@@ -1,0 +1,7 @@
+Field,Missing/'not reported' count
+Gender,4
+Age_at_diagnosis,5
+Race,22
+Rows excluded from analysis dataset (union of the above),23
+Raw file total patients,862
+Analysis dataset total patients,839

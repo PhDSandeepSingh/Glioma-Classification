@@ -1,0 +1,9 @@
+Decision,Value,Locked in,Rule
+Duplicate patient handling,Preserved all patients; confirmed identical rows 409/424 correspond to distinct TCGA patients (TCGA-P5-A72W and TCGA-E1-A7Z4); N=839,Section 3,Byte-identical across all 24 fields incl. day-level age
+IMBALANCE_STRATEGY,Class-weight (balanced),Section 6,"Highest mean CV AUC among {no resampling, class-weight, SMOTENC}"
+Train/test split,"671/168 (80/20, stratified)",Section 5,Fixed a priori; test set touched once (Section 15)
+PRIMARY_MODEL_NAME,LogisticRegression,Section 8,"Highest mean nested-CV outer-fold AUC, ties broken by Brier score"
+CALIBRATION_METHOD,Raw (uncalibrated),Section 10,Lowest ECE among methods with max single-value pileup <=10% of N
+OPTIMAL_THRESHOLD,0.487,Section 11,Youden's J on out-of-fold primary-model probabilities (train set only)
+4-feature reduced panel,"IDH1, Age_at_diagnosis, TP53, IDH2",Section 14,Top-4 by fold-aggregated permutation importance
+PRIMARY_MODEL_NAME (lock-criterion disclosure),Mean-of-fold-AUC and pooled-OOF AUC disagree on the winner (LogisticRegression vs LogisticRegression); mean-of-fold is canonical,Section 8c (forensic audit finding),"Mean of the 5 outer-fold AUCs from nested cross-validation, ties broken by mean-of-fold Brier score. Explicitly NOT the pooled out-of-fold AUC (a different, also-valid statistic — see Table06 for both, and Section 8c for why this matters)."

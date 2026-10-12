@@ -1,0 +1,21 @@
+{
+  "notebook_version": "3.0",
+  "generated_utc": "2026-10-10T07:07:38.979969",
+  "python_version": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "random_state": 42,
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "scipy": "1.16.3",
+  "shap": "0.52.0",
+  "scikit-learn": "1.6.1",
+  "xgboost": "3.4.1",
+  "imbalanced-learn": "0.14.2",
+  "statsmodels": "0.15.0",
+  "seaborn": "0.13.2",
+  "matplotlib": "3.10.0",
+  "analysis_dataset_sha256_of_content": "46b4f020c56397732d6f80c2e94a2ff4412500dcf140e4d99065cf5d9bdf2bf3",
+  "final_N_after_dedup": 839,
+  "train_N": 671,
+  "test_N": 168
+}

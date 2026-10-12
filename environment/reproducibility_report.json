@@ -1,0 +1,96 @@
+{
+  "report_version": "1.0",
+  "description": "Machine-readable record of the two independent executions of Glioma_Grading_v4_EXECUTED.ipynb referenced in the manuscript (Section 5.10, Robustness Checks; Section 7, Limitations) and README.md Section 7.",
+  "dataset_verification": {
+    "source_file": "TCGA_InfoWithGrade.csv",
+    "rows": 839,
+    "rows_after_duplicate_removal": 838,
+    "sha256_of_content": "<computed at runtime by the notebook's Section 3 audit cell; identical across both runs below, confirming both environments analysed the byte-identical dataset>",
+    "note": "The hash itself is not reproduced here as a literal value to avoid a stale or miscopied digest being mistaken for a live check. Re-running Section 3 of the notebook against your own copy of the data will regenerate and print it directly."
+  },
+  "random_state": 42,
+  "runs": [
+    {
+      "run_id": "primary_canonical",
+      "used_for": "All numbers reported in the manuscript tables and figures unless otherwise noted.",
+      "platform": {
+        "os": "Linux",
+        "architecture": "x86_64"
+      },
+      "python_version": "3.12.3",
+      "package_versions": {
+        "numpy": "2.4.4",
+        "pandas": "3.0.2",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.8.0",
+        "xgboost": "3.4.1",
+        "shap": "0.52.0",
+        "imbalanced-learn": "0.14.2",
+        "statsmodels": "0.14.6"
+      },
+      "key_results": {
+        "imbalance_strategy_locked": "No resampling",
+        "imbalance_strategy_winning_auc": 0.8994,
+        "primary_model_locked": "XGBoost",
+        "mean_of_fold_vs_pooled_oof_disagreement": true,
+        "mean_of_fold_auc_xgboost": 0.9219,
+        "pooled_oof_auc_xgboost": 0.9153,
+        "pooled_oof_auc_logistic_regression": 0.9171,
+        "locked_threshold_youden_j": 0.377,
+        "sealed_test_auc": 0.9256,
+        "sealed_test_sensitivity": 0.9296,
+        "sealed_test_specificity": 0.8041,
+        "sealed_test_accuracy": 0.8571
+      }
+    },
+    {
+      "run_id": "secondary_crosscheck",
+      "used_for": "Independent reproducibility check only (manuscript Section 5.10 and Section 7). Not the source of any headline number reported elsewhere in the manuscript.",
+      "platform": {
+        "os": "macOS",
+        "architecture": "ARM64 (Apple Silicon)"
+      },
+      "python_version": "3.13.5",
+      "package_versions": {
+        "numpy": "2.2.6",
+        "pandas": "2.3.3",
+        "scipy": "1.16.2",
+        "scikit-learn": "1.6.1",
+        "xgboost": "3.0.1",
+        "shap": "0.51.0",
+        "imbalanced-learn": "0.14.0",
+        "statsmodels": "0.14.5"
+      },
+      "key_results": {
+        "imbalance_strategy_locked": "Class-weight (balanced)",
+        "imbalance_strategy_winning_auc": 0.8995,
+        "primary_model_locked": "XGBoost",
+        "mean_of_fold_vs_pooled_oof_disagreement": false,
+        "mean_of_fold_auc_xgboost": null,
+        "pooled_oof_auc_xgboost": 0.9172,
+        "pooled_oof_auc_logistic_regression": 0.9171,
+        "locked_threshold_youden_j": 0.43,
+        "sealed_test_auc": 0.930,
+        "sealed_test_sensitivity": 0.930,
+        "sealed_test_specificity": null,
+        "sealed_test_accuracy": null
+      }
+    }
+  ],
+  "comparison_summary": {
+    "stable_across_environments": [
+      "sealed_test_auc (0.926 vs 0.930, both consistent with the training-partition nested-CV estimate)",
+      "sealed_test_sensitivity (0.930 in both)",
+      "primary_model_locked (XGBoost in both)",
+      "dataset content and shape (SHA-256 verified identical)",
+      "random_state (42 in both)"
+    ],
+    "sensitive_to_environment": [
+      "imbalance_strategy_locked: near-exact tie (0.8994 vs 0.8995) flips winner between 'No resampling' and 'Class-weight (balanced)'; does not change the substantive conclusion that all four strategies are statistically indistinguishable on this cohort",
+      "mean_of_fold_vs_pooled_oof_disagreement: present in the primary run (motivating the parallel logistic-regression analysis, manuscript Section 5.12), essentially absent in the cross-check run",
+      "locked_threshold_youden_j: 0.377 vs 0.43 — the largest and most visible of the environment-sensitive values"
+    ],
+    "root_cause": "Multi-threaded gradient-boosted tree construction is not guaranteed bit-for-bit deterministic across hardware, thread counts, and library versions even at a fixed random seed. Values already close to a tie in one environment (imbalance-strategy AUCs; the two nested-CV summary statistics) are the ones most likely to flip under this kind of floating-point perturbation; values with a wide margin (overall discrimination) are not.",
+    "not_an_error": "A reader reproducing this pipeline on different hardware should expect the same qualitative conclusions and similar headline AUC/sensitivity, but should not expect the exact threshold or strategy-comparison values to reproduce to three decimal places. See README.md Section 7 and manuscript Section 7 (Limitations) for the full discussion."
+  }
+}

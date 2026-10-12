@@ -1,0 +1,25 @@
+Variable,Role,Type,Coding
+Grade,Target,Binary,0 = LGG (Lower-Grade Glioma); 1 = GBM (Glioblastoma)
+Gender,Clinical (categorical),Binary,0 = male; 1 = female
+Age_at_diagnosis,Clinical (continuous),Float (years),Continuous age in years at diagnosis
+Race,Clinical (nominal categorical),4-level nominal,0 = white; 1 = black or african american; 2 = asian; 3 = american indian or alaska native
+IDH1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+TP53,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+ATRX,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+PTEN,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+EGFR,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+CIC,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+MUC16,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+PIK3CA,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+NF1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+PIK3R1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+FUBP1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+RB1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+NOTCH1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+BCOR,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+CSMD3,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+SMARCA4,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+GRIN2A,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+IDH2,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+FAT4,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+PDGFRA,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED

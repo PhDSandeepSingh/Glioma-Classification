@@ -1,0 +1,8 @@
+N_features,Features_selected_in_majority_of_folds,AUC,AUC_sd,Pct_of_full_model_AUC
+1,IDH1,0.8557,0.0201,93.5
+2,"IDH1, Age_at_diagnosis",0.9004,0.0137,98.4
+3,"IDH1, Age_at_diagnosis, TP53",0.9128,0.0164,99.8
+4,"IDH1, Age_at_diagnosis, TP53, PTEN",0.908,0.0219,99.2
+5,"IDH1, Age_at_diagnosis, TP53, IDH2, EGFR",0.9109,0.0234,99.6
+10,top 10,0.9144,0.018,99.9
+23,all features (no selection),0.915,0.0219,100.0

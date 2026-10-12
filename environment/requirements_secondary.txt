@@ -1,0 +1,32 @@
+# requirements_secondary.txt
+# Exact package versions for the CROSS-CHECK environment used for the
+# independent reproducibility run described in the manuscript (Section 5.10,
+# Robustness Checks, and Section 7, Limitations). This environment reproduced
+# the paper's headline discrimination (AUC, sensitivity) but not several
+# near-tied downstream values (imbalance-strategy winner, locked threshold) —
+# see README Section 7 before treating a mismatch against this environment
+# as an error.
+#
+# Platform: macOS ARM64 (Apple Silicon)
+# Python:   3.13.5
+
+# --- Core analysis stack (version-pinned; part of the explicit
+#     cross-environment reproducibility check, README Section 7) ---
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.16.2
+scikit-learn==1.6.1
+xgboost==3.0.1
+shap==0.51.0
+imbalanced-learn==0.14.0
+statsmodels==0.14.5
+
+# --- Supporting packages (needed to run the notebook; not individually
+#     part of the cross-environment comparison, but consistent with the
+#     above core-stack versions and the Python 3.13 environment) ---
+matplotlib==3.9.4
+seaborn==0.13.2
+jupyter==1.1.1
+notebook==7.2.2
+ipykernel==6.29.5
+ucimlrepo==0.0.7

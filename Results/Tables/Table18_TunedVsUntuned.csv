@@ -1,0 +1,3 @@
+Configuration,AUC,AUC_sd
+Untuned (library defaults),0.9149,0.0219
+Nested-CV tuned (Section 8),0.9105,

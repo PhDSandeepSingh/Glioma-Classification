@@ -1,0 +1,28 @@
+# requirements_primary.txt
+# Exact package versions for the CANONICAL environment — the numbers reported
+# throughout the manuscript (Tables 1-27, Figures 1-18) were produced under
+# this environment. Install with: pip install -r requirements_primary.txt
+#
+# Platform: Linux x86_64
+# Python:   3.12.3
+
+# --- Core analysis stack (version-pinned; part of the explicit
+#     cross-environment reproducibility check, README Section 7) ---
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.4.1
+shap==0.52.0
+imbalanced-learn==0.14.2
+statsmodels==0.14.6
+
+# --- Supporting packages (needed to run the notebook; not individually
+#     part of the cross-environment comparison, but consistent with the
+#     above core-stack versions and the Python 3.12 environment) ---
+matplotlib==3.10.0
+seaborn==0.13.2
+jupyter==1.1.1
+notebook==7.3.2
+ipykernel==6.29.5
+ucimlrepo==0.0.7

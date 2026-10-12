@@ -1,0 +1,4 @@
+Threshold_definition,Threshold_value,TP,TN,FP,FN,Sensitivity,Specificity,PPV,NPV,Accuracy,MCC
+Default (0.5),0.5,61,83,15,9,0.8714,0.8469,0.8026,0.9022,0.8571,0.7116
+"Youden (locked, Sec 11)",0.487,61,82,16,9,0.8714,0.8367,0.7922,0.9011,0.8512,0.7007
+"Cost-optimal (r=5, Sec 11)",0.23,67,76,22,3,0.9571,0.7755,0.7528,0.962,0.8512,0.7237

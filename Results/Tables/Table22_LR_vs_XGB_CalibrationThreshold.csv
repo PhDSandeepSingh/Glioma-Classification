@@ -1,0 +1,3 @@
+Model,ECE,Slope,Intercept,Youden_threshold,Sensitivity,Specificity
+XGBoost,0.029,0.962,-0.02,0.487,0.904,0.846
+LogisticRegression,0.029,0.962,-0.02,0.487,0.904,0.846
