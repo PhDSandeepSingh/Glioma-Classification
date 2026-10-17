@@ -2,7 +2,9 @@
 
 # Glioma-Classification
 
-### Diagnostic Label–IDH Discordance and Machine-Learning Classifier Performance on a Legacy TCGA Glioma Grading Benchmark
+### Impact of diagnostic label–IDH discordance and WHO 2021 criteria on machine-learning glioma grading from somatic mutations
+
+
 
 [![Release](https://img.shields.io/badge/release-v3.0.0-0A66C2?style=for-the-badge&logo=github)](https://github.com/SandeepSinghNk/Glioma-Classification/releases/tag/v3.0.0)
 [![Python](https://img.shields.io/badge/Python-3.13.16-3776AB?style=for-the-badge&logo=python&logoColor=white)](environment/requirements-lock.txt)
