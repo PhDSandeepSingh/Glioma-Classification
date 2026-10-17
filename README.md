@@ -245,7 +245,7 @@ If you use this codebase, the benchmark audit, or the released WHO 2021 patient-
 ```bibtex
 @article{singh2026glioma,
   author  = {Singh, Sandeep and Pal, Ashok and Mittal, Nitin and Kaur, Jatinder and Gared, Fikreselam},
-  title   = {Diagnostic label--{IDH} discordance and machine-learning classifier performance on a legacy {TCGA} glioma grading benchmark},
+  title   = {Impact of diagnostic label–IDH discordance and WHO 2021 criteria on machine-learning glioma grading from somatic mutations},
   journal = {Scientific Reports},
   year    = {2026}
 }
