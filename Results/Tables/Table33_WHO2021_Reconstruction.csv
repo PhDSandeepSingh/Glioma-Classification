@@ -1,0 +1,11 @@
+WHO2021_reconstructed,Legacy GBM,Legacy LGG,All
+"Astrocytoma, IDH-mutant, grade 2-3",0,224,224
+"Astrocytoma, IDH-mutant, grade 4",23,15,38
+"Astrocytoma, IDH-mutant, grade not assignable",0,1,1
+"Glioblastoma, IDH-wildtype (histological criteria)",327,0,327
+"Glioblastoma, IDH-wildtype (molecular criteria)",0,68,68
+"IDH-mutant, 1p/19q unknown",2,0,2
+"IDH-wildtype, glioblastoma criteria not met",0,8,8
+"IDH-wildtype, glioblastoma status not assessable (TERT unknown)",0,9,9
+"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",0,162,162
+All,352,487,839

@@ -1,5 +1,5 @@
-Strategy,roc_auc_mean,roc_auc_sd,balanced_accuracy_mean,balanced_accuracy_sd,mcc_mean,mcc_sd,brier_mean,brier_sd
-No resampling,0.9013,0.0189,0.8553,0.0213,0.7069,0.0428,0.1159,0.0129
-Class-weight (balanced),0.902,0.0184,0.8535,0.0204,0.7038,0.041,0.1158,0.0124
-SMOTENC,0.9014,0.0198,0.8557,0.0189,0.7061,0.0377,0.1164,0.0135
-Standard SMOTE,0.9013,0.0197,0.8559,0.0164,0.7069,0.0336,0.1157,0.0129
+Strategy,roc_auc_mean,roc_auc_sd,balanced_accuracy_mean,balanced_accuracy_sd,mcc_mean,mcc_sd,brier_mean,brier_sd,roc_auc_mean_full_precision,brier_mean_full_precision
+No resampling,0.9013,0.0189,0.8553,0.0213,0.7069,0.0428,0.1159,0.0129,0.901346891412681,0.11591367360727228
+Class-weight (balanced),0.9014,0.0178,0.8547,0.0197,0.7039,0.0394,0.1159,0.0127,0.9014329822224559,0.11587338532031201
+SMOTENC,0.9014,0.0198,0.8557,0.0189,0.7061,0.0377,0.1164,0.0135,0.9013943877759668,0.11635204940728455
+Standard SMOTE,0.9013,0.0196,0.8563,0.0166,0.7075,0.034,0.1157,0.0129,0.9012690525848421,0.11567113508998218

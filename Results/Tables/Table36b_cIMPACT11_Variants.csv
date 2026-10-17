@@ -1,0 +1,5 @@
+Variant,Qualifying_IDHwt_legacy_LGG,Denominator,Share_pct,Notes
+"Base reconstruction (any 1 of TERTp, EGFR amp, +7/-10)",68,85,80.0,"7 of 68 lack a Ceccarelli histological grade (TCGA-E1-A7YD, -A7YJ, -A7YL, -A7YM, -A7YN, -A7YQ, -A7Z2)"
+cIMPACT-NOW update 11 cautious (drop TERT-only G2 and single-criterion EGFR/+7-10 age < 40),64,85,75.3,"Drops 3 TERT-only Ceccarelli G2 cases (TCGA-HT-A61A, TCGA-HT-7854, TCGA-FG-7643) and 1 EGFR-only case aged < 40 (TCGA-FG-5963, age 23.5 y, G3)"
+"Requiring >= 2 molecular criteria (TERTp, EGFR amp, +7/-10)",45,85,52.9,"3 TERT+EGFR, 14 TERT++7/-10, 16 EGFR++7/-10, 12 all three criteria"
+de Mendonca et al. (2025) Method-2021 (TERTp or +7/-10; Ceccarelli IDH; no EGFR amp),63,85,74.1,"63 GBM-IDHwt, 17 unclassified (including 4 EGFR-only cases), 5 Astrocytoma, IDH-mutant (Ceccarelli IDH-mutant)"

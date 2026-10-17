@@ -1,0 +1,12 @@
+Set,Category,N,Predicted_GBM,Predicted_LGG,Errors_vs_legacy_label,Prediction_agrees_with_IDH_status
+Training OOF,"Legacy LGG, IDH1-mutant (concordant)",303,0,303,0,303
+Training OOF,"Legacy GBM, IDH1/2-wild-type (concordant)",261,260,1,1,260
+Training OOF,"Legacy GBM, IDH1-mutant",19,0,19,19,19
+Training OOF,"Legacy GBM, IDH2-mutant",2,1,1,1,1
+Training OOF,"Legacy LGG, IDH1-wt / IDH2-mutant",19,1,18,1,18
+Training OOF,"Legacy LGG, IDH1/2-wild-type",67,64,3,64,64
+Sealed test,"Legacy LGG, IDH1-mutant (concordant)",78,2,76,2,76
+Sealed test,"Legacy GBM, IDH1/2-wild-type (concordant)",66,65,1,1,65
+Sealed test,"Legacy GBM, IDH1-mutant",4,0,4,4,4
+Sealed test,"Legacy LGG, IDH1-wt / IDH2-mutant",2,0,2,0,2
+Sealed test,"Legacy LGG, IDH1/2-wild-type",18,18,0,18,18

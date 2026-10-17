@@ -1,0 +1,5 @@
+Model,N,Bootstrap_resamples_used,Slope,Slope_CI_lo,Slope_CI_hi,CITL,CITL_CI_lo,CITL_CI_hi,ECE,ECE_CI_lo,ECE_CI_hi,Brier,Brier_CI_lo,Brier_CI_hi
+"Primary model, Platt-calibrated (as deployed)",168,1000,1.3093,1.0704,1.7987,-0.0415,-0.4231,0.3489,0.0627,0.0575,0.1218,0.1011,0.0756,0.1287
+"Primary model, raw",168,1000,1.26,1.0179,1.7202,-0.3139,-0.7121,0.0798,0.0616,0.0515,0.1173,0.1019,0.0747,0.1309
+"Age + IDH1 LR (uncalibrated, class-weighted)",168,1000,1.0624,0.8182,1.6464,-0.289,-0.685,0.1564,0.0567,0.0392,0.1138,0.1084,0.0749,0.1441
+"4-feature panel (uncalibrated, class-weighted)",168,1000,1.1141,0.8799,1.5266,-0.4295,-0.8318,0.0145,0.0544,0.0464,0.1169,0.1055,0.072,0.1414

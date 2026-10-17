@@ -1,0 +1,79 @@
+{
+  "title": "Glioma-Classification v3.0.0: analysis code and WHO 2021 label release for \"Diagnostic label–IDH discordance and machine-learning classifier performance on a legacy TCGA glioma grading benchmark\"",
+  "upload_type": "software",
+  "version": "3.0.0",
+  "description": "<p>Analysis notebook (Glioma_Grading_R3.ipynb), its source script (build_notebook.py), locked decisions, result tables and figures for an audit of the UCI/TCGA Glioma Grading benchmark (UCI dataset 759, doi:10.24432/C5R62J). Four model families are compared by nested cross-validation with all decisions locked before a held-out test set is scored; errors are related to agreement between the legacy LGG/GBM label and IDH status; and approximate WHO 2021 categories are reconstructed by linking TCGA case identifiers to published molecular annotations (Ceccarelli et al., Cell 2016; cBioPortal study lgggbm_tcga_pub pinned at datahub commit 18763f8eee86d4886d7210068f745f1e509498ee). The release includes a versioned patient-level label file (Data/Release) with a datasheet (Data/DATASHEET.md), SHA-256 checksums of all external inputs, and pinned Python 3.13 package versions.</p><p><strong>Research use only.</strong> The reconstructed WHO 2021 categories are approximate and must not be used for clinical diagnosis.</p>",
+  "creators": [
+    {
+      "name": "Singh, Sandeep",
+      "affiliation": "Department of Mathematics, University Institute of Sciences, Chandigarh University, Mohali, India"
+    },
+    {
+      "name": "Pal, Ashok",
+      "affiliation": "Department of Mathematics, University Institute of Sciences, Chandigarh University, Mohali, India"
+    },
+    {
+      "name": "Mittal, Nitin",
+      "affiliation": "Department of Industry 4.0, Shri Vishwakarma Skill University, Palwal, India"
+    },
+    {
+      "name": "Kaur, Jatinder",
+      "affiliation": "Department of Electronics and Communication Engineering, GLA University, Mathura, India"
+    },
+    {
+      "name": "Gared, Fikreselam",
+      "affiliation": "Faculty of Electrical and Computer Engineering, Bahir Dar Institute of Technology, Bahir Dar University, Bahir Dar, Ethiopia"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "glioma",
+    "IDH mutation",
+    "WHO 2021 classification",
+    "label noise",
+    "benchmark validity",
+    "machine learning",
+    "TCGA",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.24432/C5R62J",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.3390/ijms232214155",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.cell.2015.12.028",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://www.cbioportal.org/study/summary?id=lgggbm_tcga_pub",
+      "relation": "isDerivedFrom",
+      "scheme": "url",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/cBioPortal/datahub/tree/18763f8eee86d4886d7210068f745f1e509498ee/public/lgggbm_tcga_pub",
+      "relation": "isDerivedFrom",
+      "scheme": "url",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/SandeepSinghNk/Glioma-Classification",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "TODO(authors) before publishing the deposit: (1) the version DOI is minted by Zenodo on deposit — copy it into CITATION.cff (doi field), README_R3.md and the manuscript's Code availability statement and reference list; (2) after the article is published, add {\"identifier\": \"<article DOI>\", \"relation\": \"isSupplementTo\", \"scheme\": \"doi\", \"resource_type\": \"publication-article\"}; (3) add ORCID iDs to creators; (4) delete this notes field. Upstream TCGA data are subject to the NCI GDC/TCGA data-use policies; the UCI dataset is CC BY 4.0."
+}

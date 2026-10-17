@@ -1,25 +1,25 @@
 Variable,Role,Type,Coding
-Grade,Target,Binary,0 = LGG (Lower-Grade Glioma); 1 = GBM (Glioblastoma)
-Gender,Clinical (categorical),Binary,0 = male; 1 = female
-Age_at_diagnosis,Clinical (continuous),Float (years),Continuous age in years at diagnosis
-Race,Clinical (nominal categorical),4-level nominal,0 = white; 1 = black or african american; 2 = asian; 3 = american indian or alaska native
-IDH1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-TP53,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-ATRX,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-PTEN,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-EGFR,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-CIC,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-MUC16,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-PIK3CA,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-NF1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-PIK3R1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-FUBP1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-RB1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-NOTCH1,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-BCOR,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-CSMD3,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-SMARCA4,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-GRIN2A,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-IDH2,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-FAT4,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
-PDGFRA,Molecular (somatic mutation status),Binary,0 = NOT_MUTATED; 1 = MUTATED
+Grade,Target,Binary,0 = LGG; 1 = GBM (legacy TCGA project label)
+Gender,Clinical,Binary,0 = male; 1 = female
+Age_at_diagnosis,Clinical,Continuous (years),"years + days/365, rounded to 2 decimals by UCI"
+Race,Clinical,Nominal (4 levels),0 white; 1 black or African American; 2 Asian; 3 American Indian or Alaska Native (one-hot encoded)
+IDH1,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+TP53,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+ATRX,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+PTEN,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+EGFR,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+CIC,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+MUC16,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+PIK3CA,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+NF1,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+PIK3R1,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+FUBP1,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+RB1,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+NOTCH1,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+BCOR,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+CSMD3,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+SMARCA4,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+GRIN2A,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+IDH2,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+FAT4,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)
+PDGFRA,Molecular,Binary,0 = not mutated; 1 = mutated (somatic mutation call)

@@ -1,6 +1,8 @@
-Group,N,N_GBM,N_LGG,AUC,AUC_CI_lower,AUC_CI_upper,Sensitivity,Specificity,Note,Attribute
-Male,90,39,51,0.9178,0.8633,0.9679,0.8718,0.8431,,Gender
-Female,78,31,47,0.9465,0.8924,0.9847,0.871,0.8298,,Gender
-White,154,62,92,0.9352,0.8952,0.9653,0.8871,0.837,,Race
-Black/African American,13,8,5,Not reportable,,,,,Fewer than 10 patients in one class — any AUC here would be noise presented as a number,Race
-Asian,1,0,1,Not reportable,,,,,Fewer than 10 patients in one class — any AUC here would be noise presented as a number,Race
+Attribute,Group,N,N_GBM,N_LGG,Accuracy,Errors,AUC,AUC_CI,Sensitivity,Specificity,Note,Interpretation_note
+Sex,Male,90,39,51,0.833,15,0.918,0.859-0.970,0.897,0.784,,
+Sex,Female,78,31,47,0.872,10,0.947,0.897-0.983,0.968,0.809,,
+Race,White,154,62,92,0.857,22,0.936,0.898-0.967,0.935,0.804,,
+Race,Black/African American,13,8,5,0.769,3,not reportable,,,,< 10 patients in a class,
+Race,Asian,1,0,1,1.0,0,not reportable,,,,< 10 patients in a class,
+Legacy label vs IDH1,Concordant (LGG/IDH1-mut or GBM/IDH1-wt),144,66,78,0.979,3,0.999,0.997-1.000,0.985,0.974,,"Tautological: stratum defined by agreement of the label with IDH1, the dominant predictor; an AUC near 1 is guaranteed by construction and is not a performance estimate"
+Legacy label vs IDH1,Discordant (LGG/IDH1-wt or GBM/IDH1-mut),24,4,20,0.083,22,not reportable,,,,< 10 patients in a class,Stratum defined by disagreement of the label with IDH1; low accuracy is expected by construction

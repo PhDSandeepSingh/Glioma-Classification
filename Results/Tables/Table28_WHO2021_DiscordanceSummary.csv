@@ -1,0 +1,5 @@
+WHO2021_audit_category,n,TP53,ATRX,EGFR,PTEN,CIC,FUBP1
+"Legacy GBM, IDH1-mutant: IDH-mutant tumour (WHO 2021: astrocytoma, IDH-mutant, grade 4 if astrocytic)",23,22,18,2,1,1,0
+"Legacy GBM, IDH2-mutant",2,2,2,1,1,1,1
+"Legacy LGG, IDH1-wild-type but IDH2-mutant: IDH-mutant tumour (not a glioblastoma candidate)",21,3,3,0,0,8,1
+"Legacy LGG, IDH1/2-wild-type: candidate glioblastoma, IDH-wild-type if TERT/EGFR-amp/+7-10 present (not in the UCI file; assessed from external annotations in Section 20f)",85,16,10,30,20,1,1

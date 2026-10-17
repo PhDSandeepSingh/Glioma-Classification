@@ -1,0 +1,7 @@
+Set,Group,N,Errors,Accuracy
+Training OOF,Concordant,566,2,0.996
+Training OOF,Discordant,105,84,0.2
+Training OOF,All,671,86,0.872
+Sealed test,Concordant,144,3,0.979
+Sealed test,Discordant,24,22,0.083
+Sealed test,All,168,25,0.851

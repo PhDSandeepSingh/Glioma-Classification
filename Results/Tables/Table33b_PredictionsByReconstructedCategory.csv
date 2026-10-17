@@ -1,0 +1,18 @@
+Category,Set,Legacy_LGG,Legacy_GBM,N,Predicted_GBM
+"Astrocytoma, IDH-mutant, grade 2-3",Sealed test,52,0,52,1
+"Astrocytoma, IDH-mutant, grade 2-3",Training OOF,172,0,172,1
+"Astrocytoma, IDH-mutant, grade 4",Sealed test,1,3,4,1
+"Astrocytoma, IDH-mutant, grade 4",Training OOF,14,20,34,1
+"Astrocytoma, IDH-mutant, grade not assignable",Training OOF,1,0,1,0
+"Glioblastoma, IDH-wildtype (histological criteria)",Sealed test,0,66,66,65
+"Glioblastoma, IDH-wildtype (histological criteria)",Training OOF,0,261,261,260
+"Glioblastoma, IDH-wildtype (molecular criteria)",Sealed test,15,0,15,15
+"Glioblastoma, IDH-wildtype (molecular criteria)",Training OOF,53,0,53,52
+"IDH-mutant, 1p/19q unknown",Sealed test,0,1,1,0
+"IDH-mutant, 1p/19q unknown",Training OOF,0,1,1,0
+"IDH-wildtype, glioblastoma criteria not met",Sealed test,2,0,2,2
+"IDH-wildtype, glioblastoma criteria not met",Training OOF,6,0,6,5
+"IDH-wildtype, glioblastoma status not assessable (TERT unknown)",Sealed test,1,0,1,1
+"IDH-wildtype, glioblastoma status not assessable (TERT unknown)",Training OOF,8,0,8,7
+"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",Sealed test,27,0,27,0
+"Oligodendroglioma, IDH-mutant, 1p/19q-codeleted",Training OOF,135,0,135,0

@@ -1,6 +1,6 @@
-MIT License
+MIT License (Analysis Code)
 
-Copyright (c) 2026 Sandeep Singh, Ashok Pal, Nitin Mittal, Jatinder Kaur, Fikreselam Gared
+Copyright (c) 2026 Sandeep Singh, Ashok Pal, Nitin Mittal, Jatinder Kaur, and Fikreselam Gared
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+Data and Label Release Terms
+-------------------------------------------------------------------------------
+- The reconstructed WHO 2021 patient-level label file
+  (Data/Release/TCGA_GliomaBenchmark_WHO2021_Labels_v1.0.csv) and its column
+  dictionary are provided under Creative Commons Attribution 4.0 International
+  (CC BY 4.0 (proposed; author to confirm)), matching the CC BY 4.0 licence of
+  the upstream UCI dataset (doi:10.24432/C5R62J).
+- Upstream molecular annotations from cBioPortal study lgggbm_tcga_pub
+  (Ceccarelli et al., Cell 2016) are subject to the Broad Institute GDAC TCGA
+  Analysis Pipeline License and the NCI Genomic Data Commons (GDC) / TCGA
+  data-use and publication policies.

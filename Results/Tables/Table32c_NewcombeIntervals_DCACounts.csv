@@ -1,0 +1,5 @@
+Partition,Rule_comparator,Model_errors,Rule_errors,Discordant_b_model_right,Discordant_c_rule_right,Exact_McNemar_p,Delta_acc_model_minus_rule,Newcombe10_CI_lo,Newcombe10_CI_hi,Newcombe_unadj_CI_lo,Newcombe_unadj_CI_hi,DCA_grid_0.30_0.50_rule_NB_ge_model
+Test (n=168),IDH1/2-wildtype => GBM,25,22,0,3,0.25,-0.0179,-0.0472,0.0087,-0.0449,0.006,21/21
+Test (n=168),IDH1-wildtype => GBM,25,24,2,3,1.0,-0.006,-0.0387,0.0261,-0.0365,0.0239,16/21
+Development OOF (n=671),IDH1/2-wildtype => GBM,86,88,4,2,0.6875,0.003,-0.0057,0.0119,-0.0053,0.0116,12/21
+Development OOF (n=671),IDH1-wildtype => GBM,86,105,21,2,6.6e-05,0.0283,0.0142,0.0435,0.0144,0.0434,0/21

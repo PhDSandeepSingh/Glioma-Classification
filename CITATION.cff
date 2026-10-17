@@ -1,0 +1,102 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code or the released WHO 2021 label file, please cite the
+  archived software release below and the associated article.
+type: software
+title: >-
+  Glioma-Classification v3.0.0: analysis code and WHO 2021 label release for
+  "Diagnostic label–IDH discordance and machine-learning classifier performance
+  on a legacy TCGA glioma grading benchmark"
+abstract: >-
+  Analysis notebook, source script, locked decisions, result tables and
+  figures for an audit of the UCI/TCGA Glioma Grading benchmark (UCI dataset
+  759). Four model families are compared by nested cross-validation with all
+  decisions locked before a held-out test set is scored; errors are related
+  to agreement between the legacy LGG/GBM label and IDH status; and approximate
+  WHO 2021 categories are reconstructed by linking TCGA case identifiers to
+  published molecular annotations (cBioPortal lgggbm_tcga_pub). Includes a
+  versioned patient-level label file with a datasheet. Research use only;
+  not for clinical diagnosis.
+authors:
+  - given-names: Sandeep
+    family-names: Singh
+    affiliation: >-
+      Department of Mathematics, University Institute of Sciences,
+      Chandigarh University, Mohali, Punjab, India
+    # TODO(authors): add orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+  - given-names: Ashok
+    family-names: Pal
+    affiliation: >-
+      Department of Mathematics, University Institute of Sciences,
+      Chandigarh University, Mohali, Punjab, India
+  - given-names: Nitin
+    family-names: Mittal
+    affiliation: >-
+      Department of Industry 4.0, Skill Faculty of Engineering & Technology,
+      Shri Vishwakarma Skill University, Palwal, Haryana, India
+  - given-names: Jatinder
+    family-names: Kaur
+    affiliation: >-
+      Department of Electronics and Communication Engineering, GLA University,
+      Mathura, Uttar Pradesh, India
+  - given-names: Fikreselam
+    family-names: Gared
+    affiliation: >-
+      Faculty of Electrical and Computer Engineering, Bahir Dar Institute of
+      Technology, Bahir Dar University, Bahir Dar, Ethiopia
+version: 3.0.0
+# TODO(authors): set date-released to the date the GitHub release is tagged.
+date-released: "2026-10-16"
+# TODO(authors): DOI is minted by Zenodo when the tagged GitHub release is
+# archived. Paste the version DOI here, then uncomment:
+# doi: 10.5281/zenodo.XXXXXXX
+license: MIT
+repository-code: "https://github.com/SandeepSinghNk/Glioma-Classification"
+keywords:
+  - glioma
+  - IDH mutation
+  - WHO 2021 classification
+  - label noise
+  - benchmark validity
+  - machine learning
+  - TCGA
+  - reproducibility
+references:
+  - type: data
+    title: Glioma Grading Clinical and Mutation Features
+    authors:
+      - given-names: Erdal
+        family-names: Tasci
+      - given-names: Kevin
+        family-names: Camphausen
+      - given-names: Andra Valentina
+        family-names: Krauze
+      - given-names: Ying
+        family-names: Zhuge
+    publisher:
+      name: UCI Machine Learning Repository
+    year: 2022
+    doi: 10.24432/C5R62J
+    license: CC-BY-4.0
+  - type: article
+    title: >-
+      Molecular profiling reveals biologically discrete subsets and pathways
+      of progression in diffuse glioma
+    authors:
+      - given-names: Michele
+        family-names: Ceccarelli
+      - name: et al.
+    journal: Cell
+    volume: 164
+    issue: 3
+    start: 550
+    end: 563
+    year: 2016
+    doi: 10.1016/j.cell.2015.12.028
+  - type: database
+    title: "cBioPortal for Cancer Genomics: study lgggbm_tcga_pub (Merged Cohort of LGG and GBM, TCGA, Cell 2016)"
+    authors:
+      - name: cBioPortal for Cancer Genomics
+    url: "https://www.cbioportal.org/study/summary?id=lgggbm_tcga_pub"
+    repository: "https://github.com/cBioPortal/datahub/tree/18763f8eee86d4886d7210068f745f1e509498ee/public/lgggbm_tcga_pub"
+    notes: "Pinned at datahub commit 18763f8eee86d4886d7210068f745f1e509498ee; accessed 12 October 2026."

@@ -1,0 +1,5 @@
+Set,Group,N,Errors,Accuracy,Errors_where_prediction_follows_IDH
+Training OOF,Concordant,583,2,0.997,0
+Training OOF,Discordant,88,84,0.045,84
+Sealed test,Concordant,146,3,0.979,0
+Sealed test,Discordant,22,22,0.0,22

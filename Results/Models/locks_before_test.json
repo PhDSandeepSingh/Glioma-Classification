@@ -1,0 +1,7 @@
+{
+  "Imbalance strategy": "Class-weight (balanced)",
+  "Primary model": "XGBoost",
+  "Calibration": "Platt/sigmoid (cross-fitted)",
+  "Threshold": 0.351,
+  "Four-feature panel": "IDH1, Age_at_diagnosis, IDH2, TP53"
+}

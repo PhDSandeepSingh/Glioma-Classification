@@ -1,21 +1,89 @@
 {
-  "notebook_version": "3.0",
-  "generated_utc": "2026-10-10T07:07:38.979969",
-  "python_version": "3.13.15",
-  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
-  "random_state": 42,
-  "numpy": "2.1.3",
-  "pandas": "2.2.3",
-  "scipy": "1.16.3",
-  "shap": "0.52.0",
-  "scikit-learn": "1.6.1",
+  "generated_utc": "2026-10-12T18:21:27.013547+00:00",
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.9.1",
   "xgboost": "3.4.1",
+  "shap": "0.53.0",
   "imbalanced-learn": "0.14.2",
   "statsmodels": "0.15.0",
+  "matplotlib": "3.11.2",
   "seaborn": "0.13.2",
-  "matplotlib": "3.10.0",
-  "analysis_dataset_sha256_of_content": "46b4f020c56397732d6f80c2e94a2ff4412500dcf140e4d99065cf5d9bdf2bf3",
-  "final_N_after_dedup": 839,
+  "random_state": 42,
+  "analysis_file_sha256": "1b25614ff94c8cf95f80f2c91c33e69843044c62283332690c9ff88f195144a1",
+  "dataframe_content_hash": "46b4f020c56397732d6f80c2e94a2ff4412500dcf140e4d99065cf5d9bdf2bf3",
+  "N": 839,
   "train_N": 671,
-  "test_N": 168
+  "test_N": 168,
+  "Imbalance strategy": "Class-weight (balanced)",
+  "Primary model": "XGBoost",
+  "Calibration": "Platt/sigmoid (cross-fitted)",
+  "Threshold": 0.351,
+  "Four-feature panel": "IDH1, Age_at_diagnosis, IDH2, TP53",
+  "cache_manifest": {
+    "nested_cv_families": {
+      "file": "nested_cv_families_46b4f020c563_r3_7ded954bbd.pkl",
+      "code_key": "7ded954bbd",
+      "hit": false
+    },
+    "age_idh1_nested": {
+      "file": "age_idh1_nested_46b4f020c563_r3_0668dc15f2.pkl",
+      "code_key": "0668dc15f2",
+      "hit": false
+    },
+    "repeated_nested_XGBoost": {
+      "file": "repeated_nested_XGBoost_46b4f020c563_r3_640ddd8a14.pkl",
+      "code_key": "640ddd8a14",
+      "hit": false
+    },
+    "explain_XGBoost": {
+      "file": "explain_XGBoost_46b4f020c563_r3_e31f119a79.pkl",
+      "code_key": "e31f119a79",
+      "hit": false
+    },
+    "lofo_nested_XGBoost": {
+      "file": "lofo_nested_XGBoost_46b4f020c563_r3_c227b5e8dd.pkl",
+      "code_key": "c227b5e8dd",
+      "hit": false
+    },
+    "panels_nested_XGBoost": {
+      "file": "panels_nested_XGBoost_46b4f020c563_r3_259e8b9a74.pkl",
+      "code_key": "259e8b9a74",
+      "hit": false
+    },
+    "final_models_XGBoost": {
+      "file": "final_models_XGBoost_46b4f020c563_r3_2a88a735f0.pkl",
+      "code_key": "2a88a735f0",
+      "hit": false
+    },
+    "rich_features_nested": {
+      "file": "rich_features_nested_46b4f020c563_r3_3cad6d4b99.pkl",
+      "code_key": "3cad6d4b99",
+      "hit": false
+    },
+    "rich_features_final": {
+      "file": "rich_features_final_46b4f020c563_r3_b5f0209931.pkl",
+      "code_key": "b5f0209931",
+      "hit": false
+    },
+    "norace_nested_XGBoost": {
+      "file": "norace_nested_XGBoost_46b4f020c563_r3_32195aebd5.pkl",
+      "code_key": "32195aebd5",
+      "hit": false
+    },
+    "norace_final_XGBoost": {
+      "file": "norace_final_XGBoost_46b4f020c563_r3_32c54ed6f8.pkl",
+      "code_key": "32c54ed6f8",
+      "hit": false
+    },
+    "locked_panel_nested_XGBoost": {
+      "file": "locked_panel_nested_XGBoost_46b4f020c563_r3_66cd56747a.pkl",
+      "code_key": "66cd56747a",
+      "hit": false
+    }
+  },
+  "cache_all_recomputed_this_run": true
 }

@@ -1,5 +1,5 @@
-Model,Mean_of_fold_AUC,Pooled_OOF_AUC,Gap
-LogisticRegression,0.9127,0.9115,0.0012
-RandomForest,0.9106,0.9052,0.0054
-XGBoost,0.9105,0.9016,0.0089
-SVM_RBF,0.9089,0.897,0.0119
+Model,Mean_of_fold_AUC,AUC_fold_SD,Pooled_OOF_AUC,Mean_of_fold_Brier,Pooled_OOF_Brier,Gap
+XGBoost,0.9149,0.0186,0.9116,0.1056,0.1056,0.0034
+LogisticRegression,0.9124,0.0228,0.9113,0.1069,0.1069,0.0011
+RandomForest,0.9114,0.0149,0.9065,0.1077,0.1077,0.005
+SVM_RBF,0.909,0.0191,0.8939,0.1096,0.1096,0.0151

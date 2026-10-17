@@ -1,0 +1,54 @@
+Column,Description
+Release_version,Version of this label file
+Case_ID,TCGA patient barcode (raw UCI/TCGA export)
+UCI_row_index,0-based data-row index in TCGA_InfoWithGrade.csv (UCI ID 759); header excluded
+Partition,"train (n=671) or test (n=168); stratified split, seed 42"
+Project,TCGA project of the raw export
+Legacy_label,Legacy TCGA project label (WHO 2007-era histology): the benchmark target
+Primary_Diagnosis_raw,Primary diagnosis field of the raw export (not used as a predictor)
+IDH1_UCI,UCI IDH1 mutation flag (1 = any non-synonymous call)
+IDH2_UCI,UCI IDH2 mutation flag
+IDH_status_Ceccarelli,"Curated IDH status, Ceccarelli et al. 2016 (cBioPortal lgggbm_tcga_pub)"
+IDH_hotspot_exome,IDH1 R132 / IDH2 R172 calls in the study exome mutation file; 'none' if sequenced without a hotspot
+Exome_sequenced,Patient listed among the study's exome-sequenced samples (H3 and IDH hotspot calls interpretable)
+IDH_1p19q_subtype,1p/19q status (Ceccarelli)
+Chr7gain_Chr10loss,Combined chromosome 7 gain / 10 loss (Ceccarelli)
+TERT_promoter,TERT promoter status (Ceccarelli; frequently missing in TCGA-GBM)
+EGFR_GISTIC,GISTIC 2.0 discrete call (2 = high-level amplification)
+CDKN2A_GISTIC,GISTIC 2.0 discrete call (-2 = deep/homozygous deletion)
+CDKN2B_GISTIC,GISTIC 2.0 discrete call (-2 = deep/homozygous deletion)
+H3_status,H3 K27M (H3-3A/H3C2/H3C3) or G34R/V (H3-3A) hotspot from the exome mutation file (HGVS p.K28M / p.G35R/V)
+Methylation_cluster,Supervised DNA-methylation cluster (Ceccarelli); descriptive only
+Label_IDH12_discordant,"Legacy label disagrees with IDH1/2 status (LGG & IDH-wt, or GBM & IDH-mut)"
+WHO2021_category_base,"Approximate WHO 2021 category, variant: base R3 rules (IDH from UCI calls)"
+WHO_grade4_base,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: base R3 rules (IDH from UCI calls)"
+WHO_GBM_IDHwt_base,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: base R3 rules (IDH from UCI calls)"
+Assigning_rule_base,"Rule/criterion that assigned the category, variant: base R3 rules (IDH from UCI calls)"
+WHO2021_category_b,"Approximate WHO 2021 category, variant: Ceccarelli IDH status"
+WHO_grade4_b,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: Ceccarelli IDH status"
+WHO_GBM_IDHwt_b,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: Ceccarelli IDH status"
+Assigning_rule_b,"Rule/criterion that assigned the category, variant: Ceccarelli IDH status"
+WHO2021_category_c,"Approximate WHO 2021 category, variant: molecular GBM criteria only for astrocytic histology"
+WHO_grade4_c,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: molecular GBM criteria only for astrocytic histology"
+WHO_GBM_IDHwt_c,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: molecular GBM criteria only for astrocytic histology"
+Assigning_rule_c,"Rule/criterion that assigned the category, variant: molecular GBM criteria only for astrocytic histology"
+WHO2021_category_d,"Approximate WHO 2021 category, variant: IDH-wt without criteria = NEC, excluded"
+WHO_grade4_d,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: IDH-wt without criteria = NEC, excluded"
+WHO_GBM_IDHwt_d,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: IDH-wt without criteria = NEC, excluded"
+Assigning_rule_d,"Rule/criterion that assigned the category, variant: IDH-wt without criteria = NEC, excluded"
+WHO2021_category_e,"Approximate WHO 2021 category, variant: b + c + d"
+WHO_grade4_e,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: b + c + d"
+WHO_GBM_IDHwt_e,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: b + c + d"
+Assigning_rule_e,"Rule/criterion that assigned the category, variant: b + c + d"
+WHO2021_category_f,"Approximate WHO 2021 category, variant: base + H3"
+WHO_grade4_f,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: base + H3"
+WHO_GBM_IDHwt_f,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: base + H3"
+Assigning_rule_f,"Rule/criterion that assigned the category, variant: base + H3"
+WHO2021_category_g,"Approximate WHO 2021 category, variant: b + c + d + H3"
+WHO_grade4_g,"CNS WHO grade 4 target (1/0; blank = unassignable), variant: b + c + d + H3"
+WHO_GBM_IDHwt_g,"Glioblastoma, IDH-wildtype target (1/0; blank = unassignable), variant: b + c + d + H3"
+Assigning_rule_g,"Rule/criterion that assigned the category, variant: b + c + d + H3"
+Prediction_source,Training out-of-fold (nested CV) or test-set prediction of the locked XGBoost model
+Calibrated_probability_GBM,Platt-calibrated probability of the legacy GBM label
+Predicted_label,Prediction at the locked threshold
+Prediction_threshold,Locked Youden threshold (training partition)

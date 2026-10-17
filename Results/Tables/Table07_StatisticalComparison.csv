@@ -1,3 +1,6 @@
-Comparison,AUC_A,AUC_B,Diff,DeLong_p,McNemar_p,Significant_at_0.05
-LogisticRegression (full) vs. Age+IDH1,0.9115024886506592,0.8963563601888823,0.015146128461776875,0.048528738052455056,0.13739482585580076,True
-LogisticRegression vs. LR (same 23 features),0.9016390453791318,0.9115024886506592,-0.009863443271527439,0.08430032281427247,,False
+Comparison,AUC_A,AUC_B,Diff,Diff_CI_lo,Diff_CI_hi,DeLong_p,McNemar_p_at_0.5
+"XGBoost vs Age+IDH1 (LR, nested)",0.9116,0.8963,0.0153,0.0009,0.0297,0.0368,0.0033
+XGBoost vs LogisticRegression,0.9116,0.9113,0.0003,-0.0095,0.0101,0.9508,
+XGBoost vs SVM_RBF,0.9116,0.8939,0.0177,0.0029,0.0324,0.0188,
+XGBoost vs RandomForest,0.9116,0.9065,0.0051,-0.0048,0.015,0.3104,
+"Soft-vote ensemble (4 families, nested) vs XGBoost",0.9127,0.9116,0.0011,-0.0053,0.0076,0.7267,
