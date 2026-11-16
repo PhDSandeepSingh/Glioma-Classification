@@ -1,0 +1,11 @@
+Attribute,Group,N,Discordant,Discordant_pct,Wilson_lo_pct,Wilson_hi_pct,IDHwt_legacy_LGG,IDHmut_legacy_GBM,Test,p_value,Model_acc_vs_legacy,Model_acc_vs_grade4,N_grade4_known,Model_acc_vs_GBMwt,N_GBMwt_known
+Age band,<=40,249,23,9.2369,6.234,13.4786,11,12,chi-square,0.0001,0.9076,0.8857,245,0.9675,246
+Age band,41-55,245,33,13.4694,9.7542,18.3124,23,10,chi-square,0.0001,0.8653,0.9424,243,0.9837,245
+Age band,56-70,241,49,20.332,15.7347,25.8601,46,3,chi-square,0.0001,0.7967,0.9788,236,0.9958,236
+Age band,>70,104,5,4.8077,2.0708,10.7642,5,0,chi-square,0.0001,0.9423,0.9903,103,0.9903,103
+Sex,Female,351,44,12.5356,9.4722,16.4102,35,9,Fisher exact,0.7559,0.8689,0.937,349,0.9829,350
+Sex,Male,488,66,13.5246,10.7737,16.8452,50,16,Fisher exact,0.7559,0.8668,0.9456,478,0.9833,480
+Race,American Indian or Alaska Native,1,1,100.0,20.6549,100.0,1,0,"Monte Carlo chi-square (20,000 permutations)",0.0239,0.0,1.0,1,1.0,1
+Race,Asian,14,4,28.5714,11.7214,54.6491,2,2,"Monte Carlo chi-square (20,000 permutations)",0.0239,0.7143,0.7692,13,1.0,13
+Race,Black or African American,59,10,16.9492,9.4758,28.4632,7,3,"Monte Carlo chi-square (20,000 permutations)",0.0239,0.7966,0.931,58,0.9655,58
+Race,White,765,95,12.4183,10.2674,14.9448,75,20,"Monte Carlo chi-square (20,000 permutations)",0.0239,0.8771,0.9457,755,0.9842,758

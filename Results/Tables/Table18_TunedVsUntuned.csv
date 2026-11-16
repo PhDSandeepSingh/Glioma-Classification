@@ -1,0 +1,3 @@
+Configuration,Mean_of_fold_AUC,Pooled_OOF_AUC,DeLong_p
+Library defaults,0.8968,0.8973,
+Nested-CV tuned,0.9149,0.9116,0.0055

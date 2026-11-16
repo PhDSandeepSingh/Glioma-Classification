@@ -1,0 +1,9 @@
+Decision,Value,Rule
+Cohort,N=839 (487 LGG / 352 GBM); no rows removed,"2 analysis rows are identical on all 24 fields but map to distinct TCGA patients (TCGA-P5-A72W, TCGA-E1-A7Z4; raw ages 35 years 65 days, 35 years 66 days; diagnoses Astrocytoma, anaplastic / Astrocytoma, NOS). The coincidence arises from UCI's 2-decimal age rounding. Both patients are retained."
+Train/test split,"671/168, stratified, seed 42",Fixed a priori; same partition as an intermediate version of the analysis (disclosed)
+Imbalance strategy,Class-weight (balanced),"Highest mean CV AUC (RF, 5x5 CV, training only) among no correction / class weight / SMOTENC; applied to every family"
+Primary model,XGBoost,"Highest mean outer-fold nested-CV AUC, ties by Brier; pooled-OOF winner = XGBoost"
+Calibration,Platt/sigmoid (cross-fitted),Lowest ECE among non-degenerate methods (pile-up <= 10%)
+Threshold,0.351,Youden's J on calibrated out-of-fold probabilities (training only)
+Four-feature panel,"IDH1, Age_at_diagnosis, IDH2, TP53",Majority vote of nested per-fold top-4 selections (training only)
+SHAP,TreeExplainer (tree_path_dependent; no background data),Explainer chosen by model family

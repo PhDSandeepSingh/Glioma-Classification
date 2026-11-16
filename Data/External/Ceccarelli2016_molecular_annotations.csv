@@ -1,0 +1,1123 @@
+PATIENT_ID,GRADE,IDH_STATUS,IDH_CODEL_SUBTYPE,IDH_1P19Q_SUBTYPE,CHR_7_GAIN_CHR_10_LOSS,TERT_PROMOTER_STATUS,ORIGINAL_SUBTYPE,SNP6
+TCGA-CS-4938,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-4941,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-CS-4942,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-4943,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-4944,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,IDHmut-non-codel,Yes
+TCGA-CS-5390,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-CS-5393,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-5394,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-5395,G2,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-CS-5396,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-CS-5397,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-CS-6186,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-CS-6188,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-CS-6290,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-6665,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-6666,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-6667,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-CS-6668,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-CS-6669,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-CS-6670,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DB-5270,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DB-5273,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-5274,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-5275,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-5276,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-5277,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-5278,G2,Mutant,IDHmut-codel,Codel,No combined CNA,WT,IDHmut-codel,Yes
+TCGA-DB-5279,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-5280,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-5281,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4X9,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4XA,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A4XB,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4XC,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4XD,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4XE,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4XF,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A4XG,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A4XH,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64L,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64O,G2,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DB-A64P,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64Q,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64R,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64S,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A64U,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64V,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64W,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DB-A64X,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DB-A75K,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DB-A75L,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DB-A75M,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DB-A75O,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DB-A75P,G2,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-DH-5140,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-DH-5141,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DH-5142,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DH-5143,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DH-5144,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DH-A669,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DH-A66B,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DH-A66D,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DH-A66F,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DH-A66G,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DH-A7UR,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DH-A7US,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DH-A7UT,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DH-A7UU,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DH-A7UV,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-5847,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-DU-5849,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-5851,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-5852,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-DU-5853,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-5854,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-5855,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-5870,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-5871,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-5872,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-5874,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-6392,G3,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-DU-6393,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-6394,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-6395,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-6396,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-6397,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-6399,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-DU-6400,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-6401,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-6402,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-6403,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-6404,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-DU-6405,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-6406,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-DU-6407,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-6408,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-6410,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-6542,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7006,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-7007,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7008,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7009,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-7010,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7011,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-7012,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-7013,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-7014,G2,,,Non-codel,No combined CNA,,,Yes
+TCGA-DU-7015,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7018,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-7019,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7290,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-DU-7292,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-DU-7294,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-7298,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7299,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7300,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-7301,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7302,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-7304,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7306,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-7309,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-8158,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-DU-8161,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-8162,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-DU-8163,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-8164,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-8165,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-8166,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-8167,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-8168,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-DU-A5TP,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-A5TR,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-A5TS,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-A5TT,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-DU-A5TU,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-A5TW,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-DU-A5TY,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-DU-A6S2,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DU-A6S3,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DU-A6S6,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DU-A6S7,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-A6S8,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DU-A76K,G2,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-DU-A76L,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-DU-A76O,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-A76R,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DU-A7T6,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-DU-A7T8,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-A7TA,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-A7TB,G2,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-DU-A7TC,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-A7TD,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-DU-A7TG,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-DU-A7TI,,,,Non-codel,No combined CNA,,,Yes
+TCGA-DU-A7TJ,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-5302,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-E1-5303,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-E1-5304,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-E1-5305,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-E1-5307,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-E1-5311,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-E1-5318,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-E1-5319,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-E1-5322,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,IDHmut-non-codel,Yes
+TCGA-E1-A7YD,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7YE,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YH,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YI,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YJ,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7YK,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YL,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7YM,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7YN,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7YO,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-E1-A7YQ,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7YS,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-E1-A7YU,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YV,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YW,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7YY,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7Z2,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-E1-A7Z3,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7Z4,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-E1-A7Z6,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-EZ-7264,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-F6-A8O3,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-F6-A8O4,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-5962,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-5963,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-FG-5964,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-5965,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-6688,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-FG-6689,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-6690,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-6691,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-6692,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-FG-7634,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-7636,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-7637,G2,Mutant,IDHmut-non-codel,Non-codel,,WT,IDHmut-non-codel,No
+TCGA-FG-7638,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-7641,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-7643,G2,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-FG-8181,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-FG-8182,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-8185,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-8186,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-8187,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-8188,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-8189,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-8191,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-A4MT,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-A4MU,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-FG-A4MW,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-FG-A4MX,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-A4MY,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-FG-A60J,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,IDHmut-non-codel,Yes
+TCGA-FG-A60K,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-FG-A60L,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-A6IZ,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-FG-A6J1,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-FG-A6J3,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-A70Y,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-A70Z,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-FG-A710,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-FG-A711,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-A713,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-FG-A87N,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-FG-A87Q,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-FN-7833,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7467,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7468,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7469,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-7470,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7471,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7472,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7473,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7474,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7475,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7476,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7477,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7478,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7479,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,IDHmut-non-codel,Yes
+TCGA-HT-7480,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7481,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7482,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7483,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7485,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7601,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7602,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7603,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7604,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7605,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7606,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7607,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7608,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7609,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7610,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7611,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7616,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7620,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7676,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7677,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7680,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-7681,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7684,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,IDHmut-non-codel,Yes
+TCGA-HT-7686,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7687,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7688,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7689,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7690,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7691,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-7692,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7693,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7694,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7695,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7854,G2,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-HT-7855,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7856,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7857,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-7858,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7860,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-HT-7873,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7874,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7875,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7877,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7879,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7880,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7881,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-7882,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-HT-7884,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-7902,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8010,G2,Mutant,IDHmut-codel,Codel,No combined CNA,WT,IDHmut-codel,Yes
+TCGA-HT-8011,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-HT-8012,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-8013,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8015,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-8018,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8019,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-8104,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-HT-8105,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-8106,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8107,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-8108,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8109,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-8110,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-HT-8111,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8113,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,IDHmut-non-codel,Yes
+TCGA-HT-8114,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8558,G2,WT,IDHwt,Non-codel,,WT,IDHwt,No
+TCGA-HT-8563,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-8564,G3,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-HT-A4DS,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-HT-A4DV,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-A5R5,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A5R7,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A5R9,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-A5RA,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-HT-A5RB,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A5RC,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,WT,IDHwt,Yes
+TCGA-HT-A614,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A615,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-A616,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A617,G2,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-HT-A618,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A619,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HT-A61A,G2,Mutant,IDHmut-non-codel,Non-codel,,Mutant,IDHmut-non-codel,No
+TCGA-HT-A61B,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HT-A61C,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,IDHwt,Yes
+TCGA-HT-A74H,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-HT-A74J,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-HT-A74K,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-HT-A74L,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-HT-A74O,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-HW-7486,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HW-7487,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HW-7489,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HW-7490,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HW-7491,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HW-7493,G2,,,Non-codel,No combined CNA,,,Yes
+TCGA-HW-7495,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HW-8319,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HW-8320,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HW-8321,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HW-8322,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HW-A5KJ,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-HW-A5KK,G3,WT,IDHwt,Non-codel,No combined CNA,Mutant,IDHwt,Yes
+TCGA-HW-A5KL,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-HW-A5KM,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-IK-7675,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-IK-8125,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-KT-A74X,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-KT-A7W1,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-P5-A5ET,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-P5-A5EU,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5EV,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5EW,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5EX,G3,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-P5-A5EY,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-P5-A5EZ,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5F0,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-P5-A5F1,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5F2,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5F4,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-P5-A5F6,G2,WT,IDHwt,Non-codel,No combined CNA,WT,IDHwt,Yes
+TCGA-P5-A72U,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-P5-A72W,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A72X,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A72Z,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-P5-A730,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-P5-A731,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A733,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A735,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A736,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A737,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-P5-A77W,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-P5-A77X,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-P5-A780,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-P5-A781,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A65R,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A65S,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-QH-A65V,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-QH-A65X,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A65Z,G2,Mutant,IDHmut-codel,Codel,No combined CNA,Mutant,IDHmut-codel,Yes
+TCGA-QH-A6CS,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-QH-A6CU,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A6CV,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-QH-A6CW,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-QH-A6CX,G2,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-QH-A6CY,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A6CZ,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A6X3,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-QH-A6X4,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A6X5,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A6X8,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A6X9,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-QH-A6XA,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-QH-A6XC,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-QH-A86X,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-QH-A870,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-R8-A6MK,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-R8-A6ML,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-R8-A6MO,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-R8-A6YH,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-R8-A73M,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-RY-A83X,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-RY-A83Y,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-RY-A83Z,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-RY-A840,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-RY-A843,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-RY-A845,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-RY-A847,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6TS,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6TU,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6TV,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6TW,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6TX,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6TY,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6TZ,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6U0,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-S9-A6U1,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6U2,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6U5,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6U6,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6U8,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6U9,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6UA,G3,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-S9-A6UB,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WD,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WE,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WG,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6WH,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WI,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6WL,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WM,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-S9-A6WN,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WO,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A6WP,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A6WQ,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7IQ,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7IS,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7IX,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-S9-A7IY,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7IZ,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7J0,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7J1,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7J2,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7J3,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7QW,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7QX,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7QY,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7QZ,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7R1,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-S9-A7R2,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-S9-A7R3,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7R4,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7R7,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A7R8,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-S9-A89V,G3,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-S9-A89Z,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A7C3,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-TM-A7C4,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A7C5,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TM-A7CA,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A7CF,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-TM-A84B,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-TM-A84C,G2,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-TM-A84F,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A84G,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TM-A84H,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A84I,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A84J,G3,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-TM-A84L,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A84M,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TM-A84O,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TM-A84Q,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TM-A84R,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TM-A84S,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TM-A84T,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TQ-A7RF,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TQ-A7RG,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RH,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TQ-A7RI,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RJ,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TQ-A7RK,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-TQ-A7RM,,Mutant,IDHmut-non-codel,Non-codel,Gain chr 7 & loss chr 10,,IDHmut-non-codel,Yes
+TCGA-TQ-A7RN,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RO,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RP,,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-TQ-A7RQ,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RR,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TQ-A7RS,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RU,,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-TQ-A7RV,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-TQ-A7RW,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-TQ-A8XE,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,IDHmut-non-codel,Yes
+TCGA-VM-A8C8,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-VM-A8C9,G2,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-VM-A8CA,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-VM-A8CB,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-VM-A8CD,G3,WT,IDHwt,Non-codel,No combined CNA,,IDHwt,Yes
+TCGA-VM-A8CE,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-VM-A8CF,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-VM-A8CH,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-VV-A829,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-VV-A86M,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-VW-A7QS,G3,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-VW-A8FI,G3,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,IDHwt,Yes
+TCGA-W9-A837,G2,Mutant,IDHmut-codel,Codel,No combined CNA,,IDHmut-codel,Yes
+TCGA-WH-A86K,G2,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A858,G3,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A859,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A85A,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A85B,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A85C,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A85D,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-WY-A85E,,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,IDHmut-non-codel,Yes
+TCGA-02-0001,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0003,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0004,G4,WT,,,,,Mesenchymal,No
+TCGA-02-0006,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0007,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0009,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0010,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0011,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0014,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0015,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0016,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0021,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0023,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0024,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0025,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0026,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0027,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0028,G4,Mutant,IDHmut-codel,Codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0033,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0034,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0037,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0038,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0039,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0043,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0046,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0047,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0048,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0051,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0052,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-02-0054,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0055,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0057,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-02-0058,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0059,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0060,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0064,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0068,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-02-0069,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0070,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0071,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0074,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0075,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0079,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0080,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0083,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-02-0084,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0085,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0086,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0087,G4,,,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0089,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-02-0099,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0102,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0104,G4,WT,IDHwt,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0106,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0107,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0111,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0113,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-02-0114,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0115,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-02-0116,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0250,,,,,,,,No
+TCGA-02-0258,G4,,,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0260,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0266,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-02-0269,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0271,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-02-0281,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0285,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0289,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0290,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0317,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0321,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0324,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-02-0325,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0326,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-02-0329,,,,,,,,No
+TCGA-02-0330,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0332,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0333,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-02-0336,,,,,,,,No
+TCGA-02-0337,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-0338,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0339,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-02-0422,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-02-0430,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-02-0432,G4,,,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-02-0439,G4,,,,,,Proneural,No
+TCGA-02-0440,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0446,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-0451,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-02-0456,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-2466,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-02-2470,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-02-2483,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,G-CIMP,Yes
+TCGA-02-2485,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-02-2486,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0119,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-0121,,,,Non-codel,No combined CNA,,,Yes
+TCGA-06-0122,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0124,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Mesenchymal,Yes
+TCGA-06-0125,G4,WT,IDHwt,Non-codel,No combined CNA,Mutant,Classical,Yes
+TCGA-06-0126,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0127,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-06-0128,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,Mutant,G-CIMP,Yes
+TCGA-06-0129,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-06-0130,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0131,,,,,,,,No
+TCGA-06-0132,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-06-0133,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0137,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0138,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0139,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0140,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-0141,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0142,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-0143,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0145,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0146,G4,,,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-06-0147,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0148,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-06-0149,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0150,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-0151,G4,Mutant,IDHmut-non-codel,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-0152,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0154,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0155,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0156,G4,Mutant,,,,,Proneural,No
+TCGA-06-0157,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-06-0158,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-06-0159,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-0160,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-0162,G4,,,Non-codel,No combined CNA,,Neural,Yes
+TCGA-06-0164,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0165,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-0166,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0167,G4,WT,,,,,,No
+TCGA-06-0168,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0169,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0171,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Neural,Yes
+TCGA-06-0173,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0174,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0175,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0176,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0177,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0178,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,Neural,Yes
+TCGA-06-0179,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0182,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0184,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0185,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0187,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-06-0188,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0189,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0190,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Mesenchymal,Yes
+TCGA-06-0192,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0194,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0195,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0197,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0201,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0206,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0208,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0209,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-0210,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Mesenchymal,Yes
+TCGA-06-0211,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-06-0213,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-06-0214,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Neural,Yes
+TCGA-06-0216,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0219,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-06-0221,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,Neural,Yes
+TCGA-06-0237,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0238,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0240,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-0241,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0394,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0397,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0402,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0409,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0410,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-06-0412,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0413,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-06-0414,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-06-0644,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0645,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0646,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0648,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0649,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0650,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0686,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Proneural,Yes
+TCGA-06-0743,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0744,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-06-0745,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Proneural,Yes
+TCGA-06-0747,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-06-0749,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0750,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0875,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-0876,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0877,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-06-0878,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-0879,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-0881,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-0882,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-0939,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-1084,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-1086,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-1087,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-1800,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-1801,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-1802,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-1804,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-1805,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-06-1806,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-2557,G4,WT,IDHwt,Non-codel,No combined CNA,Mutant,Mesenchymal,Yes
+TCGA-06-2558,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-06-2559,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-06-2561,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-2562,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-2563,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-2564,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-2565,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-06-2566,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-06-2567,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-2569,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-2570,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,G-CIMP,Yes
+TCGA-06-5408,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-5410,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-5411,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Neural,Yes
+TCGA-06-5412,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-5413,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-5414,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-5415,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-06-5416,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-06-5417,G4,Mutant,,,,,G-CIMP,No
+TCGA-06-5418,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-06-5856,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-5858,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-06-5859,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-06-6388,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-6389,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-06-6390,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-06-6391,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-06-6693,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-6694,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-6695,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-6697,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-6698,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-6699,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-6700,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-6701,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,,Yes
+TCGA-06-A5U0,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-A5U1,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-A6S0,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-06-A6S1,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-06-A7TK,G4,WT,IDHwt,Non-codel,,,,No
+TCGA-06-A7TL,,Mutant,IDHmut-non-codel,Non-codel,,,,No
+TCGA-08-0244,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0245,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-08-0246,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-08-0344,G4,Mutant,IDHmut-codel,Codel,No combined CNA,,G-CIMP,Yes
+TCGA-08-0345,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-08-0346,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-08-0347,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-08-0348,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-08-0349,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-08-0350,G4,WT,IDHwt,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-08-0351,G4,WT,IDHwt,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-08-0352,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-08-0353,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-08-0354,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0355,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-08-0356,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0357,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0358,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0359,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-08-0360,G4,WT,,,,,Mesenchymal,No
+TCGA-08-0373,G4,WT,,,,,Mesenchymal,No
+TCGA-08-0375,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0380,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-08-0385,G4,WT,,,,,Proneural,No
+TCGA-08-0386,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-08-0389,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-08-0390,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-08-0392,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-08-0509,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-08-0510,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-08-0511,G4,,,,,,Classical,No
+TCGA-08-0512,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-08-0514,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-08-0516,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-08-0517,G4,,,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-08-0518,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0520,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-08-0521,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-08-0522,G4,,,,,,Mesenchymal,No
+TCGA-08-0524,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-08-0525,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0529,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-08-0531,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-12-0615,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-12-0616,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-12-0618,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-12-0619,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0620,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0653,,WT,,,,,,No
+TCGA-12-0654,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0656,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0657,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0662,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-12-0670,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-0688,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0691,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-12-0692,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0703,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0707,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-0769,G4,,,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-12-0772,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0773,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-12-0775,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0776,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0778,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-0780,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0818,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-12-0819,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0820,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-0821,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-0822,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-0826,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-0827,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-12-0828,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-0829,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-1088,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-1089,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-12-1090,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-12-1091,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-12-1092,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-12-1093,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-1094,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-1095,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-1096,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-12-1097,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-1098,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-12-1099,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-12-1597,G4,WT,,,,,Proneural,No
+TCGA-12-1598,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-1599,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-1600,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-1601,,WT,,,,,,No
+TCGA-12-1602,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-12-3644,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-3646,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-12-3648,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-3649,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-3650,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-12-3651,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-3652,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-12-3653,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-5295,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-12-5299,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-12-5301,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-0736,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-0740,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-14-0781,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-14-0783,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-0786,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-14-0787,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-14-0789,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-0790,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-14-0812,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-0813,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-0817,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-0862,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-14-0865,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-14-0866,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-0867,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-0871,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-1034,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Mesenchymal,Yes
+TCGA-14-1037,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-1043,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-14-1395,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-14-1396,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-14-1401,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1402,G4,,,Non-codel,No combined CNA,Mutant,Classical,Yes
+TCGA-14-1450,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-14-1451,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1452,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-14-1453,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-14-1454,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1455,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1456,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-14-1458,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-14-1459,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-1794,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1795,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1821,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-14-1823,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Mesenchymal,Yes
+TCGA-14-1825,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-14-1827,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-1829,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-2554,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Neural,Yes
+TCGA-14-2555,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-14-3476,G4,WT,,,,,Neural,No
+TCGA-14-3477,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-14-4157,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-15-0742,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-15-1444,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,Proneural,Yes
+TCGA-15-1446,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-15-1447,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-15-1449,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-16-0846,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-16-0848,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-16-0849,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-16-0850,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-16-0861,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-16-1045,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-16-1047,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-16-1048,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-16-1055,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-16-1056,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-16-1060,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-16-1062,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-16-1063,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-16-1460,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-19-0955,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-0957,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-19-0960,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-19-0962,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-19-0963,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-19-0964,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-19-1385,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-19-1386,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-1387,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-19-1388,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-19-1389,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Mesenchymal,Yes
+TCGA-19-1390,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-19-1392,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-19-1786,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-1787,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-19-1788,G4,Mutant,,,,,G-CIMP,No
+TCGA-19-1789,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-19-1790,G4,WT,,,,,Mesenchymal,No
+TCGA-19-1791,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-19-2619,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-2620,G4,WT,IDHwt,Non-codel,No combined CNA,Mutant,Neural,Yes
+TCGA-19-2621,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-19-2623,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-19-2624,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Proneural,Yes
+TCGA-19-2625,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-19-2629,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,WT,G-CIMP,Yes
+TCGA-19-2631,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-4065,G4,,,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-19-4068,G4,WT,,,,,Classical,No
+TCGA-19-5947,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-19-5950,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-5951,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-19-5952,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-5953,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-19-5954,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-5955,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-19-5956,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-19-5958,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-19-5959,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-19-5960,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Proneural,Yes
+TCGA-19-A60I,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-19-A6J4,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-19-A6J5,G4,Mutant,IDHmut-non-codel,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-26-1438,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-26-1439,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-26-1440,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-26-1442,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-26-1443,G4,,,Non-codel,No combined CNA,,Classical,Yes
+TCGA-26-1799,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-26-5132,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-26-5133,G4,WT,IDHwt,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-26-5134,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-26-5135,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Proneural,Yes
+TCGA-26-5136,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-26-5139,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-26-6173,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-26-6174,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-26-A7UX,G4,WT,IDHwt,Non-codel,,,,No
+TCGA-27-1830,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-27-1831,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Neural,Yes
+TCGA-27-1832,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-27-1833,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-27-1834,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-27-1835,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-27-1836,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-27-1837,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-27-1838,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-27-2518,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-27-2519,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-27-2521,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-27-2523,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-27-2524,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-27-2526,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-27-2527,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-27-2528,G4,WT,IDHwt,Non-codel,No combined CNA,Mutant,Classical,Yes
+TCGA-28-1745,G4,WT,,,,,Mesenchymal,No
+TCGA-28-1746,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-28-1747,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-28-1749,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-28-1750,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-1751,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-1752,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-28-1753,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-1755,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-28-1756,G4,,,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-28-1757,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-28-1760,G4,WT,,,,,Classical,No
+TCGA-28-2499,G4,WT,,,,,,No
+TCGA-28-2501,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-28-2502,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-2506,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-28-2509,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-2510,,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-28-2512,G4,,,,,,,No
+TCGA-28-2513,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-2514,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-28-5204,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-28-5207,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-5208,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-28-5209,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-5211,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-28-5213,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-5214,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-28-5215,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-28-5216,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-28-5218,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-28-5219,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-28-5220,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-28-6450,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-32-1970,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Classical,Yes
+TCGA-32-1973,G4,,,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-32-1976,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-32-1977,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-32-1978,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-32-1979,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-32-1980,G4,WT,IDHwt,Non-codel,No combined CNA,,Neural,Yes
+TCGA-32-1982,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-32-1986,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-32-1987,G4,,,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-32-1991,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-32-2491,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-32-2494,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-32-2495,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-32-2498,,WT,,,,,,No
+TCGA-32-2615,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-32-2616,G4,,,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-32-2632,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-32-2634,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-32-2638,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-32-4208,G4,Mutant,IDHmut-non-codel,Non-codel,No combined CNA,,G-CIMP,Yes
+TCGA-32-4209,G4,WT,,,,,Mesenchymal,No
+TCGA-32-4210,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-32-4211,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-32-4213,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-32-4719,G4,WT,IDHwt,Non-codel,No combined CNA,,Classical,Yes
+TCGA-32-5222,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-41-2571,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-41-2572,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-41-2573,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-41-2575,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-41-3392,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-41-3393,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-41-3915,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-41-4097,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-41-5651,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,Mutant,Proneural,Yes
+TCGA-41-6646,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-4W-AA9R,,WT,IDHwt,Non-codel,,,,No
+TCGA-4W-AA9S,G4,WT,IDHwt,Non-codel,,,,No
+TCGA-4W-AA9T,G4,WT,IDHwt,Non-codel,,,,No
+TCGA-74-6573,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-74-6575,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-74-6577,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-74-6578,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-74-6581,G4,,,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-74-6584,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-4925,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-76-4926,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-76-4927,G4,WT,,,,,Neural,No
+TCGA-76-4928,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-76-4929,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Neural,Yes
+TCGA-76-4931,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-76-4932,G4,WT,,,,,Proneural,No
+TCGA-76-4934,G4,WT,IDHwt,Non-codel,No combined CNA,,Proneural,Yes
+TCGA-76-4935,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-76-6191,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-76-6192,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-76-6193,G4,WT,IDHwt,Non-codel,No combined CNA,,Mesenchymal,Yes
+TCGA-76-6280,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6282,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Mesenchymal,Yes
+TCGA-76-6283,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6285,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Proneural,Yes
+TCGA-76-6286,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6656,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-76-6657,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6660,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6661,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6662,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6663,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-76-6664,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-81-5910,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-81-5911,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-87-5896,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,Classical,Yes
+TCGA-OX-A56R,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-RR-A6KA,G4,WT,IDHwt,Non-codel,No combined CNA,,,Yes
+TCGA-RR-A6KB,,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes
+TCGA-RR-A6KC,G4,WT,IDHwt,Non-codel,Gain chr 7 & loss chr 10,,,Yes

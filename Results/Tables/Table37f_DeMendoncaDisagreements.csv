@@ -1,0 +1,6 @@
+Case_ID,Project,IDH1_UCI,IDH2_UCI,IDH_status_Ceccarelli,IDH_hotspot_exome,Our_WHO2021_category_base,deMendonca_Method2021_category,Reason
+TCGA-HT-A61A,TCGA-LGG,0,0,Mutant,none,"Glioblastoma, IDH-wildtype (molecular criteria)","Astrocytoma, IDH-mutant","UCI IDH1=0, IDH2=0 (wildtype in UCI) vs Ceccarelli IDH_STATUS=Mutant (exome: none)"
+TCGA-P5-A72U,TCGA-LGG,0,1,WT,none,"Astrocytoma, IDH-mutant, grade 2-3","Glioblastoma, IDH-wildtype","UCI IDH1=0, IDH2=1 (IDH2-mutant in UCI) vs Ceccarelli IDH_STATUS=WT (exome: none)"
+TCGA-19-1787,TCGA-GBM,0,1,Missing (WT in GDC),Not exome-sequenced,"Astrocytoma, IDH-mutant, grade 4","Glioblastoma, IDH-wildtype","UCI IDH1=0, IDH2=1 (IDH2-mutant in UCI) vs Ceccarelli IDH_STATUS missing (GDC IDH-wildtype in de Mendonca; exome: Not exome-sequenced)"
+TCGA-06-5416,TCGA-GBM,0,1,Missing (WT in GDC),Not exome-sequenced,"Astrocytoma, IDH-mutant, grade 4","Glioblastoma, IDH-wildtype","UCI IDH1=0, IDH2=1 (IDH2-mutant in UCI) vs Ceccarelli IDH_STATUS missing (GDC IDH-wildtype in de Mendonca; exome: Not exome-sequenced)"
+TCGA-06-0151,TCGA-GBM,0,0,Mutant,none,"Glioblastoma, IDH-wildtype (histological criteria)","Astrocytoma, IDH-mutant","UCI IDH1=0, IDH2=0 (wildtype in UCI) vs Ceccarelli IDH_STATUS=Mutant (exome: none)"

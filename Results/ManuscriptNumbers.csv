@@ -1,0 +1,704 @@
+Key,Value,Source,Note
+N_analysis,839,Section 2,
+N_LGG,487,Section 2,
+N_GBM,352,Section 2,
+N_binary_or_categorical_features,22,Section 2,"Gender, Race + 20 mutation genes; Age is the only continuous feature"
+raw_IDH1wt_LGG,108,Table28,
+raw_IDH1mut_GBM,23,Table28,
+cohort_IDH1wt_LGG,106,Table28,
+cohort_IDH1mut_GBM,23,Table28,
+cohort_IDH1wt_IDH2mut_LGG,21,Table28,
+cohort_IDH12wt_LGG,85,Table28,
+cohort_IDH12_status_discordant_total,110,Table28,
+cohort_IDH2mut_legacy_GBM,2,Table28,
+Age_mean_LGG,43.9,Section 4,
+Age_mean_GBM,60.7,Section 4,
+Age_MWU_U,32495.5,Section 4,
+Age_cohen_d,1.26,Section 4,
+Age_median_diff,19.8,Section 4,
+Age_mean_diff,16.8,Section 4,
+Gender_chi2,2.78,Section 4,
+Gender_p,0.095,Section 4,
+Race_MC_p,0.0009,Section 4,
+Gender_male_n,488,Section 4,58.2%
+Gender_female_n,351,Section 4,41.8%
+Race_0_n,765,Section 4,91.2%
+Race_1_n,59,Section 4,7.0%
+Race_2_n,14,Section 4,1.7%
+Race_3_n,1,Section 4,0.1%
+Race_0_LGG_n,457,Table_PatientCharacteristics,
+Race_0_GBM_n,308,Table_PatientCharacteristics,
+Race_1_LGG_n,21,Table_PatientCharacteristics,
+Race_1_GBM_n,38,Table_PatientCharacteristics,
+Race_2_LGG_n,8,Table_PatientCharacteristics,
+Race_2_GBM_n,6,Table_PatientCharacteristics,
+Race_3_LGG_n,1,Table_PatientCharacteristics,
+Race_3_GBM_n,0,Table_PatientCharacteristics,
+N_train,671,Section 5,
+N_test,168,Section 5,
+Train_GBM,282,Section 5,
+Train_LGG,389,Section 5,
+Test_GBM,70,Section 5,
+Test_LGG,98,Section 5,
+Imbalance_locked,Class-weight (balanced),Table04,
+Imbalance_AUC_spread,0.0001,Table04,
+SMOTE_nonbinary_pct_first_gene,1.9,Section 6,IDH1
+SMOTE_nonbinary_pct_mean_genes,3.4,Section 6,
+NestedCV_meanfold_AUC_XGBoost,0.915,Table06,
+NestedCV_pooled_AUC_XGBoost,0.912,Table06,
+NestedCV_meanfold_AUC_LogisticRegression,0.912,Table06,
+NestedCV_pooled_AUC_LogisticRegression,0.911,Table06,
+NestedCV_meanfold_AUC_RandomForest,0.911,Table06,
+NestedCV_pooled_AUC_RandomForest,0.906,Table06,
+NestedCV_meanfold_AUC_SVM_RBF,0.909,Table06,
+NestedCV_pooled_AUC_SVM_RBF,0.894,Table06,
+Primary_model,XGBoost,Table06,
+Pooled_OOF_winner,XGBoost,Table06,
+Family_AUC_range_meanfold,0.006,Table06,
+Baseline_AUC_Age only,0.808,Table05,
+Baseline_AUC_IDH1 only,0.856,Table05,
+Baseline_AUC_Age + IDH1,0.898,Table05,
+Baseline_AUC_Clinical (Age + Gender + Race),0.811,Table05,
+Baseline_AUC_All 23 features,0.919,Table05,
+Baseline_AUC_Rule: IDH1 wild-type -> GBM (no fitting),0.856,Table05,
+Dev_AUC_primary_pooled,0.912,Table07,
+Dev_AUC_AgeIDH1_pooled,0.896,Table07,
+Dev_DeltaAUC_vs_AgeIDH1,0.015,Table07,95% CI +0.001 to +0.030
+Dev_DeLong_p_vs_AgeIDH1,0.0368,Table07,
+Ensemble_pooled_AUC,0.913,Table07,
+Ensemble_vs_primary_p,0.727,Table07,
+DeLong_p_XGBoost vs LogisticRegression,0.951,Table07,
+DeLong_p_XGBoost vs SVM_RBF,0.019,Table07,
+DeLong_p_XGBoost vs RandomForest,0.31,Table07,
+Calibration_locked,Platt/sigmoid (cross-fitted),Table09,
+Raw_ECE,0.041,Table09,
+Raw_slope,0.966,Table09,
+Raw_CITL,-0.274,Table09,
+Raw_Brier_OOF,0.106,Table09,
+Isotonic_pileup_pct,14.2,Table09,95 of 671
+Train_noskill_Brier,0.244,Section 11,prevalence 282/671
+OOF_Brier_reduction_pct,57.0,Section 11,
+Threshold_Youden,0.351,Section 12,bootstrap 95% CI 0.257-0.567
+Threshold_boot_CI_lo,0.257,Section 12,
+Threshold_boot_CI_hi,0.567,Section 12,
+Threshold_boot_n_resamples,1000,Section 12,bootstrap resamples drawn for the threshold CI (code: range(1000)); 1000 contained both classes and were used; out-of-fold predictions held fixed (no refitting)
+Threshold_boot_n_resamples_used,1000,Section 12,
+OOF_sens_at_threshold,0.926,Section 12,
+OOF_spec_at_threshold,0.833,Section 12,
+Repeated_mean_of_fold_auc_mean,0.916,Table_RepeatedNestedCVStability,SD 0.004; range 0.909-0.920
+Repeated_pooled_oof_auc_mean,0.913,Table_RepeatedNestedCVStability,SD 0.005; range 0.903-0.921
+Repeated_youden_threshold_raw_scale_mean,0.459,Table_RepeatedNestedCVStability,SD 0.039; range 0.405-0.497
+Canonical_raw_scale_Youden,0.389,Section 13,locked threshold 0.351 is on the Platt/sigmoid (cross-fitted) scale
+DCA_thresholds_DeltaNB_CI_excl_0,49,Table11,0.01-0.61
+DCA_primary_beats_treatall_from,0.01,Table11,
+DCA_dev_DeltaNB_at_tau,0.013,Table11,threshold 0.35; 95% CI 0.005 to 0.021
+DCA_dev_NB_primary_at_tau,0.336,Table11,threshold 0.35; 95% CI 0.293 to 0.380
+DCA_dev_NB_ruleIDH1_at_tau,0.323,Table11,threshold 0.35; 95% CI 0.280 to 0.369
+DCA_dev_DeltaNB_model_minus_ruleIDH1_at_tau,0.013,Table11,threshold 0.35; paired bootstrap 95% CI 0.005 to 0.021
+DCA_dev_n_thresholds_0.30-0.50_rule_NB_ge_model_ruleIDH1,0,Table11,of 21 grid points
+DCA_dev_NB_ruleIDH12_at_tau,0.335,Table11,threshold 0.35; 95% CI 0.293 to 0.379
+DCA_dev_DeltaNB_model_minus_ruleIDH12_at_tau,0.001,Table11,threshold 0.35; paired bootstrap 95% CI -0.004 to 0.006
+DCA_dev_n_thresholds_0.30-0.50_rule_NB_ge_model_ruleIDH12,12,Table11,of 21 grid points
+SHAP_method,TreeExplainer (tree_path_dependent; no background data),Section 15,
+Perm_rank_stability_rho,0.63,Section 15,
+SHAP_IDH1,1.656,Table12,
+SHAP_Age_at_diagnosis,0.553,Table12,
+SHAP_TP53,0.434,Table12,
+SHAP_PTEN,0.186,Table12,
+Perm_IDH1,0.266,Table13,
+Perm_Age_at_diagnosis,0.019,Table13,
+Perm_TP53,0.015,Table13,
+Perm_IDH2,0.006,Table13,
+LOFO_DeltaAUC_IDH1,0.021,Table14,p=0.00224 (Holm 0.0515); dSens +0.025; dSpec +0.051; dNB +0.027; dECE +0.027
+LOFO_DeltaAUC_NF1,0.015,Table14,p=0.00448 (Holm 0.0985); dSens -0.004; dSpec +0.013; dNB +0.003; dECE +0.024
+LOFO_DeltaAUC_MUC16,0.013,Table14,p=0.00492 (Holm 0.103); dSens -0.007; dSpec +0.003; dNB -0.002; dECE +0.020
+LOFO_n_features_p_lt_0.05,4,Table14,unadjusted
+LOFO_n_features_Holm_lt_0.05,0,Table14,
+Panel4_features,"IDH1, Age_at_diagnosis, IDH2, TP53",Table15,
+Panel4_dev_pooled_AUC,0.898,Table15,
+Panel4_dev_pct_of_full,98.5,Table15,
+Panel4_dev_DeLong_p,0.018,Table15,
+Panel1_dev_pct_of_full,93.0,Table15,
+Panel2_dev_pct_of_full,95.0,Table15,
+Panel3_dev_pct_of_full,97.0,Table15,
+Panel5_dev_pct_of_full,98.6,Table15,
+Tuning_gain_pooled_AUC,0.014,Table18,p=0.005
+Test_AUC,0.932,Table16,95% CI 0.893-0.964
+Test_Accuracy,0.851,Table16,95% CI 0.792-0.905
+Test_F1,0.839,Table16,95% CI 0.769-0.897
+Test_Average_precision,0.899,Table16,95% CI 0.838-0.950
+Test_MCC,0.714,Table16,95% CI 0.608-0.814
+Test_Balanced_accuracy,0.862,Table16,95% CI 0.808-0.911
+Test_Sensitivity,0.929,Table16,95% CI 0.864-0.985
+Test_Specificity,0.796,Table16,95% CI 0.710-0.875
+Test_PPV,0.765,Table16,95% CI 0.671-0.852
+Test_NPV,0.94,Table16,95% CI 0.885-0.988
+Test_Brier,0.101,Table16,95% CI 0.075-0.129
+Test_TP,65,Table16,
+Test_TN,78,Table16,
+Test_FP,20,Table16,
+Test_FN,5,Table16,
+Test_noskill_Brier,0.243,Section 20,
+Test_Brier_reduction_pct,58.0,Section 20,
+Test_AUC_AgeIDH1,0.908,Table16b,97.5% of primary; p=0.168
+Test_DeltaAUC_vs_AgeIDH1,0.023,Table16b,95% CI -0.010 to +0.056; p=0.168
+Test_AUC_panel4,0.919,Table16b,98.6% of primary; p=0.343
+Test_panel4_pct_of_primary,98.6,Table16b,
+Test_AgeIDH1_pct_of_primary,97.5,Table16b,
+DCA_test_NB_primary_at_tau,0.323,Table11b,Age+IDH1 0.329; treat-all 0.103; threshold 0.35
+DCA_test_DeltaNB_at_tau,-0.006,Table11b,95% CI -0.025 to 0.010
+DCA_test_n_thresholds_DeltaNB_CI_excl_0,3,Table11b,
+DCA_test_NB_AgeIDH1_at_tau,0.329,Table11b,threshold 0.35; 95% CI 0.247 to 0.412
+DCA_test_NB_ruleIDH1_at_tau,0.329,Table11b,threshold 0.35; 95% CI 0.247 to 0.412
+DCA_test_DeltaNB_model_minus_ruleIDH1_at_tau,-0.006,Table11b,threshold 0.35; paired bootstrap 95% CI -0.025 to 0.010
+DCA_test_n_thresholds_0.30-0.50_rule_NB_ge_model_ruleIDH1,19,Table11b,of 21 grid points
+DCA_test_NB_ruleIDH12_at_tau,0.335,Table11b,threshold 0.35; 95% CI 0.256 to 0.417
+DCA_test_DeltaNB_model_minus_ruleIDH12_at_tau,-0.012,Table11b,threshold 0.35; paired bootstrap 95% CI -0.028 to 0.000
+DCA_test_n_thresholds_0.30-0.50_rule_NB_ge_model_ruleIDH12,21,Table11b,of 21 grid points
+Test_discordant_n,24,Table21,
+Test_errors_total,25,Table21,
+Test_errors_in_discordant,22,Table21,88% of errors
+Subgroup_Male_N,90,Table21,AUC 0.918
+Subgroup_Female_N,78,Table21,AUC 0.947
+Subgroup_White_N,154,Table21,AUC 0.936
+Subgroup_Black/African Americ_N,13,Table21,AUC not reportable
+Subgroup_Asian_N,1,Table21,AUC not reportable
+Subgroup_Concordant (LGG/IDH1_N,144,Table21,AUC 0.999
+Subgroup_Discordant (LGG/IDH1_N,24,Table21,AUC not reportable
+Cohort_IDH1_discordant_n,129,Section 20d,15.4% of cohort
+Cohort_IDH12_discordant_pct,13.1,Section 20d,
+IDH1_rule_accuracy_ceiling_pct,84.6,Section 20d,
+Dev_errors_in_discordant,84,Table30,of 86 OOF errors; discordant n=105
+Dev_accuracy_concordant,0.996,Table30,
+Dev_accuracy_discordant,0.2,Table30,
+Dev_errors_IDH_direction,83,Table31,errors in IDH1-mutant legacy GBM + IDH1/2-wt legacy LGG (prediction follows IDH status)
+Dev_catA_n,19,Table31,predicted GBM 0; errors 19
+Dev_catA_predGBM,0,Table31,
+Dev_catC_n,19,Table31,predicted GBM 1; errors 1
+Dev_catC_predGBM,1,Table31,
+Dev_catD_n,67,Table31,predicted GBM 64; errors 64
+Dev_catD_predGBM,64,Table31,
+Dev_concordant_n,564,Table31,errors 1
+Dev_concordant_errors,1,Table31,
+Test_errors_IDH_direction,22,Table31,errors in IDH1-mutant legacy GBM + IDH1/2-wt legacy LGG (prediction follows IDH status)
+Test_catA_n,4,Table31,predicted GBM 0; errors 4
+Test_catA_predGBM,0,Table31,
+Test_catC_n,2,Table31,predicted GBM 0; errors 0
+Test_catC_predGBM,0,Table31,
+Test_catD_n,18,Table31,predicted GBM 18; errors 18
+Test_catD_predGBM,18,Table31,
+Test_concordant_n,144,Table31,errors 3
+Test_concordant_errors,3,Table31,
+Dev_model_acc,0.872,Table32,sens 0.926; spec 0.833; errors 86; AUC 0.910
+Dev_model_sens,0.926,Table32,
+Dev_model_spec,0.833,Table32,
+Dev_model_errors,86,Table32,
+Dev_model_AUC,0.91,Table32,
+Dev_ruleIDH1_acc,0.844,Table32,sens 0.933; spec 0.779; errors 105; AUC 0.856
+Dev_ruleIDH1_sens,0.933,Table32,
+Dev_ruleIDH1_spec,0.779,Table32,
+Dev_ruleIDH1_errors,105,Table32,
+Dev_ruleIDH1_AUC,0.856,Table32,
+Dev_ruleIDH1_DeltaAUC_vs_model,0.055,Table32,95% CI 0.037 to 0.072; p=6.6e-10
+Dev_ruleIDH1_DeLong_p,6.6e-10,Table32,
+Dev_ruleIDH12_acc,0.869,Table32,sens 0.926; spec 0.828; errors 88; AUC 0.877
+Dev_ruleIDH12_sens,0.926,Table32,
+Dev_ruleIDH12_spec,0.828,Table32,
+Dev_ruleIDH12_errors,88,Table32,
+Dev_ruleIDH12_AUC,0.877,Table32,
+Dev_ruleIDH12_DeltaAUC_vs_model,0.034,Table32,95% CI 0.020 to 0.048; p=3.2e-06
+Dev_ruleIDH12_DeLong_p,3.2e-06,Table32,
+Test_model_acc,0.851,Table32,sens 0.929; spec 0.796; errors 25; AUC 0.932
+Test_model_sens,0.929,Table32,
+Test_model_spec,0.796,Table32,
+Test_model_errors,25,Table32,
+Test_model_AUC,0.932,Table32,
+Test_ruleIDH1_acc,0.857,Table32,sens 0.943; spec 0.796; errors 24; AUC 0.869
+Test_ruleIDH1_sens,0.943,Table32,
+Test_ruleIDH1_spec,0.796,Table32,
+Test_ruleIDH1_errors,24,Table32,
+Test_ruleIDH1_AUC,0.869,Table32,
+Test_ruleIDH1_DeltaAUC_vs_model,0.062,Table32,95% CI 0.031 to 0.094; p=0.00012
+Test_ruleIDH1_DeLong_p,0.00012,Table32,
+Test_ruleIDH12_acc,0.869,Table32,sens 0.943; spec 0.816; errors 22; AUC 0.880
+Test_ruleIDH12_sens,0.943,Table32,
+Test_ruleIDH12_spec,0.816,Table32,
+Test_ruleIDH12_errors,22,Table32,
+Test_ruleIDH12_AUC,0.88,Table32,
+Test_ruleIDH12_DeltaAUC_vs_model,0.052,Table32,95% CI 0.023 to 0.081; p=0.00042
+Test_ruleIDH12_DeLong_p,0.00042,Table32,
+Dev_IDH12conc_n,583,Table30b,errors 2; accuracy 0.997; errors following IDH status 0
+Dev_IDH12conc_errors,2,Table30b,
+Dev_IDH12conc_acc,0.997,Table30b,
+Dev_IDH12disc_n,88,Table30b,errors 84; accuracy 0.045; errors following IDH status 84
+Dev_IDH12disc_errors,84,Table30b,
+Dev_IDH12disc_acc,0.045,Table30b,
+Test_IDH12conc_n,146,Table30b,errors 3; accuracy 0.979; errors following IDH status 0
+Test_IDH12conc_errors,3,Table30b,
+Test_IDH12conc_acc,0.979,Table30b,
+Test_IDH12disc_n,22,Table30b,errors 22; accuracy 0.0; errors following IDH status 22
+Test_IDH12disc_errors,22,Table30b,
+Test_IDH12disc_acc,0.0,Table30b,
+Dev_errors_follow_IDH12,84,Table30b,
+Test_errors_follow_IDH12,22,Table30b,
+IDH12_rule_accuracy_ceiling_pct,86.9,Section 20d,
+Cohort_IDH12_discordant_n,110,Section 20d,
+IDHwt_EGFR_LGG_pct,35.3,Section 20e,"30/85 legacy LGG vs 78/327 legacy GBM (23.9%), IDH1/2-wildtype only"
+IDHwt_EGFR_GBM_pct,23.9,Section 20e,
+IDHwt_PTEN_LGG_pct,23.5,Section 20e,"20/85 legacy LGG vs 114/327 legacy GBM (34.9%), IDH1/2-wildtype only"
+IDHwt_PTEN_GBM_pct,34.9,Section 20e,
+IDHwt_NF1_LGG_pct,23.5,Section 20e,"20/85 legacy LGG vs 37/327 legacy GBM (11.3%), IDH1/2-wildtype only"
+IDHwt_NF1_GBM_pct,11.3,Section 20e,
+IDHwt_TP53_LGG_pct,18.8,Section 20e,"16/85 legacy LGG vs 89/327 legacy GBM (27.2%), IDH1/2-wildtype only"
+IDHwt_TP53_GBM_pct,27.2,Section 20e,
+WHO_molGBM_oligo_or_mixed_histology_n,24,Table33,"Astrocytoma, anaplastic: 42; Mixed glioma: 13; Oligodendroglioma, anaplastic: 6; Oligodendroglioma, NOS: 5; Astrocytoma, NOS: 2"
+WHO_annotated_n,828,Table33,patients with 1p/19q status (field used for classification)
+WHO_grade4_known_n,827,Table33,
+WHO_GBMwt_known_n,830,Table33,
+IDH_status_agreement_pct,99.2,Table33,"mutation calls vs Ceccarelli IDH status, n=832"
+"WHO_cat_Astrocytoma, IDH-mutant, grade 2-3_LGG",224,Table33,
+"WHO_cat_Astrocytoma, IDH-mutant, grade 2-3_GBM",0,Table33,
+"WHO_cat_Astrocytoma, IDH-mutant, grade 4_LGG",15,Table33,
+"WHO_cat_Astrocytoma, IDH-mutant, grade 4_GBM",23,Table33,
+"WHO_cat_Astrocytoma, IDH-mutant, grade not assig_LGG",1,Table33,
+"WHO_cat_Astrocytoma, IDH-mutant, grade not assig_GBM",0,Table33,
+"WHO_cat_Glioblastoma, IDH-wildtype (histological_LGG",0,Table33,
+"WHO_cat_Glioblastoma, IDH-wildtype (histological_GBM",327,Table33,
+"WHO_cat_Glioblastoma, IDH-wildtype (molecular cr_LGG",68,Table33,
+"WHO_cat_Glioblastoma, IDH-wildtype (molecular cr_GBM",0,Table33,
+"WHO_cat_IDH-mutant, 1p/19q unknown_LGG",0,Table33,
+"WHO_cat_IDH-mutant, 1p/19q unknown_GBM",2,Table33,
+"WHO_cat_IDH-wildtype, glioblastoma criteria not _LGG",8,Table33,
+"WHO_cat_IDH-wildtype, glioblastoma criteria not _GBM",0,Table33,
+"WHO_cat_IDH-wildtype, glioblastoma status not as_LGG",9,Table33,
+"WHO_cat_IDH-wildtype, glioblastoma status not as_GBM",0,Table33,
+"WHO_cat_Oligodendroglioma, IDH-mutant, 1p/19q-co_LGG",162,Table33,
+"WHO_cat_Oligodendroglioma, IDH-mutant, 1p/19q-co_GBM",0,Table33,
+Legacy_vs_WHO_grade4_agreement_pct,90.0,Table34,n=827
+Legacy_vs_WHO_grade4_n,827,Table34,
+Legacy_vs_WHO_GBM_IDHwt_agreement_pct,88.8,Table34,n=830
+Legacy_vs_WHO_GBM_IDHwt_n,830,Table34,
+Dev_legacy_n,671,Table34,positives 282; AUC 0.910; acc 0.872; sens 0.926; spec 0.833; errors 86
+Dev_legacy_AUC,0.91,Table34,
+Dev_legacy_Accuracy,0.872,Table34,
+Dev_legacy_Sensitivity,0.926,Table34,
+Dev_legacy_Specificity,0.833,Table34,
+Dev_legacy_IDH12_rule_accuracy,0.869,Table34,
+Dev_legacy_errors,86,Table34,
+Dev_legacy_rule_errors,88,Table34,
+Dev_grade4_n,661,Table34,positives 348; AUC 0.962; acc 0.938; sens 0.899; spec 0.981; errors 41
+Dev_grade4_AUC,0.962,Table34,
+Dev_grade4_Accuracy,0.938,Table34,
+Dev_grade4_Sensitivity,0.899,Table34,
+Dev_grade4_Specificity,0.981,Table34,
+Dev_grade4_IDH12_rule_accuracy,0.939,Table34,
+Dev_grade4_errors,41,Table34,
+Dev_grade4_rule_errors,40,Table34,
+Dev_GBMwt_n,663,Table34,positives 314; AUC 0.996; acc 0.986; sens 0.994; spec 0.980; errors 9
+Dev_GBMwt_AUC,0.996,Table34,
+Dev_GBMwt_Accuracy,0.986,Table34,
+Dev_GBMwt_Sensitivity,0.994,Table34,
+Dev_GBMwt_Specificity,0.98,Table34,
+Dev_GBMwt_IDH12_rule_accuracy,0.991,Table34,
+Dev_GBMwt_errors,9,Table34,
+Dev_GBMwt_rule_errors,6,Table34,
+Test_legacy_n,168,Table34,positives 70; AUC 0.932; acc 0.851; sens 0.929; spec 0.796; errors 25
+Test_legacy_AUC,0.932,Table34,
+Test_legacy_Accuracy,0.851,Table34,
+Test_legacy_Sensitivity,0.929,Table34,
+Test_legacy_Specificity,0.796,Table34,
+Test_legacy_IDH12_rule_accuracy,0.869,Table34,
+Test_legacy_errors,25,Table34,
+Test_legacy_rule_errors,22,Table34,
+Test_grade4_n,166,Table34,positives 85; AUC 0.995; acc 0.958; sens 0.953; spec 0.963; errors 7
+Test_grade4_AUC,0.995,Table34,
+Test_grade4_Accuracy,0.958,Table34,
+Test_grade4_Sensitivity,0.953,Table34,
+Test_grade4_Specificity,0.963,Table34,
+Test_grade4_IDH12_rule_accuracy,0.964,Table34,
+Test_grade4_errors,7,Table34,
+Test_grade4_rule_errors,6,Table34,
+Test_GBMwt_n,167,Table34,positives 81; AUC 0.999; acc 0.970; sens 0.988; spec 0.953; errors 5
+Test_GBMwt_AUC,0.999,Table34,
+Test_GBMwt_Accuracy,0.97,Table34,
+Test_GBMwt_Sensitivity,0.988,Table34,
+Test_GBMwt_Specificity,0.953,Table34,
+Test_GBMwt_IDH12_rule_accuracy,0.988,Table34,
+Test_GBMwt_errors,5,Table34,
+Test_GBMwt_rule_errors,2,Table34,
+Dev_legacy_errors_correct_for_GBMwt,72,Table34,of 79 legacy-label errors with a reconstructed label (86 errors in total)
+Dev_legacy_errors_known_GBMwt,79,Table34,
+Dev_legacy_errors_correct_for_grade4,52,Table34,of 78 legacy-label errors with a reconstructed label (86 errors in total)
+Dev_legacy_errors_known_grade4,78,Table34,
+Test_legacy_errors_correct_for_GBMwt,19,Table34,of 24 legacy-label errors with a reconstructed label (25 errors in total)
+Test_legacy_errors_known_GBMwt,24,Table34,
+Test_legacy_errors_correct_for_grade4,16,Table34,of 23 legacy-label errors with a reconstructed label (25 errors in total)
+Test_legacy_errors_known_grade4,23,Table34,
+"Test_predGBM_Astrocytoma, IDH-mutant, grade 2-3",1/52,Table33b,
+"Dev_predGBM_Astrocytoma, IDH-mutant, grade 2-3",1/172,Table33b,
+"Test_predGBM_Astrocytoma, IDH-mutant, grade 4",1/4,Table33b,
+"Dev_predGBM_Astrocytoma, IDH-mutant, grade 4",1/34,Table33b,
+"Dev_predGBM_Astrocytoma, IDH-mutant, grade not assig",0/1,Table33b,
+"Test_predGBM_Glioblastoma, IDH-wildtype (histological",65/66,Table33b,
+"Dev_predGBM_Glioblastoma, IDH-wildtype (histological",260/261,Table33b,
+"Test_predGBM_Glioblastoma, IDH-wildtype (molecular cr",15/15,Table33b,
+"Dev_predGBM_Glioblastoma, IDH-wildtype (molecular cr",52/53,Table33b,
+"Test_predGBM_IDH-mutant, 1p/19q unknown",0/1,Table33b,
+"Dev_predGBM_IDH-mutant, 1p/19q unknown",0/1,Table33b,
+"Test_predGBM_IDH-wildtype, glioblastoma criteria not ",2/2,Table33b,
+"Dev_predGBM_IDH-wildtype, glioblastoma criteria not ",5/6,Table33b,
+"Test_predGBM_IDH-wildtype, glioblastoma status not as",1/1,Table33b,
+"Dev_predGBM_IDH-wildtype, glioblastoma status not as",7/8,Table33b,
+"Test_predGBM_Oligodendroglioma, IDH-mutant, 1p/19q-co",0/27,Table33b,
+"Dev_predGBM_Oligodendroglioma, IDH-mutant, 1p/19q-co",0/135,Table33b,
+Dev_McNemar_model_vs_ruleIDH1_p,6.6e-05,Table32b,"exact; model errors 86 vs rule errors 105; discordant pairs: model right/rule wrong 21, model wrong/rule right 2"
+Dev_McNemar_model_vs_ruleIDH1_b_model_right,21,Table32b,
+Dev_McNemar_model_vs_ruleIDH1_c_rule_right,2,Table32b,
+Dev_DiffAccuracy_model_minus_ruleIDH1,0.028,Table32b,paired bootstrap 95% CI 0.015 to 0.042
+Dev_DiffSensitivity_model_minus_ruleIDH1,-0.007,Table32b,paired bootstrap 95% CI -0.018 to 0.000
+Dev_DiffSpecificity_model_minus_ruleIDH1,0.054,Table32b,paired bootstrap 95% CI 0.033 to 0.076
+Dev_McNemar_model_vs_ruleIDH12_p,0.688,Table32b,"exact; model errors 86 vs rule errors 88; discordant pairs: model right/rule wrong 4, model wrong/rule right 2"
+Dev_McNemar_model_vs_ruleIDH12_b_model_right,4,Table32b,
+Dev_McNemar_model_vs_ruleIDH12_c_rule_right,2,Table32b,
+Dev_DiffAccuracy_model_minus_ruleIDH12,0.003,Table32b,paired bootstrap 95% CI -0.004 to 0.010
+Dev_DiffSensitivity_model_minus_ruleIDH12,0.0,Table32b,paired bootstrap 95% CI -0.011 to 0.010
+Dev_DiffSpecificity_model_minus_ruleIDH12,0.005,Table32b,paired bootstrap 95% CI -0.005 to 0.016
+Test_McNemar_model_vs_ruleIDH1_p,1.0,Table32b,"exact; model errors 25 vs rule errors 24; discordant pairs: model right/rule wrong 2, model wrong/rule right 3"
+Test_McNemar_model_vs_ruleIDH1_b_model_right,2,Table32b,
+Test_McNemar_model_vs_ruleIDH1_c_rule_right,3,Table32b,
+Test_DiffAccuracy_model_minus_ruleIDH1,-0.006,Table32b,paired bootstrap 95% CI -0.036 to 0.018
+Test_DiffSensitivity_model_minus_ruleIDH1,-0.014,Table32b,paired bootstrap 95% CI -0.046 to 0.000
+Test_DiffSpecificity_model_minus_ruleIDH1,0.0,Table32b,paired bootstrap 95% CI -0.042 to 0.039
+Test_McNemar_model_vs_ruleIDH12_p,0.25,Table32b,"exact; model errors 25 vs rule errors 22; discordant pairs: model right/rule wrong 0, model wrong/rule right 3"
+Test_McNemar_model_vs_ruleIDH12_b_model_right,0,Table32b,
+Test_McNemar_model_vs_ruleIDH12_c_rule_right,3,Table32b,
+Test_DiffAccuracy_model_minus_ruleIDH12,-0.018,Table32b,paired bootstrap 95% CI -0.042 to 0.000
+Test_DiffSensitivity_model_minus_ruleIDH12,-0.014,Table32b,paired bootstrap 95% CI -0.045 to 0.000
+Test_DiffSpecificity_model_minus_ruleIDH12,-0.02,Table32b,paired bootstrap 95% CI -0.053 to 0.000
+TestCal_primary_Slope,1.309,Table16c,95% CI 1.070 to 1.799
+TestCal_primary_CITL,-0.042,Table16c,95% CI -0.423 to 0.349
+TestCal_primary_ECE,0.063,Table16c,95% CI 0.058 to 0.122
+TestCal_primary_Brier,0.101,Table16c,95% CI 0.076 to 0.129
+TestCal_primary_raw_Slope,1.26,Table16c,95% CI 1.018 to 1.720
+TestCal_primary_raw_CITL,-0.314,Table16c,95% CI -0.712 to 0.080
+TestCal_primary_raw_ECE,0.062,Table16c,95% CI 0.052 to 0.117
+TestCal_primary_raw_Brier,0.102,Table16c,95% CI 0.075 to 0.131
+TestCal_AgeIDH1_Slope,1.062,Table16c,95% CI 0.818 to 1.646
+TestCal_AgeIDH1_CITL,-0.289,Table16c,95% CI -0.685 to 0.156
+TestCal_AgeIDH1_ECE,0.057,Table16c,95% CI 0.039 to 0.114
+TestCal_AgeIDH1_Brier,0.108,Table16c,95% CI 0.075 to 0.144
+TestCal_panel4_Slope,1.114,Table16c,95% CI 0.880 to 1.527
+TestCal_panel4_CITL,-0.429,Table16c,95% CI -0.832 to 0.015
+TestCal_panel4_ECE,0.054,Table16c,95% CI 0.046 to 0.117
+TestCal_panel4_Brier,0.105,Table16c,95% CI 0.072 to 0.141
+Dev_NB_AgeIDH1_recalibrated_at_tau,0.324,Section 20h,threshold 0.35; uncalibrated 0.323; primary model 0.336; Platt recalibration fitted on training OOF (cross-fitted)
+Dev_NB_AgeIDH1_uncalibrated_at_tau,0.323,Section 20h,
+Test_NB_AgeIDH1_recalibrated_at_tau,0.329,Section 20h,threshold 0.35; uncalibrated 0.329; primary model 0.323; Platt recalibration fitted on training OOF (all training OOF)
+Test_NB_AgeIDH1_uncalibrated_at_tau,0.329,Section 20h,
+TestCal_AgeIDH1_recalibrated_CITL,0.033,Section 20h,
+Test_acc_range_repeatedCV_raw_thresholds,0.851-0.863,Table17b,raw primary probabilities at the 10 repeated nested-CV raw-scale Youden thresholds (0.405-0.497); sensitivity 0.914-0.929; specificity 0.796-0.816
+Canonical_raw_threshold_below_all_repeats,True,Section 13,canonical 0.389; repeats 0.405-0.497
+Dev_withinAUC_IDHwt,0.662,Table30c,95% CI 0.589-0.722; n=328 (261 GBM / 67 LGG)
+Dev_withinAUC_IDHmut,0.628,Table30c,95% CI 0.513-0.735; n=343 (21 GBM / 322 LGG)
+DevRaw_withinAUC_IDHwt,0.666,Table30c,95% CI 0.605-0.736; n=328 (261 GBM / 67 LGG)
+DevRaw_withinAUC_IDHmut,0.637,Table30c,95% CI 0.532-0.737; n=343 (21 GBM / 322 LGG)
+Test_withinAUC_IDHwt,0.707,Table30c,95% CI 0.582-0.821; n=84 (66 GBM / 18 LGG)
+Test_withinAUC_IDHmut,0.859,Table30c,95% CI 0.727-0.969; n=84 (4 GBM / 80 LGG)
+Dev_net_rescue_IDH1,19,Table30d,discordant correct 21 of 105 minus concordant errors 2; model errors 86 vs rule errors 105
+Dev_net_rescue_IDH12,2,Table30d,discordant correct 4 of 88 minus concordant errors 2; model errors 86 vs rule errors 88
+Test_net_rescue_IDH1,-1,Table30d,discordant correct 2 of 24 minus concordant errors 3; model errors 25 vs rule errors 24
+Test_net_rescue_IDH12,-3,Table30d,discordant correct 0 of 22 minus concordant errors 3; model errors 25 vs rule errors 22
+IDH_sources_differ_n,7,Table35c,dataset IDH1/2 calls vs Ceccarelli IDH_STATUS among 832 with both; TCGA-DU-6399 (wt->mut); TCGA-HT-A61A (wt->mut); TCGA-WY-A85A (wt->mut); TCGA-QH-A65S (wt->mut); TCGA-P5-A72U (mut->wt); TCGA-HT-A618 (wt->mut); TCGA-06-0151 (wt->mut)
+IDH_dataset_vs_MAFhotspot_agree_pct,99.3,Table35c,among 764 exome-sequenced patients; disagree n=5
+IDH_cecc_vs_MAFhotspot_agree_pct,99.2,Table35c,n=764
+Exome_sequenced_n,764,Section 20j,"legacy LGG 485, legacy GBM 279"
+Cecc_IDH_status_available_n,832,Section 20j,
+RS_a_molGBM_of_IDHwtLGG,68/85,Table35a,Base (R3 rules); 80.0%; criteria not met 8; NEC 0; not assessable 9; H3 0
+RS_a_molGBM_n,68,Table35a,
+RS_a_IDHwtLGG_n,85,Table35a,
+RS_a_legacy_agree_Grade4_pct,90.0,Table35a,744/827; positives 433 of which legacy GBM 350
+RS_a_legacy_agree_GBMwt_pct,88.8,Table35a,737/830; positives 395 of which legacy GBM 327
+RS_a_Dev_Grade4_model_vs_rule_acc,0.938 vs 0.939,Table35b,model errors 41 vs rule errors 40; n=661; model AUC 0.962
+RS_a_Dev_legacy_errors_agree_Grade4,52/78,Table35b,of 86 legacy-label errors in total
+RS_a_Dev_GBMwt_model_vs_rule_acc,0.986 vs 0.991,Table35b,model errors 9 vs rule errors 6; n=663; model AUC 0.996
+RS_a_Dev_legacy_errors_agree_GBMwt,72/79,Table35b,of 86 legacy-label errors in total
+RS_a_Dev_legacy_errors_agree_both,52/78,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 7; 86 errors in total
+RS_a_Test_Grade4_model_vs_rule_acc,0.958 vs 0.964,Table35b,model errors 7 vs rule errors 6; n=166; model AUC 0.995
+RS_a_Test_legacy_errors_agree_Grade4,16/23,Table35b,of 25 legacy-label errors in total
+RS_a_Test_GBMwt_model_vs_rule_acc,0.970 vs 0.988,Table35b,model errors 5 vs rule errors 2; n=167; model AUC 0.999
+RS_a_Test_legacy_errors_agree_GBMwt,19/24,Table35b,of 25 legacy-label errors in total
+RS_a_Test_legacy_errors_agree_both,15/23,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 4; 25 errors in total
+RS_b_molGBM_of_IDHwtLGG,68/81,Table35a,Ceccarelli IDH status; 84.0%; criteria not met 5; NEC 0; not assessable 8; H3 0
+RS_b_molGBM_n,68,Table35a,
+RS_b_IDHwtLGG_n,81,Table35a,
+RS_b_legacy_agree_Grade4_pct,90.0,Table35a,744/827; positives 433 of which legacy GBM 350
+RS_b_legacy_agree_GBMwt_pct,88.7,Table35a,737/831; positives 394 of which legacy GBM 326
+RS_b_Dev_Grade4_model_vs_rule_acc,0.938 vs 0.937,Table35b,model errors 41 vs rule errors 42; n=662; model AUC 0.963
+RS_b_Dev_legacy_errors_agree_Grade4,53/79,Table35b,of 86 legacy-label errors in total
+RS_b_Dev_GBMwt_model_vs_rule_acc,0.985 vs 0.986,Table35b,model errors 10 vs rule errors 9; n=664; model AUC 0.996
+RS_b_Dev_legacy_errors_agree_GBMwt,73/80,Table35b,of 86 legacy-label errors in total
+RS_b_Dev_legacy_errors_agree_both,53/79,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 7; 86 errors in total
+RS_b_Test_Grade4_model_vs_rule_acc,0.958 vs 0.964,Table35b,model errors 7 vs rule errors 6; n=165; model AUC 0.995
+RS_b_Test_legacy_errors_agree_Grade4,15/22,Table35b,of 25 legacy-label errors in total
+RS_b_Test_GBMwt_model_vs_rule_acc,0.964 vs 0.982,Table35b,model errors 6 vs rule errors 3; n=167; model AUC 0.998
+RS_b_Test_legacy_errors_agree_GBMwt,18/24,Table35b,of 25 legacy-label errors in total
+RS_b_Test_legacy_errors_agree_both,14/22,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 4; 25 errors in total
+RS_c_molGBM_of_IDHwtLGG,44/85,Table35a,Astrocytic histology only; 51.8%; criteria not met 3; NEC 32; not assessable 6; H3 0
+RS_c_molGBM_n,44,Table35a,
+RS_c_IDHwtLGG_n,85,Table35a,
+RS_c_legacy_agree_Grade4_pct,92.6,Table35a,739/798; positives 409 of which legacy GBM 350
+RS_c_legacy_agree_GBMwt_pct,91.4,Table35a,732/801; positives 371 of which legacy GBM 327
+RS_c_Dev_Grade4_model_vs_rule_acc,0.942 vs 0.944,Table35b,model errors 37 vs rule errors 36; n=640; model AUC 0.964
+RS_c_Dev_legacy_errors_agree_Grade4,35/57,Table35b,of 86 legacy-label errors in total
+RS_c_Dev_GBMwt_model_vs_rule_acc,0.992 vs 0.997,Table35b,model errors 5 vs rule errors 2; n=642; model AUC 0.999
+RS_c_Dev_legacy_errors_agree_GBMwt,55/58,Table35b,of 86 legacy-label errors in total
+RS_c_Dev_legacy_errors_agree_both,35/57,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 3; 86 errors in total
+RS_c_Test_Grade4_model_vs_rule_acc,0.962 vs 0.968,Table35b,model errors 6 vs rule errors 5; n=158; model AUC 0.996
+RS_c_Test_legacy_errors_agree_Grade4,9/15,Table35b,of 25 legacy-label errors in total
+RS_c_Test_GBMwt_model_vs_rule_acc,0.975 vs 0.994,Table35b,model errors 4 vs rule errors 1; n=159; model AUC 0.999
+RS_c_Test_legacy_errors_agree_GBMwt,12/16,Table35b,of 25 legacy-label errors in total
+RS_c_Test_legacy_errors_agree_both,8/15,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 3; 25 errors in total
+RS_d_molGBM_of_IDHwtLGG,68/85,Table35a,NEC unassignable (both targets); 80.0%; criteria not met 0; NEC 8; not assessable 9; H3 0
+RS_d_molGBM_n,68,Table35a,
+RS_d_IDHwtLGG_n,85,Table35a,
+RS_d_legacy_agree_Grade4_pct,89.9,Table35a,736/819; positives 433 of which legacy GBM 350
+RS_d_legacy_agree_GBMwt_pct,88.7,Table35a,729/822; positives 395 of which legacy GBM 327
+RS_d_Dev_Grade4_model_vs_rule_acc,0.945 vs 0.948,Table35b,model errors 36 vs rule errors 34; n=655; model AUC 0.967
+RS_d_Dev_legacy_errors_agree_Grade4,52/73,Table35b,of 86 legacy-label errors in total
+RS_d_Dev_GBMwt_model_vs_rule_acc,0.994 vs 1.000,Table35b,model errors 4 vs rule errors 0; n=657; model AUC 1.000
+RS_d_Dev_legacy_errors_agree_GBMwt,72/74,Table35b,of 86 legacy-label errors in total
+RS_d_Dev_legacy_errors_agree_both,52/73,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 2; 86 errors in total
+RS_d_Test_Grade4_model_vs_rule_acc,0.970 vs 0.976,Table35b,model errors 5 vs rule errors 4; n=164; model AUC 0.996
+RS_d_Test_legacy_errors_agree_Grade4,16/21,Table35b,of 25 legacy-label errors in total
+RS_d_Test_GBMwt_model_vs_rule_acc,0.982 vs 1.000,Table35b,model errors 3 vs rule errors 0; n=165; model AUC 0.999
+RS_d_Test_legacy_errors_agree_GBMwt,19/22,Table35b,of 25 legacy-label errors in total
+RS_d_Test_legacy_errors_agree_both,15/21,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 2; 25 errors in total
+RS_d2_molGBM_of_IDHwtLGG,68/85,Table35a,NEC unassignable (grade 4 target only); 80.0%; criteria not met 0; NEC 8; not assessable 9; H3 0
+RS_d2_molGBM_n,68,Table35a,
+RS_d2_IDHwtLGG_n,85,Table35a,
+RS_d2_legacy_agree_Grade4_pct,89.9,Table35a,736/819; positives 433 of which legacy GBM 350
+RS_d2_legacy_agree_GBMwt_pct,88.8,Table35a,737/830; positives 395 of which legacy GBM 327
+RS_d2_Dev_Grade4_model_vs_rule_acc,0.945 vs 0.948,Table35b,model errors 36 vs rule errors 34; n=655; model AUC 0.967
+RS_d2_Dev_legacy_errors_agree_Grade4,52/73,Table35b,of 86 legacy-label errors in total
+RS_d2_Dev_GBMwt_model_vs_rule_acc,0.986 vs 0.991,Table35b,model errors 9 vs rule errors 6; n=663; model AUC 0.996
+RS_d2_Dev_legacy_errors_agree_GBMwt,72/79,Table35b,of 86 legacy-label errors in total
+RS_d2_Dev_legacy_errors_agree_both,52/73,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 2; 86 errors in total
+RS_d2_Test_Grade4_model_vs_rule_acc,0.970 vs 0.976,Table35b,model errors 5 vs rule errors 4; n=164; model AUC 0.996
+RS_d2_Test_legacy_errors_agree_Grade4,16/21,Table35b,of 25 legacy-label errors in total
+RS_d2_Test_GBMwt_model_vs_rule_acc,0.970 vs 0.988,Table35b,model errors 5 vs rule errors 2; n=167; model AUC 0.999
+RS_d2_Test_legacy_errors_agree_GBMwt,19/24,Table35b,of 25 legacy-label errors in total
+RS_d2_Test_legacy_errors_agree_both,15/21,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 2; 25 errors in total
+RS_e_molGBM_of_IDHwtLGG,44/81,Table35a,b + c + d; 54.3%; criteria not met 0; NEC 32; not assessable 5; H3 0
+RS_e_molGBM_n,44,Table35a,
+RS_e_IDHwtLGG_n,81,Table35a,
+RS_e_legacy_agree_Grade4_pct,92.6,Table35a,739/798; positives 409 of which legacy GBM 350
+RS_e_legacy_agree_GBMwt_pct,91.3,Table35a,732/802; positives 370 of which legacy GBM 326
+RS_e_Dev_Grade4_model_vs_rule_acc,0.939 vs 0.941,Table35b,model errors 39 vs rule errors 38; n=641; model AUC 0.962
+RS_e_Dev_legacy_errors_agree_Grade4,35/59,Table35b,of 86 legacy-label errors in total
+RS_e_Dev_GBMwt_model_vs_rule_acc,0.988 vs 0.992,Table35b,model errors 8 vs rule errors 5; n=643; model AUC 0.997
+RS_e_Dev_legacy_errors_agree_GBMwt,55/60,Table35b,of 86 legacy-label errors in total
+RS_e_Dev_legacy_errors_agree_both,35/59,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 5; 86 errors in total
+RS_e_Test_Grade4_model_vs_rule_acc,0.968 vs 0.975,Table35b,model errors 5 vs rule errors 4; n=157; model AUC 0.996
+RS_e_Test_legacy_errors_agree_Grade4,9/14,Table35b,of 25 legacy-label errors in total
+RS_e_Test_GBMwt_model_vs_rule_acc,0.975 vs 0.994,Table35b,model errors 4 vs rule errors 1; n=159; model AUC 0.999
+RS_e_Test_legacy_errors_agree_GBMwt,12/16,Table35b,of 25 legacy-label errors in total
+RS_e_Test_legacy_errors_agree_both,8/14,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 2; 25 errors in total
+RS_f_molGBM_of_IDHwtLGG,68/85,Table35a,Base + H3; 80.0%; criteria not met 7; NEC 0; not assessable 8; H3 3
+RS_f_molGBM_n,68,Table35a,
+RS_f_IDHwtLGG_n,85,Table35a,
+RS_f_legacy_agree_Grade4_pct,89.8,Table35a,743/827; positives 434 of which legacy GBM 350
+RS_f_legacy_agree_GBMwt_pct,88.7,Table35a,737/831; positives 394 of which legacy GBM 326
+RS_f_Dev_Grade4_model_vs_rule_acc,0.939 vs 0.941,Table35b,model errors 40 vs rule errors 39; n=661; model AUC 0.963
+RS_f_Dev_legacy_errors_agree_Grade4,53/78,Table35b,of 86 legacy-label errors in total
+RS_f_Dev_GBMwt_model_vs_rule_acc,0.985 vs 0.988,Table35b,model errors 10 vs rule errors 8; n=664; model AUC 0.996
+RS_f_Dev_legacy_errors_agree_GBMwt,72/79,Table35b,of 86 legacy-label errors in total
+RS_f_Dev_legacy_errors_agree_both,52/78,Table35b,grade-4 only 1; GBM-IDHwt only 19; neither 6; 86 errors in total
+RS_f_Test_Grade4_model_vs_rule_acc,0.958 vs 0.964,Table35b,model errors 7 vs rule errors 6; n=166; model AUC 0.995
+RS_f_Test_legacy_errors_agree_Grade4,16/23,Table35b,of 25 legacy-label errors in total
+RS_f_Test_GBMwt_model_vs_rule_acc,0.970 vs 0.988,Table35b,model errors 5 vs rule errors 2; n=167; model AUC 0.999
+RS_f_Test_legacy_errors_agree_GBMwt,19/24,Table35b,of 25 legacy-label errors in total
+RS_f_Test_legacy_errors_agree_both,15/23,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 4; 25 errors in total
+RS_g_molGBM_of_IDHwtLGG,44/81,Table35a,b + c + d + H3; 54.3%; criteria not met 0; NEC 31; not assessable 4; H3 3
+RS_g_molGBM_n,44,Table35a,
+RS_g_IDHwtLGG_n,81,Table35a,
+RS_g_legacy_agree_Grade4_pct,92.5,Table35a,739/799; positives 410 of which legacy GBM 350
+RS_g_legacy_agree_GBMwt_pct,91.2,Table35a,733/804; positives 369 of which legacy GBM 325
+RS_g_Dev_Grade4_model_vs_rule_acc,0.939 vs 0.941,Table35b,model errors 39 vs rule errors 38; n=642; model AUC 0.962
+RS_g_Dev_legacy_errors_agree_Grade4,36/60,Table35b,of 86 legacy-label errors in total
+RS_g_Dev_GBMwt_model_vs_rule_acc,0.984 vs 0.988,Table35b,model errors 10 vs rule errors 8; n=645; model AUC 0.997
+RS_g_Dev_legacy_errors_agree_GBMwt,55/61,Table35b,of 86 legacy-label errors in total
+RS_g_Dev_legacy_errors_agree_both,35/60,Table35b,grade-4 only 1; GBM-IDHwt only 19; neither 5; 86 errors in total
+RS_g_Test_Grade4_model_vs_rule_acc,0.968 vs 0.975,Table35b,model errors 5 vs rule errors 4; n=157; model AUC 0.996
+RS_g_Test_legacy_errors_agree_Grade4,9/14,Table35b,of 25 legacy-label errors in total
+RS_g_Test_GBMwt_model_vs_rule_acc,0.975 vs 0.994,Table35b,model errors 4 vs rule errors 1; n=159; model AUC 0.999
+RS_g_Test_legacy_errors_agree_GBMwt,12/16,Table35b,of 25 legacy-label errors in total
+RS_g_Test_legacy_errors_agree_both,8/14,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 2; 25 errors in total
+RS_h1_molGBM_of_IDHwtLGG,68/85,Table35a,Base; not assessable -> positive; 80.0%; criteria not met 8; NEC 0; not assessable 9; H3 0
+RS_h1_molGBM_n,68,Table35a,
+RS_h1_IDHwtLGG_n,85,Table35a,
+RS_h1_legacy_agree_Grade4_pct,89.0,Table35a,744/836; positives 442 of which legacy GBM 350
+RS_h1_legacy_agree_GBMwt_pct,87.8,Table35a,737/839; positives 404 of which legacy GBM 327
+RS_h1_Dev_Grade4_model_vs_rule_acc,0.937 vs 0.940,Table35b,model errors 42 vs rule errors 40; n=669; model AUC 0.963
+RS_h1_Dev_legacy_errors_agree_Grade4,59/85,Table35b,of 86 legacy-label errors in total
+RS_h1_Dev_GBMwt_model_vs_rule_acc,0.985 vs 0.991,Table35b,model errors 10 vs rule errors 6; n=671; model AUC 0.996
+RS_h1_Dev_legacy_errors_agree_GBMwt,79/86,Table35b,of 86 legacy-label errors in total
+RS_h1_Dev_legacy_errors_agree_both,59/85,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 7; 86 errors in total
+RS_h1_Test_Grade4_model_vs_rule_acc,0.958 vs 0.964,Table35b,model errors 7 vs rule errors 6; n=167; model AUC 0.994
+RS_h1_Test_legacy_errors_agree_Grade4,17/24,Table35b,of 25 legacy-label errors in total
+RS_h1_Test_GBMwt_model_vs_rule_acc,0.970 vs 0.988,Table35b,model errors 5 vs rule errors 2; n=168; model AUC 0.998
+RS_h1_Test_legacy_errors_agree_GBMwt,20/25,Table35b,of 25 legacy-label errors in total
+RS_h1_Test_legacy_errors_agree_both,16/24,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 4; 25 errors in total
+RS_h0_molGBM_of_IDHwtLGG,68/85,Table35a,Base; not assessable -> negative; 80.0%; criteria not met 8; NEC 0; not assessable 9; H3 0
+RS_h0_molGBM_n,68,Table35a,
+RS_h0_IDHwtLGG_n,85,Table35a,
+RS_h0_legacy_agree_Grade4_pct,90.1,Table35a,753/836; positives 433 of which legacy GBM 350
+RS_h0_legacy_agree_GBMwt_pct,88.9,Table35a,746/839; positives 395 of which legacy GBM 327
+RS_h0_Dev_Grade4_model_vs_rule_acc,0.928 vs 0.928,Table35b,model errors 48 vs rule errors 48; n=669; model AUC 0.953
+RS_h0_Dev_legacy_errors_agree_Grade4,52/85,Table35b,of 86 legacy-label errors in total
+RS_h0_Dev_GBMwt_model_vs_rule_acc,0.976 vs 0.979,Table35b,model errors 16 vs rule errors 14; n=671; model AUC 0.988
+RS_h0_Dev_legacy_errors_agree_GBMwt,72/86,Table35b,of 86 legacy-label errors in total
+RS_h0_Dev_legacy_errors_agree_both,52/85,Table35b,grade-4 only 0; GBM-IDHwt only 19; neither 14; 86 errors in total
+RS_h0_Test_Grade4_model_vs_rule_acc,0.952 vs 0.958,Table35b,model errors 8 vs rule errors 7; n=167; model AUC 0.994
+RS_h0_Test_legacy_errors_agree_Grade4,16/24,Table35b,of 25 legacy-label errors in total
+RS_h0_Test_GBMwt_model_vs_rule_acc,0.964 vs 0.982,Table35b,model errors 6 vs rule errors 3; n=168; model AUC 0.998
+RS_h0_Test_legacy_errors_agree_GBMwt,19/25,Table35b,of 25 legacy-label errors in total
+RS_h0_Test_legacy_errors_agree_both,15/24,Table35b,grade-4 only 1; GBM-IDHwt only 3; neither 5; 25 errors in total
+RS_a_molGBM_EGFRamp_only_n,4,Table36,of 68 molecular GBM; TERT unknown in 1
+RS_b_molGBM_EGFRamp_only_n,4,Table36,of 68 molecular GBM; TERT unknown in 1
+RS_e_molGBM_EGFRamp_only_n,3,Table36,of 44 molecular GBM; TERT unknown in 1
+RS_g_molGBM_EGFRamp_only_n,3,Table36,of 44 molecular GBM; TERT unknown in 1
+RS_range_molGBM_pct,51.8-84.0,Table35a,"across variants a-g, h0, h1"
+H3_hotspot_n,3,Table35d,"TCGA-TM-A84C H3 K27M (legacy LGG, age 32; base: IDH-wildtype, glioblastoma status not assessable (TERT unknown)); TCGA-HT-7469 H3 G34R (legacy LGG, age 30; base: IDH-wildtype, glioblastoma criteria not met); TCGA-06-A5U0 H3 G34R (legacy GBM, age 22; base: Glioblastoma, IDH-wildtype (histological criteria))"
+H3_IDHwt_sequenced_n,347,Section 20j,of 412 IDH1/2-wild-type; IDH-wt legacy LGG sequenced 84 of 85
+IDHwt_min_age,20.2,Section 20j,youngest IDH1/2-wild-type patient; n under 18 = 0
+Dev_agreeing_errors_oligo_mixed_hist,17,Section 20j,legacy-label errors agreeing with the GBM-IDHwt target that are molecular GBMs with oligodendroglial/mixed histology (of 72 agreeing errors)
+Test_agreeing_errors_oligo_mixed_hist,7,Section 20j,legacy-label errors agreeing with the GBM-IDHwt target that are molecular GBMs with oligodendroglial/mixed histology (of 19 agreeing errors)
+Bio_NF1_molGBM_vs_histGBM,11/68 vs 37/327,Table37,Fisher p=0.31
+Bio_NF1_unresolved_vs_GBMcriteria,9/17 vs 48/395,Table37,Fisher p=0.0001
+Bio_EGFR_molGBM_vs_histGBM,28/68 vs 78/327,Table37,Fisher p=0.0063
+Bio_EGFR_unresolved_vs_GBMcriteria,2/17 vs 106/395,Table37,Fisher p=0.26
+Bio_PTEN_molGBM_vs_histGBM,17/68 vs 114/327,Table37,Fisher p=0.12
+Bio_PTEN_unresolved_vs_GBMcriteria,3/17 vs 131/395,Table37,Fisher p=0.29
+Bio_TP53_molGBM_vs_histGBM,8/68 vs 89/327,Table37,Fisher p=0.0079
+Bio_TP53_unresolved_vs_GBMcriteria,8/17 vs 97/395,Table37,Fisher p=0.047
+Bio_IDHwtLGG_EGFRmut_with_amp,20/30,Table37b,EGFR-mutant IDH-wild-type legacy LGG with GISTIC EGFR amplification (+2)
+Bio_IDHwt_EGFRmut_with_amp,78/105,Table37b,amplified without mutation 110; Fisher p=9.1e-11
+Bio_TP53_astro_vs_oligo,235/263 vs 6/162,Table37c,Fisher p=1.3e-77
+Bio_ATRX_astro_vs_oligo,188/263 vs 3/162,Table37c,Fisher p=3.5e-53
+Bio_IDHmut_legacyGBM_in_astro_vs_oligo,23 vs 0,Table37c,IDH-mutant legacy GBM that are astrocytoma vs oligodendroglioma (base)
+Bio_IDHwt_PA-like_by_category,"Glioblastoma, IDH-wildtype: 3; glioblastoma criteria not met: 5; glioblastoma status not assessable: 6",Table37d,
+Bio_IDHwt_LGm6-GBM_by_category,"Glioblastoma, IDH-wildtype: 25",Table37d,
+Bio_unresolved_NF1_CDKN2AB_profile,3,Section 20k,"TCGA-VM-A8CD (Mesenchymal-like), TCGA-HT-7857 (PA-like), TCGA-S9-A6UA (PA-like)"
+Rich_complete_train_n,657,Table38,"of 671; LGG 388, GBM 269"
+Rich_complete_test_n,163,Table38,"of 168; LGG 97, GBM 66"
+Rich_incomplete_by_label,"LGG 2, GBM 17",Table38,whole cohort; patients lacking any of the four external features
+Rich_IDH12_rule_acc_subset,0.869,Table38,"IDH1/2-rule accuracy (label-IDH agreement) in the complete-case training subset, n=657"
+Rich_test_IDH12_rule_acc_subset,0.877,Table38,n=163
+RichDev_XGB_base23_AUC,0.916,Table38,"n=657; acc@0.5 0.863; acc@Youden(0.390) 0.877; oracle acc 0.877; within-IDHwt AUC 0.677; within-IDHmut AUC 0.660; errors 81 (discordant 79 of 86, concordant 2)"
+RichDev_XGB_base23_Acc_at_0.5,0.863,Table38,
+RichDev_XGB_base23_Acc_at_threshold,0.877,Table38,
+RichDev_XGB_base23_Oracle_acc,0.877,Table38,
+RichDev_XGB_base23_AUC_within_IDHwt,0.677,Table38,
+RichDev_XGB_base23_AUC_within_IDHmut,0.66,Table38,
+RichDev_XGB_rich27_AUC,0.923,Table38,"n=657; acc@0.5 0.871; acc@Youden(0.414) 0.874; oracle acc 0.874; within-IDHwt AUC 0.704; within-IDHmut AUC 0.715; errors 83 (discordant 77 of 86, concordant 6)"
+RichDev_XGB_rich27_Acc_at_0.5,0.871,Table38,
+RichDev_XGB_rich27_Acc_at_threshold,0.874,Table38,
+RichDev_XGB_rich27_Oracle_acc,0.874,Table38,
+RichDev_XGB_rich27_AUC_within_IDHwt,0.704,Table38,
+RichDev_XGB_rich27_AUC_within_IDHmut,0.715,Table38,
+RichDev_XGB_rich27_DeltaAUC_vs_base23,0.007,Table38,95% CI -0.002 to 0.017; DeLong p=0.133
+RichDev_LR_base23_AUC,0.913,Table38,"n=657; acc@0.5 0.866; acc@Youden(0.468) 0.872; oracle acc 0.872; within-IDHwt AUC 0.664; within-IDHmut AUC 0.645; errors 84 (discordant 80 of 86, concordant 4)"
+RichDev_LR_base23_Acc_at_0.5,0.866,Table38,
+RichDev_LR_base23_Acc_at_threshold,0.872,Table38,
+RichDev_LR_base23_Oracle_acc,0.872,Table38,
+RichDev_LR_base23_AUC_within_IDHwt,0.664,Table38,
+RichDev_LR_base23_AUC_within_IDHmut,0.645,Table38,
+RichDev_LR_rich27_AUC,0.923,Table38,"n=657; acc@0.5 0.866; acc@Youden(0.415) 0.866; oracle acc 0.869; within-IDHwt AUC 0.691; within-IDHmut AUC 0.742; errors 88 (discordant 80 of 86, concordant 8)"
+RichDev_LR_rich27_Acc_at_0.5,0.866,Table38,
+RichDev_LR_rich27_Acc_at_threshold,0.866,Table38,
+RichDev_LR_rich27_Oracle_acc,0.869,Table38,
+RichDev_LR_rich27_AUC_within_IDHwt,0.691,Table38,
+RichDev_LR_rich27_AUC_within_IDHmut,0.742,Table38,
+RichDev_LR_rich27_DeltaAUC_vs_base23,0.01,Table38,95% CI -0.000 to 0.020; DeLong p=0.0543
+RichTest_XGB_base23_AUC,0.929,Table38,"n=163; acc@0.5 0.865; acc@Youden(0.390) 0.865; oracle acc nan; within-IDHwt AUC 0.660; within-IDHmut AUC 0.854; errors 22 (discordant 20 of 20, concordant 2)"
+RichTest_XGB_base23_Acc_at_0.5,0.865,Table38,
+RichTest_XGB_base23_Acc_at_threshold,0.865,Table38,
+RichTest_XGB_base23_AUC_within_IDHwt,0.66,Table38,
+RichTest_XGB_base23_AUC_within_IDHmut,0.854,Table38,
+RichTest_XGB_rich27_AUC,0.935,Table38,"n=163; acc@0.5 0.883; acc@Youden(0.414) 0.871; oracle acc nan; within-IDHwt AUC 0.679; within-IDHmut AUC 0.900; errors 21 (discordant 20 of 20, concordant 1)"
+RichTest_XGB_rich27_Acc_at_0.5,0.883,Table38,
+RichTest_XGB_rich27_Acc_at_threshold,0.871,Table38,
+RichTest_XGB_rich27_AUC_within_IDHwt,0.679,Table38,
+RichTest_XGB_rich27_AUC_within_IDHmut,0.9,Table38,
+RichTest_XGB_rich27_DeltaAUC_vs_base23,0.006,Table38,95% CI -0.016 to 0.028; DeLong p=0.622
+Disc_Ageband_<=40,23/249,Table39,"9.2% (Wilson 95% CI 6.2-13.5); IDH-wt LGG 11, IDH-mut GBM 12"
+Disc_Ageband_41-55,33/245,Table39,"13.5% (Wilson 95% CI 9.8-18.3); IDH-wt LGG 23, IDH-mut GBM 10"
+Disc_Ageband_56-70,49/241,Table39,"20.3% (Wilson 95% CI 15.7-25.9); IDH-wt LGG 46, IDH-mut GBM 3"
+Disc_Ageband_>70,5/104,Table39,"4.8% (Wilson 95% CI 2.1-10.8); IDH-wt LGG 5, IDH-mut GBM 0"
+Disc_Ageband_p,0.0001,Table39,chi-square
+Disc_Sex_Female,44/351,Table39,"12.5% (Wilson 95% CI 9.5-16.4); IDH-wt LGG 35, IDH-mut GBM 9"
+Disc_Sex_Male,66/488,Table39,"13.5% (Wilson 95% CI 10.8-16.8); IDH-wt LGG 50, IDH-mut GBM 16"
+Disc_Sex_p,0.7559,Table39,Fisher exact
+Disc_Race_American Indian or Alaska Native,1/1,Table39,"100.0% (Wilson 95% CI 20.7-100.0); IDH-wt LGG 1, IDH-mut GBM 0"
+Disc_Race_Asian,4/14,Table39,"28.6% (Wilson 95% CI 11.7-54.6); IDH-wt LGG 2, IDH-mut GBM 2"
+Disc_Race_Black or African American,10/59,Table39,"16.9% (Wilson 95% CI 9.5-28.5); IDH-wt LGG 7, IDH-mut GBM 3"
+Disc_Race_White,95/765,Table39,"12.4% (Wilson 95% CI 10.3-14.9); IDH-wt LGG 75, IDH-mut GBM 20"
+Disc_Race_p,0.0239,Table39,"Monte Carlo chi-square (20,000 permutations)"
+Dev_NoRace_AUC,0.914,Table40,primary 0.912; diff -0.002 (95% CI -0.008 to +0.003); DeLong p=0.417
+Dev_NoRace_acc,0.872,Table40,threshold 0.383; primary 0.872; errors 86 vs 86; exact McNemar p=1.000
+Test_NoRace_AUC,0.93,Table40,primary 0.932; diff +0.002 (95% CI -0.010 to +0.013); DeLong p=0.791
+Test_NoRace_acc,0.857,Table40,threshold 0.383; primary 0.851; errors 24 vs 25; exact McNemar p=1.000
+NoRace_threshold,0.383,Table40,Youden on cross-fitted Platt OOF of the race-free model (training only)
+Panel4_locked_fixed_dev_pooled_AUC,0.902,Table15c,"fixed panel, nested CV; full minus panel +0.009 (95% CI -0.002 to +0.021); DeLong p=0.098; vs selection-procedure estimate p=0.353"
+Panel4_locked_fixed_dev_DeLong_p,0.098,Table15c,
+Panel4_locked_fixed_dev_pct_of_full,99.0,Table15c,
+Release_file,TCGA_GliomaBenchmark_WHO2021_Labels_v1.0.csv,Data/Release,839 rows x 53 columns; SHA-256 d7c9e905dbe11f94ca396394766d46088854f223e99f244af508f7ff35c9afbd
+Version_python,3.13.16,reproducibility_report.json,
+Version_scikit-learn,1.9.1,reproducibility_report.json,
+Version_xgboost,3.4.1,reproducibility_report.json,
+Version_shap,0.53.0,reproducibility_report.json,
+Version_imbalanced-learn,0.14.2,reproducibility_report.json,
+DeMendonca_n_both_assigned,816,Table37e,patients assigned a category by both reconstructions (out of 839)
+DeMendonca_n_agree,811,Table37e,811 of 816 (99.4%) agree across four categories
+DeMendonca_agree_pct,99.4,Table37e,811/816 = 99.39%
+DeMendonca_4cat_kappa,0.990,Table37e,Cohen kappa across assigned categories (0.9902)
+DeMendonca_GBMwt_kappa,0.988,Table37e,Cohen kappa for binary GBM-IDH-wildtype target (0.9877)
+DeMendonca_n_disagreements,5,Table37f,all 5 arise from IDH definition (UCI IDH1/2 vs Ceccarelli/GDC IDH status)
+DeMendonca_IDHwt_LGG_GBM,63/85,Table37e,74.1% of 85 IDH-wildtype legacy LGG labelled GBM-IDHwt by de Mendonca et al.
+DeMendonca_IDHwt_LGG_unclassified,17/85,Table37e,20.0% unclassified (includes 4 EGFR-amplification-only cases)
+DeMendonca_IDHwt_LGG_astro_IDHmut,5/85,Table37e,"5.9% labelled Astrocytoma, IDH-mutant (Ceccarelli IDH-mutant)"
+RS_cimpact11_molGBM_count,64/85,Table36b,"75.3%; drops 3 TERT-only G2 (TCGA-HT-A61A, -HT-7854, -FG-7643) and 1 EGFR-only <40 (TCGA-FG-5963, age 23)"
+RS_cimpact11_molGBM_pct,75.3,Table36b,64 of 85
+RS_cimpact11_dropped_TERT_G2_n,3,Table36b,"TCGA-HT-A61A, TCGA-HT-7854, TCGA-FG-7643"
+RS_cimpact11_dropped_EGFR_lt40_n,1,Table36b,"TCGA-FG-5963 (age 23.5 y, Ceccarelli G3)"
+RS_cimpact11_missing_Cecc_grade_n,7,Table36b,7 of 68 molecular GBMs lack a Ceccarelli grade
+RS_ge2crit_molGBM_count,45/85,Table36b,52.9% requiring >= 2 molecular criteria
+RS_ge2crit_molGBM_pct,52.9,Table36b,45 of 85
+RS_c_dev_agree_GBMwt_all_errors,55/86,Table35b,64.0% over all 86 dev OOF errors (vs 72/86 = 83.7% in base; 55/58 = 94.8% among assessable)
+RS_c_dev_agree_GBMwt_all_errors_pct,64.0,Table35b,55 of 86
+Test_Newcombe10_DiffAcc_model_minus_ruleIDH12,-0.018,Table32c,"Newcombe paired score 95% CI -0.047 to 0.009 (method 10, N/2-adjusted); unadjusted -0.045 to 0.006"
+Test_Newcombe10_CI_lo_ruleIDH12,-0.047,Table32c,-0.0472
+Test_Newcombe10_CI_hi_ruleIDH12,0.009,Table32c,+0.0087
+Test_Newcombe_unadj_CI_lo_ruleIDH12,-0.045,Table32c,-0.0449 (sensitivity without N/2 adjustment)
+Test_Newcombe_unadj_CI_hi_ruleIDH12,0.006,Table32c,+0.0060 (sensitivity without N/2 adjustment)
+Test_Newcombe10_DiffAcc_model_minus_ruleIDH1,-0.006,Table32c,Newcombe paired score 95% CI -0.039 to 0.026 (method 10)
+Test_Newcombe10_CI_lo_ruleIDH1,-0.039,Table32c,-0.0387
+Test_Newcombe10_CI_hi_ruleIDH1,0.026,Table32c,+0.0261
+Dev_Newcombe10_DiffAcc_model_minus_ruleIDH12,0.003,Table32c,Newcombe paired score 95% CI -0.006 to 0.012 (method 10)
+Dev_Newcombe10_CI_lo_ruleIDH12,-0.006,Table32c,-0.0057
+Dev_Newcombe10_CI_hi_ruleIDH12,0.012,Table32c,+0.0119
+Dev_Newcombe10_DiffAcc_model_minus_ruleIDH1,0.028,Table32c,Newcombe paired score 95% CI 0.014 to 0.044 (method 10)
+Dev_Newcombe10_CI_lo_ruleIDH1,0.014,Table32c,+0.0142
+Dev_Newcombe10_CI_hi_ruleIDH1,0.044,Table32c,+0.0435
+CDKN2AB_del_IDHmut_GBM,4/25,Section20p,16.0%; 21/25 (84.0%) IDH-mutant legacy GBM are grade 4 on histology alone
+CDKN2AB_del_IDHmut_LGG,16/402,Section20p,"4.0% (15 with 1p/19q non-codel, 1 codel)"
+IDHmut_GBM_hist_only_grade4,21/25,Section20p,84.0% lack CDKN2A/B homozygous deletion
+RichTest_XGB_rich27_vs_base23_McNemar_p,1.0,Table38,test exact McNemar at locked thresholds: 2 (27-feature right) vs 1 (23-feature right) discordant pairs
+H3_exome_sequenced_IDHwt,347/412,Section20p,84.2% of all 412 IDH-wildtype patients exome-sequenced
+H3_exome_sequenced_IDHwt_LGG,84/85,Section20p,98.8% of 85 IDH-wildtype legacy LGG exome-sequenced (all except TCGA-DU-6392)
+Bio_PAlike_in_molGBM68,3/68,Table37d,4.4% of the 68 molecular GBMs have a PA-like methylation profile
+Subgroup_Acc_grade4_Age_le40,0.886,Table39,217/245 (below legacy-label accuracy 0.908 = 226/249)
+Subgroup_Acc_grade4_Age_41_55,0.942,Table39,229/243
+Subgroup_Acc_grade4_Age_56_70,0.979,Table39,231/236
+Subgroup_Acc_grade4_Age_gt70,0.990,Table39,102/103
+Subgroup_Acc_grade4_Race_Asian,0.769,Table39,10/13 (vs legacy-label accuracy 0.714 = 10/14)

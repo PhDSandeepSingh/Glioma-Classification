@@ -1,0 +1,5 @@
+Set,Discordance_definition,N,Discordant_n,Discordant_correct,Concordant_errors,Net_rescue,Model_errors,Rule_errors,Model_acc_minus_rule_acc
+Training OOF,IDH1,671,105,21,2,19,86,105,0.0283
+Training OOF,IDH1/2,671,88,4,2,2,86,88,0.003
+Sealed test,IDH1,168,24,2,3,-1,25,24,-0.006
+Sealed test,IDH1/2,168,22,0,3,-3,25,22,-0.0179

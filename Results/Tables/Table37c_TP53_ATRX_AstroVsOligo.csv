@@ -1,0 +1,4 @@
+Gene,IDH-mutant astrocytoma,Oligodendroglioma,Fisher_p
+TP53,235/263 (89.4%),6/162 (3.7%),1.3316053216641844e-77
+ATRX,188/263 (71.5%),3/162 (1.9%),3.5238851293725535e-53
+Legacy GBM label,23/263 (8.7%),0/162 (0.0%),

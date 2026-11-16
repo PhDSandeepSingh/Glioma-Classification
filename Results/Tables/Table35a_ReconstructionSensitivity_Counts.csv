@@ -1,0 +1,11 @@
+Variant,Description,IDHwt_legacy_LGG_n,Molecular_GBM_n,Molecular_GBM_pct_of_IDHwt_LGG,Criteria_not_met_n,NEC_no_criterion_n,NEC_oligo_mixed_histology_n,Not_assessable_n,H3_altered_n,IDHmut_legacy_GBM_n,Molecular_GBM_EGFRamp_only_n,Molecular_GBM_EGFRamp_only_TERTunknown_n,Grade4_known_n,Grade4_positives,Grade4_positives_legacy_GBM,Legacy_agrees_Grade4_n,Legacy_agrees_Grade4_pct,GBMwt_known_n,GBMwt_positives,GBMwt_positives_legacy_GBM,Legacy_agrees_GBMwt_n,Legacy_agrees_GBMwt_pct
+a,Base (R3 rules),85,68,80.0,8,0,0,9,0,25,4,1,827,433,350,744,89.96,830,395,327,737,88.8
+b,Ceccarelli IDH status,81,68,83.95,5,0,0,8,0,26,4,1,827,433,350,744,89.96,831,394,326,737,88.69
+c,Astrocytic histology only,85,44,51.76,3,0,32,6,0,25,3,1,798,409,350,739,92.61,801,371,327,732,91.39
+d,NEC unassignable (both targets),85,68,80.0,0,8,0,9,0,25,4,1,819,433,350,736,89.87,822,395,327,729,88.69
+d2,NEC unassignable (grade 4 target only),85,68,80.0,0,8,0,9,0,25,4,1,819,433,350,736,89.87,830,395,327,737,88.8
+e,b + c + d,81,44,54.32,0,2,30,5,0,26,3,1,798,409,350,739,92.61,802,370,326,732,91.27
+f,Base + H3,85,68,80.0,7,0,0,8,3,25,4,1,827,434,350,743,89.84,831,394,326,737,88.69
+g,b + c + d + H3,81,44,54.32,0,2,29,4,3,26,3,1,799,410,350,739,92.49,804,369,325,733,91.17
+h1,Base; not assessable -> positive,85,68,80.0,8,0,0,9,0,25,4,1,836,442,350,744,89.0,839,404,327,737,87.84
+h0,Base; not assessable -> negative,85,68,80.0,8,0,0,9,0,25,4,1,836,433,350,753,90.07,839,395,327,746,88.92

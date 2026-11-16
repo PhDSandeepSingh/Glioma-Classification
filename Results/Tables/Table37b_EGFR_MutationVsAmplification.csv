@@ -1,0 +1,4 @@
+Group,N,Mut+Amp+,Mut+Amp-,Mut-Amp+,Mut-Amp-,Fisher_p
+"IDH-wild-type, all",397,78,27,110,182,9.125739202876262e-11
+IDH-wild-type legacy LGG,84,20,10,15,39,0.0010369103310888979
+IDH-wild-type legacy GBM,313,58,17,95,143,1.3694933012186256e-08

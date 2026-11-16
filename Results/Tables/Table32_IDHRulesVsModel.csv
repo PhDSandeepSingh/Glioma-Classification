@@ -1,0 +1,7 @@
+Set,Predictor,AUC,Sensitivity,Specificity,Accuracy,Errors,DeltaAUC_model_minus_rule,CI_lo,CI_hi,DeLong_p
+Training OOF,Locked model,0.9103,0.9255,0.8329,0.8718,86,,,,
+Training OOF,Rule: IDH1-wildtype -> GBM,0.8558,0.9326,0.7789,0.8435,105,0.0545,0.0372,0.0719,0.0
+Training OOF,Rule: IDH1/2-wildtype -> GBM,0.8766,0.9255,0.8278,0.8689,88,0.0337,0.0195,0.0478,0.0
+Sealed test,Locked model,0.9317,0.9286,0.7959,0.8512,25,,,,
+Sealed test,Rule: IDH1-wildtype -> GBM,0.8694,0.9429,0.7959,0.8571,24,0.0623,0.0306,0.0941,0.0001
+Sealed test,Rule: IDH1/2-wildtype -> GBM,0.8796,0.9429,0.8163,0.869,22,0.0521,0.0231,0.0811,0.0004

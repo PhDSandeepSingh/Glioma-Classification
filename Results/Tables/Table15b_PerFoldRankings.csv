@@ -1,0 +1,11 @@
+,fold_0,fold_1,fold_2,fold_3,fold_4
+rank_1,IDH1,IDH1,IDH1,IDH1,IDH1
+rank_2,Age_at_diagnosis,TP53,IDH2,IDH2,ATRX
+rank_3,TP53,Age_at_diagnosis,Age_at_diagnosis,Age_at_diagnosis,Age_at_diagnosis
+rank_4,PTEN,IDH2,TP53,PTEN,PTEN
+rank_5,IDH2,PTEN,ATRX,NF1,IDH2
+rank_6,MUC16,NF1,MUC16,TP53,TP53
+rank_7,ATRX,EGFR,Race,ATRX,MUC16
+rank_8,EGFR,ATRX,PTEN,CIC,EGFR
+rank_9,Race,MUC16,PIK3R1,MUC16,NF1
+rank_10,GRIN2A,CIC,CIC,EGFR,CIC

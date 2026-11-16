@@ -1,0 +1,3 @@
+Comparison,AUC_primary,AUC_comparator,Pct_of_primary,Diff,Diff_CI_lo,Diff_CI_hi,DeLong_p
+XGBoost (23 features) vs Age + IDH1 (LR),0.9317,0.9085,97.5045,0.0233,-0.0098,0.0563,0.1677
+"XGBoost (23 features) vs 4-feature panel (IDH1, Age_at_diagnosis, IDH2, TP53)",0.9317,0.9187,98.6075,0.013,-0.0138,0.0398,0.3431

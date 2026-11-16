@@ -1,0 +1,7 @@
+Primary_Diagnosis,"Legacy GBM, IDH1-mutant: IDH-mutant tumour (WHO 2021: astrocytoma, IDH-mutant, grade 4 if astrocytic)","Legacy GBM, IDH2-mutant","Legacy LGG, IDH1-wild-type but IDH2-mutant: IDH-mutant tumour (not a glioblastoma candidate)","Legacy LGG, IDH1/2-wild-type: candidate glioblastoma, IDH-wild-type if TERT/EGFR-amp/+7-10 present (not in the UCI file; assessed from external annotations in Section 20f)"
+"Astrocytoma, NOS",0,0,1,4
+"Astrocytoma, anaplastic",0,0,0,49
+Glioblastoma,23,2,0,0
+Mixed glioma,0,0,5,16
+"Oligodendroglioma, NOS",0,0,8,8
+"Oligodendroglioma, anaplastic",0,0,7,8

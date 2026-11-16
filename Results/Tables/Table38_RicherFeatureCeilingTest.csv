@@ -1,0 +1,7 @@
+Set,Family,Features,N,Mean_of_fold_AUC,AUC,Acc_at_0.5,Threshold,Acc_at_threshold,Oracle_acc,AUC_within_IDHwt,AUC_within_IDHmut,Errors,Errors_discordant,Errors_concordant,Discordant_n,DeltaAUC_rich_minus_base,Delta_CI_lo,Delta_CI_hi,DeLong_p,McNemar_rich_right_base_wrong,McNemar_rich_wrong_base_right,McNemar_exact_p
+Training complete-case (nested OOF),XGBoost,base23,657,0.9204,0.9159,0.863,0.39,0.8767,0.8767,0.6765,0.6602,81,79,2,86,,,,,,,
+Training complete-case (nested OOF),XGBoost,rich27,657,0.9279,0.9231,0.8706,0.414,0.8737,0.8737,0.7039,0.715,83,77,6,86,0.0072,-0.0022,0.0166,0.1329,,,
+Training complete-case (nested OOF),LogisticRegression,base23,657,0.9151,0.9128,0.8661,0.468,0.8721,0.8721,0.6636,0.6447,84,80,4,86,,,,,,,
+Training complete-case (nested OOF),LogisticRegression,rich27,657,0.9227,0.9228,0.8661,0.415,0.8661,0.8691,0.6915,0.7423,88,80,8,86,0.01,-0.0002,0.0201,0.0543,,,
+Test complete-case (scored once),XGBoost,base23,163,,0.929,0.865,0.39,0.865,,0.6597,0.8542,22,20,2,20,,,,,,,
+Test complete-case (scored once),XGBoost,rich27,163,,0.9346,0.8834,0.414,0.8712,,0.6788,0.9,21,20,1,20,0.0055,-0.0165,0.0276,0.6216,2.0,1.0,1.0

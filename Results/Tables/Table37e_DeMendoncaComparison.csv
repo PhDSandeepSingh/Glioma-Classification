@@ -1,0 +1,6 @@
+Our_base_WHO2021_category,deMendonca_GBM_IDHwt,deMendonca_Astrocytoma_IDHmut,deMendonca_Oligodendroglioma_IDHmut_codel,deMendonca_Unclassified,Total
+"Glioblastoma, IDH-wildtype",389,2,0,4,395
+"Astrocytoma, IDH-mutant, grade 4",2,36,0,0,38
+"Astrocytoma, IDH-mutant, grade 2-3 / ungraded",1,224,0,0,225
+"Oligodendroglioma, IDH-mutant and 1p/19q-codeleted",0,0,162,0,162
+Unassessed / criteria not met,0,4,0,15,19

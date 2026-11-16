@@ -1,0 +1,56 @@
+{
+  "mean_fold_auc": 0.9079920079920081,
+  "sd_fold_auc": 0.022703218181458287,
+  "pooled_oof_auc": 0.9053082098123941,
+  "pooled_oof_brier": 0.10843520283889896,
+  "oof_acc_05": 0.8748137108792846,
+  "oof_errors_05": 84,
+  "oof_mcc_05": 0.7526851607444757,
+  "folds": [
+    {
+      "fold": 0,
+      "selected_strategy": "SMOTENC",
+      "selected_family": "RandomForest",
+      "inner_cv_auc": 0.9167827274278887,
+      "outer_auc": 0.9078947368421053,
+      "outer_brier": 0.10488228775641464,
+      "spw_fold": 1.3822222222222222
+    },
+    {
+      "fold": 1,
+      "selected_strategy": "Class-weight (balanced)",
+      "selected_family": "LogisticRegression",
+      "inner_cv_auc": 0.9193233004593454,
+      "outer_auc": 0.9010989010989011,
+      "outer_brier": 0.11208286925640627,
+      "spw_fold": 1.3761061946902655
+    },
+    {
+      "fold": 2,
+      "selected_strategy": "SMOTENC",
+      "selected_family": "XGBoost",
+      "inner_cv_auc": 0.9295539625647151,
+      "outer_auc": 0.8782051282051282,
+      "outer_brier": 0.1254658175499447,
+      "spw_fold": 1.3761061946902655
+    },
+    {
+      "fold": 3,
+      "selected_strategy": "Class-weight (balanced)",
+      "selected_family": "XGBoost",
+      "inner_cv_auc": 0.9089074531687903,
+      "outer_auc": 0.9413919413919414,
+      "outer_brier": 0.08892849390986023,
+      "spw_fold": 1.3761061946902655
+    },
+    {
+      "fold": 4,
+      "selected_strategy": "SMOTENC",
+      "selected_family": "LogisticRegression",
+      "inner_cv_auc": 0.9179029413438016,
+      "outer_auc": 0.9113693324219639,
+      "outer_brier": 0.11084306001352914,
+      "spw_fold": 1.3866666666666667
+    }
+  ]
+}

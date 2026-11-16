@@ -1,0 +1,5 @@
+Set,Comparator,N,Model_errors,Rule_errors,Model_right_rule_wrong,Model_wrong_rule_right,McNemar_exact_p,Bootstrap_resamples_used,Diff_Accuracy_model_minus_rule,Diff_Accuracy_CI_lo,Diff_Accuracy_CI_hi,Diff_Sensitivity_model_minus_rule,Diff_Sensitivity_CI_lo,Diff_Sensitivity_CI_hi,Diff_Specificity_model_minus_rule,Diff_Specificity_CI_lo,Diff_Specificity_CI_hi
+Training OOF,Rule: IDH1-wildtype -> GBM,671,86,105,21,2,0.0001,2000,0.0283,0.0149,0.0417,-0.0071,-0.0182,0.0,0.054,0.0327,0.076
+Training OOF,Rule: IDH1/2-wildtype -> GBM,671,86,88,4,2,0.6875,2000,0.003,-0.0045,0.0104,0.0,-0.0108,0.0105,0.0051,-0.005,0.0162
+Sealed test,Rule: IDH1-wildtype -> GBM,168,25,24,2,3,1.0,2000,-0.006,-0.0357,0.0179,-0.0143,-0.0462,0.0,0.0,-0.0417,0.0388
+Sealed test,Rule: IDH1/2-wildtype -> GBM,168,25,22,0,3,0.25,2000,-0.0179,-0.0417,0.0,-0.0143,-0.0455,0.0,-0.0204,-0.0526,0.0

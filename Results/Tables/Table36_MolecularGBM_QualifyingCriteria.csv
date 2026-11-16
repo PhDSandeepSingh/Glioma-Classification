@@ -1,0 +1,71 @@
+Variant,Description,Qualifying_criteria,N,TERT_WT,TERT_unknown,Oligo_or_mixed_histology
+a,Base (R3 rules),TERT only,9,0,0,4
+a,Base (R3 rules),EGFR amplification only,4,3,1,1
+a,Base (R3 rules),+7/-10 only,10,0,10,2
+a,Base (R3 rules),TERT + EGFR amplification,3,0,0,1
+a,Base (R3 rules),TERT + +7/-10,14,0,0,7
+a,Base (R3 rules),EGFR amplification + +7/-10,16,1,15,5
+a,Base (R3 rules),All three,12,0,0,4
+b,Ceccarelli IDH status,TERT only,8,0,0,3
+b,Ceccarelli IDH status,EGFR amplification only,4,3,1,1
+b,Ceccarelli IDH status,+7/-10 only,11,0,11,3
+b,Ceccarelli IDH status,TERT + EGFR amplification,3,0,0,1
+b,Ceccarelli IDH status,TERT + +7/-10,14,0,0,7
+b,Ceccarelli IDH status,EGFR amplification + +7/-10,16,1,15,5
+b,Ceccarelli IDH status,All three,12,0,0,4
+c,Astrocytic histology only,TERT only,5,0,0,0
+c,Astrocytic histology only,EGFR amplification only,3,2,1,0
+c,Astrocytic histology only,+7/-10 only,8,0,8,0
+c,Astrocytic histology only,TERT + EGFR amplification,2,0,0,0
+c,Astrocytic histology only,TERT + +7/-10,7,0,0,0
+c,Astrocytic histology only,EGFR amplification + +7/-10,11,1,10,0
+c,Astrocytic histology only,All three,8,0,0,0
+d,NEC unassignable (both targets),TERT only,9,0,0,4
+d,NEC unassignable (both targets),EGFR amplification only,4,3,1,1
+d,NEC unassignable (both targets),+7/-10 only,10,0,10,2
+d,NEC unassignable (both targets),TERT + EGFR amplification,3,0,0,1
+d,NEC unassignable (both targets),TERT + +7/-10,14,0,0,7
+d,NEC unassignable (both targets),EGFR amplification + +7/-10,16,1,15,5
+d,NEC unassignable (both targets),All three,12,0,0,4
+d2,NEC unassignable (grade 4 target only),TERT only,9,0,0,4
+d2,NEC unassignable (grade 4 target only),EGFR amplification only,4,3,1,1
+d2,NEC unassignable (grade 4 target only),+7/-10 only,10,0,10,2
+d2,NEC unassignable (grade 4 target only),TERT + EGFR amplification,3,0,0,1
+d2,NEC unassignable (grade 4 target only),TERT + +7/-10,14,0,0,7
+d2,NEC unassignable (grade 4 target only),EGFR amplification + +7/-10,16,1,15,5
+d2,NEC unassignable (grade 4 target only),All three,12,0,0,4
+e,b + c + d,TERT only,5,0,0,0
+e,b + c + d,EGFR amplification only,3,2,1,0
+e,b + c + d,+7/-10 only,8,0,8,0
+e,b + c + d,TERT + EGFR amplification,2,0,0,0
+e,b + c + d,TERT + +7/-10,7,0,0,0
+e,b + c + d,EGFR amplification + +7/-10,11,1,10,0
+e,b + c + d,All three,8,0,0,0
+f,Base + H3,TERT only,9,0,0,4
+f,Base + H3,EGFR amplification only,4,3,1,1
+f,Base + H3,+7/-10 only,10,0,10,2
+f,Base + H3,TERT + EGFR amplification,3,0,0,1
+f,Base + H3,TERT + +7/-10,14,0,0,7
+f,Base + H3,EGFR amplification + +7/-10,16,1,15,5
+f,Base + H3,All three,12,0,0,4
+g,b + c + d + H3,TERT only,5,0,0,0
+g,b + c + d + H3,EGFR amplification only,3,2,1,0
+g,b + c + d + H3,+7/-10 only,8,0,8,0
+g,b + c + d + H3,TERT + EGFR amplification,2,0,0,0
+g,b + c + d + H3,TERT + +7/-10,7,0,0,0
+g,b + c + d + H3,EGFR amplification + +7/-10,11,1,10,0
+g,b + c + d + H3,All three,8,0,0,0
+h1,Base; not assessable -> positive,TERT only,9,0,0,4
+h1,Base; not assessable -> positive,EGFR amplification only,4,3,1,1
+h1,Base; not assessable -> positive,+7/-10 only,10,0,10,2
+h1,Base; not assessable -> positive,TERT + EGFR amplification,3,0,0,1
+h1,Base; not assessable -> positive,TERT + +7/-10,14,0,0,7
+h1,Base; not assessable -> positive,EGFR amplification + +7/-10,16,1,15,5
+h1,Base; not assessable -> positive,All three,12,0,0,4
+h0,Base; not assessable -> negative,TERT only,9,0,0,4
+h0,Base; not assessable -> negative,EGFR amplification only,4,3,1,1
+h0,Base; not assessable -> negative,+7/-10 only,10,0,10,2
+h0,Base; not assessable -> negative,TERT + EGFR amplification,3,0,0,1
+h0,Base; not assessable -> negative,TERT + +7/-10,14,0,0,7
+h0,Base; not assessable -> negative,EGFR amplification + +7/-10,16,1,15,5
+h0,Base; not assessable -> negative,All three,12,0,0,4

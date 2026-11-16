@@ -1,0 +1,4 @@
+Case_ID,Grade,IDH1,IDH2,IDH_STATUS,H3_status,Primary_Diagnosis,Age_at_diagnosis,Base_category,H3_variant_category,Partition
+TCGA-TM-A84C,0,0,0,WT,H3 K27M,"Astrocytoma, NOS",32.44,"IDH-wildtype, glioblastoma status not assessable (TERT unknown)","Diffuse glioma, H3 K27M-mutant (location unknown)",Training OOF
+TCGA-HT-7469,0,0,0,WT,H3 G34R,"Oligodendroglioma, anaplastic",30.38,"IDH-wildtype, glioblastoma criteria not met","Diffuse hemispheric glioma, H3 G34-mutant",Training OOF
+TCGA-06-A5U0,1,0,0,WT,H3 G34R,Glioblastoma,21.79,"Glioblastoma, IDH-wildtype (histological criteria)","Diffuse hemispheric glioma, H3 G34-mutant",Training OOF

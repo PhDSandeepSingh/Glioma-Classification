@@ -1,0 +1,3 @@
+Set,AUC_primary,AUC_no_race,Diff,CI_lo,CI_hi,DeLong_p,Threshold_primary,Threshold_no_race,Acc_primary,Acc_no_race,Errors_primary,Errors_no_race,Primary_right_norace_wrong,Primary_wrong_norace_right,McNemar_exact_p
+Training OOF,0.9116,0.914,-0.0024,-0.0082,0.0034,0.4169,0.351,0.383,0.8718,0.8718,86,86,1,1,1.0
+Sealed test,0.9317,0.9302,0.0015,-0.0098,0.0128,0.7908,0.351,0.383,0.8512,0.8571,25,24,1,2,1.0

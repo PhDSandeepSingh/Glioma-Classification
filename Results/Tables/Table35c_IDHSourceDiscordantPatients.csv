@@ -1,0 +1,8 @@
+Case_ID,Grade,IDH1,IDH2,IDH_STATUS,IDH_hotspot_MAF,Primary_Diagnosis,Base_category,Variant_b_category,TP53,ATRX,Partition
+TCGA-DU-6399,0,0,0,Mutant,none,"Oligodendroglioma, NOS","IDH-wildtype, glioblastoma criteria not met","Astrocytoma, IDH-mutant, grade 2-3",1,1,Training OOF
+TCGA-HT-A61A,0,0,0,Mutant,none,"Oligodendroglioma, NOS","Glioblastoma, IDH-wildtype (molecular criteria)","Astrocytoma, IDH-mutant, grade not assignable",0,0,Sealed test
+TCGA-WY-A85A,0,0,0,Mutant,IDH1 R132H,"Astrocytoma, NOS","IDH-wildtype, glioblastoma status not assessable (TERT unknown)","Astrocytoma, IDH-mutant, grade 2-3",0,1,Training OOF
+TCGA-QH-A65S,0,0,0,Mutant,IDH1 R132H,Mixed glioma,"IDH-wildtype, glioblastoma criteria not met","Astrocytoma, IDH-mutant, grade 2-3",1,1,Training OOF
+TCGA-P5-A72U,0,0,1,WT,none,"Oligodendroglioma, anaplastic","Astrocytoma, IDH-mutant, grade 2-3","Glioblastoma, IDH-wildtype (molecular criteria)",0,0,Training OOF
+TCGA-HT-A618,0,0,0,Mutant,none,"Astrocytoma, anaplastic","IDH-wildtype, glioblastoma criteria not met","Astrocytoma, IDH-mutant, grade 2-3",1,1,Training OOF
+TCGA-06-0151,1,0,0,Mutant,none,Glioblastoma,"Glioblastoma, IDH-wildtype (histological criteria)","Astrocytoma, IDH-mutant, grade 4",0,0,Training OOF

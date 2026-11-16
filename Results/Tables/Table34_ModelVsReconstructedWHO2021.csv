@@ -1,0 +1,7 @@
+Set,Target,N,N_positive,AUC,Accuracy,Sensitivity,Specificity,Errors,IDH12_rule_accuracy,IDH12_rule_errors
+Training OOF,Legacy label,671,282,0.9103,0.8718,0.9255,0.8329,86,0.8689,88
+Training OOF,WHO 2021 CNS grade 4,661,348,0.9624,0.938,0.8994,0.9808,41,0.9395,40
+Training OOF,"WHO 2021 glioblastoma, IDH-wildtype",663,314,0.9963,0.9864,0.9936,0.9799,9,0.991,6
+Sealed test,Legacy label,168,70,0.9317,0.8512,0.9286,0.7959,25,0.869,22
+Sealed test,WHO 2021 CNS grade 4,166,85,0.9946,0.9578,0.9529,0.963,7,0.9639,6
+Sealed test,"WHO 2021 glioblastoma, IDH-wildtype",167,81,0.9986,0.9701,0.9877,0.9535,5,0.988,2

@@ -1,0 +1,22 @@
+{
+  "title": "Impact of diagnostic label–IDH discordance and WHO 2021 criteria on machine-learning glioma grading from somatic mutations",
+  "version": "3.1.0",
+  "upload_type": "software",
+  "publication_date": "2026-11-16",
+  "creators": [
+    {
+      "name": "Singh, Sandeep",
+      "affiliation": "Department of Mathematics, Chandigarh University, Mohali, Punjab, India"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Glioma",
+    "IDH mutation",
+    "WHO 2021 classification",
+    "Label noise",
+    "Machine learning",
+    "Benchmark validity",
+    "TCGA"
+  ]
+}

@@ -1,0 +1,12 @@
+# Conda environment for Glioma-Classification-v3 (canonical run: CPython 3.13.16, Linux x86_64).
+# conda env create -f environment/environment.yml && conda activate glioma-r3
+# Exact package versions are installed with pip from the lock file so that conda and
+# pip users get identical versions.
+name: glioma-r3
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -r requirements-lock.txt
