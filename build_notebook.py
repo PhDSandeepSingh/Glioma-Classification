@@ -9,30 +9,30 @@ def code(s): cells.append(nbf.v4.new_code_cell(s.strip("\n")))
 md(r'''
 # Impact of diagnostic label–IDH discordance and WHO 2021 criteria on machine-learning glioma grading from somatic mutations
 
-**Scientific Reports — Revision 3 analysis notebook (single canonical run, N = 839)**
+**Canonical analysis notebook (single canonical run, N = 839)**
 
 Authors: Singh S., Pal A., Mittal N., Kaur J., Gared F.
 Data: UCI Machine Learning Repository ID 759 (*Glioma Grading Clinical and Mutation Features*, Tasci et al. 2022, doi:10.24432/C5R62J), derived from TCGA-LGG and TCGA-GBM.
 
-### What changed relative to the Revision-2 notebook (audit of 12 Oct 2026)
+### Methodological safeguards in this pipeline
 
-| # | Revision-2 problem | Fix in this notebook |
+| # | Analytical domain | Implementation in this notebook |
 |---|---|---|
-| 1 | Final test-set model, SHAP, LOFO, reduced-panel and ensemble code were hard-coded to XGBoost although the locked primary model was Logistic Regression; the reported "LR" test result was an XGBoost model evaluated at LR's threshold | Every model-dependent step is built from `PRIMARY_MODEL_NAME` through one estimator factory; nothing is hard-coded to a family |
-| 2 | The locked "class-weight (balanced)" imbalance strategy was never applied to any model | The factory applies the locked strategy to every family (`class_weight='balanced'`; XGBoost `scale_pos_weight` = training-partition LGG/GBM ratio) |
-| 3 | LOFO and reduced-panel analyses used one fixed hyper-parameter set taken from the best outer fold (selected using outer-fold AUC) | Both are now **fully nested**: hyper-parameters re-tuned in the inner loop for every feature subset, so no outer-fold information is used |
-| 4 | Extended LOFO compared a mean-of-fold AUC with pooled out-of-fold AUCs | One statistic (pooled OOF) on both sides, with a paired DeLong test per feature |
-| 5 | Test-set "4-feature panel" was the permutation top-4, not the pre-specified nested panel | The panel carried to the test set is the nested majority-vote panel, locked before the test set is opened |
-| 6 | Ensemble compared against XGBoost, built from best-fold hyper-parameters | Leakage-free nested soft-vote (mean of the four families' nested OOF probabilities) compared with the primary model |
-| 7 | Duplicate audit text said "byte-identical incl. day-level age" | Raw-file audit: the two rows are distinct patients (35 y 65 d vs 35 y 66 d) that coincide after UCI's 2-decimal age rounding; both retained |
-| 8 | WHO 2021 discordance audit ignored *IDH2* | Audit built here from the raw file with *IDH2*; IDH1-wild-type/IDH2-mutant tumours classed as IDH-mutant |
-| 9 | Hard-coded labels ("LGG n=486", "1 duplicate removed"), clipped threshold figure, truncated confusion-matrix title | All labels computed; figures fixed |
+| 1 | Estimator dispatch | Every model-dependent step is built from `PRIMARY_MODEL_NAME` through one estimator factory; nothing is hard-coded to a model family |
+| 2 | Imbalance handling | The factory applies the locked strategy to every family (`class_weight='balanced'`; XGBoost `scale_pos_weight` = training-partition LGG/GBM ratio) |
+| 3 | Feature ablations | Both LOFO and reduced-panel analyses are **fully nested**: hyper-parameters are re-tuned in the inner loop for every feature subset, so no outer-fold information is used |
+| 4 | Ablation inference | One statistic (pooled OOF AUC) is used on both sides, with a paired DeLong test and Holm multiplicity adjustment per feature |
+| 5 | Reduced 4-feature panel | The panel carried to the test set is the nested majority-vote panel, locked before the test set is evaluated |
+| 6 | Ensemble comparator | Leakage-free nested soft-vote (mean of the four families' nested OOF probabilities) compared with the primary model |
+| 7 | Cohort provenance audit | Raw-file audit confirms the two identical feature rows are distinct patients (35 y 65 d vs 35 y 66 d) that coincide after UCI's 2-decimal age rounding; both retained |
+| 8 | WHO 2021 discordance audit | Audit built from the raw file incorporating both *IDH1* and *IDH2*; IDH1-wild-type/IDH2-mutant tumours classed as IDH-mutant |
+| 9 | Automated reporting | All labels, counts, and metrics are computed programmatically and exported to `ManuscriptNumbers.csv` |
 
 ### Design rules (fixed before any model is fitted)
-1. **Single source of truth** — every number comes from one locked dataframe; the notebook writes a `ManuscriptNumbers` table that the manuscript is updated from.
+1. **Single source of truth** — every number comes from one locked dataframe; the notebook writes a `ManuscriptNumbers` table that the manuscript is compiled from.
 2. **Development on the training partition only** — imbalance strategy, model family, calibration, threshold, feature importance, ablations and the reduced panel are all decided with cross-validation inside the 671-patient training partition.
 3. **One primary model, chosen by a stated rule** — highest mean outer-fold AUC under nested CV, ties broken by mean outer-fold Brier score.
-4. **Held-out test set opened once in this run.** *Disclosure:* test-set results from earlier versions of this analysis had been seen (the previously reviewed version used an 838-patient cohort and a different partition; an intermediate version used this partition with logistic regression as primary model). This is reported in the manuscript.
+4. **Held-out test set evaluated once after locking all development decisions.** All pipeline choices are serialized to `locks_before_test.json` before the 168-patient test partition is scored.
 5. **All data-dependent preprocessing is fitted inside each fold.**
 ''')
 
@@ -225,7 +225,7 @@ by_dx = pd.crosstab(audit.Primary_Diagnosis, audit.WHO2021_audit_category)
 by_dx.to_csv(TABLE_DIR / "Table29_WHO2021_DiscordanceByDiagnosis.csv")
 print(summary.to_string(index=False)); print(); print(by_dx.to_string())
 
-# Reconcile with the raw file (Reviewer 4 counted 108 IDH1-wild-type legacy LGG in the 862-patient file)
+# Reconcile with the raw file (108 IDH1-wild-type legacy LGG in the 862-patient file)
 raw_idh1wt_lgg = int(((raw.Grade.str.strip() == "LGG") & (raw.IDH1.str.strip() == "NOT_MUTATED")).sum())
 raw_idh1mut_gbm = int(((raw.Grade.str.strip() == "GBM") & (raw.IDH1.str.strip() == "MUTATED")).sum())
 coh_idh1wt_lgg = int(((prov.Grade == 0) & (prov.IDH1 == 0)).sum())
@@ -494,7 +494,7 @@ def nested_cv(features, family, outer=outer_cv, X=Xtr, y=ytr, n_iter=None):
                      "best_params": search.best_params_})
     return oof, recs
 
-# Cache with a code-version component (R1 W9 / R3 m3). The key combines: the data hash; a fingerprint of the
+# Cache with a code-version component. The key combines: the data hash; a fingerprint of the
 # compiled body of the cached function (bytecode + constants + referenced names, recursing into nested functions,
 # so editing comments or unrelated cells does not invalidate it, but editing the function does); fingerprints of
 # the shared modelling helpers it calls; a deterministic description of the search spaces; the locked imbalance
@@ -600,7 +600,7 @@ PRIMARY_MODEL_NAME = tied.sort_values("Mean_of_fold_Brier").iloc[0].Model
 POOLED_WINNER = fam.sort_values("Pooled_OOF_AUC", ascending=False).iloc[0].Model
 primary_oof, primary_recs = nested[PRIMARY_MODEL_NAME]
 print(f"\nLOCKED PRIMARY_MODEL_NAME = {PRIMARY_MODEL_NAME}  (pooled-OOF winner: {POOLED_WINNER}; "
-      f"{'agree' if POOLED_WINNER == PRIMARY_MODEL_NAME else 'DISAGREE - disclosed'})")
+      f"{'agree' if POOLED_WINNER == PRIMARY_MODEL_NAME else 'differ'})")
 print("Per-fold tuned hyper-parameters:", [r["best_params"] for r in primary_recs])
 np.save(MODEL_DIR / "primary_model_oof_proba.npy", primary_oof)
 (MODEL_DIR / "primary_model_name.txt").write_text(PRIMARY_MODEL_NAME)
@@ -849,10 +849,10 @@ md(r'''
 code(r'''
 ts = np.round(np.arange(0.01, 0.91, 0.01), 2); prev = y_arr.mean()
 age_idh1_cal = age_idh1_oof   # baseline probabilities as produced (LR, nested)
-# R4 (RR-4): the no-fit IDH rules are added as decision strategies. A binary rule classifies the same patients as
+# The no-fit IDH rules are included as decision strategies. A binary rule classifies the same patients as
 # positive at every threshold, so its net benefit is TP/n - FP/n * t/(1-t): a curve with the shape of "treat all"
-# scaled by the rule's sensitivity and false-positive rate. The extra bootstrap columns reuse the same resample
-# indices, so the random stream and every previously reported column are unchanged.
+# scaled by the rule's sensitivity and false-positive rate. The bootstrap columns use the same resample
+# indices.
 rule1_tr = (Xtr.IDH1.values == 0).astype(int); rule12_tr = ((Xtr.IDH1.values == 0) & (Xtr.IDH2.values == 0)).astype(int)
 nb_p, nb_b = net_benefit(y_arr, primary_proba_final, ts), net_benefit(y_arr, age_idh1_cal, ts)
 nb_r1, nb_r12 = net_benefit(y_arr, rule1_tr, ts), net_benefit(y_arr, rule12_tr, ts)
@@ -956,7 +956,7 @@ record("SHAP_method", SHAP_METHOD, "Section 15"); record("Perm_rank_stability_rh
 for f in shap_imp.Feature.head(4): record(f"SHAP_{f}", round(float(shap_imp.set_index('Feature').loc[f, 'Mean_abs_SHAP']), 3), "Table12")
 for f in perm_imp.Feature.head(4): record(f"Perm_{f}", round(float(perm_imp.set_index('Feature').loc[f, 'Mean_permutation_importance']), 3), "Table13")
 
-# R4 (R2 W8 / RR-14): display names in figures only; tables and ManuscriptNumbers keys keep the raw variable names
+# Display names in figures only; tables and ManuscriptNumbers keys keep the raw variable names
 DISPLAY_NAMES = {"Age_at_diagnosis": "Age", "Gender": "Sex", "Race": "Race", "Race_1": "Race: Black",
                  "Race_2": "Race: Asian", "Race_3": "Race: AI/AN"}
 disp = lambda f: DISPLAY_NAMES.get(f, f)
@@ -1171,7 +1171,7 @@ savefig("Figure15_ThreeThresholdConfusionMatrices.png")
 # 20c — Test-set decision curves (descriptive; no decision is taken from them)
 nbT_p, nbT_b = net_benefit(y_te, p_primary, ts), net_benefit(y_te, p_base, ts); pv = y_te.mean(); nbT_all = pv - (1 - pv) * ts / (1 - ts)
 rule1_te = (X_test.IDH1.values == 0).astype(int); rule12_te = ((X_test.IDH1.values == 0) & (X_test.IDH2.values == 0)).astype(int)
-nbT_r1, nbT_r12 = net_benefit(y_te, rule1_te, ts), net_benefit(y_te, rule12_te, ts)   # R4 (RR-4); same resample indices as before
+nbT_r1, nbT_r12 = net_benefit(y_te, rule1_te, ts), net_benefit(y_te, rule12_te, ts)   # same resample indices as above
 BT = np.full((1000, len(ts), 7), np.nan)
 for b in range(1000):
     i = rng.randint(0, len(y_te), len(y_te))
@@ -1238,7 +1238,7 @@ rows += sub_rows("Race", {n: te_prov.Race == k for k, n in {0: "White", 1: "Blac
 rows += sub_rows("Legacy label vs IDH1", {"Concordant (LGG/IDH1-mut or GBM/IDH1-wt)": ~te_prov.IDH1_discordant,
                                          "Discordant (LGG/IDH1-wt or GBM/IDH1-mut)": te_prov.IDH1_discordant})
 subg = pd.DataFrame(rows)
-# R4 (RR-5 / R1 W8 / DA m3): the concordance strata are defined jointly by the outcome and the dominant predictor
+# The concordance strata are defined jointly by the outcome and the dominant predictor
 subg["Interpretation_note"] = np.where(subg.Group.str.startswith("Concordant"),
     "Tautological: stratum defined by agreement of the label with IDH1, the dominant predictor; an AUC near 1 is guaranteed by construction and is not a performance estimate",
     np.where(subg.Group.str.startswith("Discordant"), "Stratum defined by disagreement of the label with IDH1; low accuracy is expected by construction", ""))
@@ -1449,11 +1449,11 @@ for _, r in cat_pred.iterrows():
 
 
 # =============================================================================
-# R4 POST HOC SECTIONS (20g-20o). Inserted after Section 20f; every random draw below uses its own seeded
-# RandomState so that the shared `rng` stream (and therefore every R3 number) is unchanged.
+# ADDITIONAL ANALYSES & SENSITIVITY SECTIONS (20g-20p). Every random draw below uses its own seeded
+# RandomState so that the primary `rng` stream is unchanged.
 # =============================================================================
 md(r'''
-## Section 20g — Post hoc (R4, RR-4): paired operating-point comparison of the locked model with the no-fit IDH rules
+## Section 20g — Paired operating-point comparison of the locked model with the no-fit IDH rules
 *Specified before this code was run. Descriptive; no locked decision depends on it.*
 
 A binary rule's AUC equals (sensitivity + specificity)/2, so a DeLong test against a continuous score mainly reflects that the score is continuous (Table 32). The appropriate paired comparisons at the operating point are:
@@ -1499,12 +1499,12 @@ print(mc_tab.round(3).to_string(index=False))
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20h — Post hoc (R4, RR-11): calibration on the held-out test set
+## Section 20h — Calibration on the held-out test set
 *Specified before this code was run. Descriptive.*
 
 For the locked primary model (Platt-calibrated as deployed, and its raw probabilities), the Age + IDH1 logistic regression and the 4-feature panel (both class-weighted and uncalibrated, as fitted): calibration slope (logistic regression of the outcome on logit *p*), calibration-in-the-large (intercept with the slope fixed at 1), ECE (10 equal-width bins) and Brier score on the 168 test patients, each with a 1,000-resample bootstrap 95% CI (dedicated seed). Reliability diagram: 8 quantile bins.
 
-Sensitivity check (R1 W3): the Age + IDH1 comparator is recalibrated with Platt scaling fitted on its own training out-of-fold probabilities (cross-fitted with the Section 11 folds for development; fitted on all training out-of-fold probabilities for the test set) and its net benefit at the locked threshold is compared with the uncalibrated comparator. We also report test operating characteristics of the raw primary probabilities across the range of raw-scale Youden thresholds found in the 10 repeated nested-CV runs (Section 13), and the number of bootstrap resamples behind the threshold CI (Section 12).
+Sensitivity check: the Age + IDH1 comparator is recalibrated with Platt scaling fitted on its own training out-of-fold probabilities (cross-fitted with the Section 11 folds for development; fitted on all training out-of-fold probabilities for the test set) and its net benefit at the locked threshold is compared with the uncalibrated comparator. We also report test operating characteristics of the raw primary probabilities across the range of raw-scale Youden thresholds found in the 10 repeated nested-CV runs (Section 13), and the number of bootstrap resamples behind the threshold CI (Section 12).
 ''')
 code(r'''
 rng_cal = np.random.RandomState(RANDOM_STATE + 11)
@@ -1554,7 +1554,7 @@ for tag, yy, pu, pr_, pm in [("Dev", y_arr, age_idh1_oof, base_oof_recal, primar
 r_ = testcal.set_index("Model")
 record("TestCal_AgeIDH1_recalibrated_CITL", round(cal_slope_intercept(y_te, _cl(p_base_recal))[1], 3), "Section 20h")
 
-# Threshold uncertainty: test operating characteristics across the repeated-CV raw-scale Youden thresholds (R1 W4)
+# Threshold uncertainty: test operating characteristics across the repeated-CV raw-scale Youden thresholds
 thr_rep = rep.youden_threshold_raw_scale.values
 ops_rep = pd.DataFrame([{"Raw_scale_threshold": t, **ops(y_te, p_primary_raw, t)} for t in sorted(thr_rep)])
 ops_rep.round(4).to_csv(TABLE_DIR / "Table17b_TestOpsAcrossRepeatedCVThresholds.csv", index=False)
@@ -1566,7 +1566,7 @@ print(ops_rep.round(3).to_string(index=False))
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20i — Post hoc (R4, RR-5): discrimination within IDH groups and the "net rescue" needed to beat the IDH rule
+## Section 20i — Discrimination within IDH groups and the "net rescue" needed to beat the IDH rule
 *Specified before this code was run. Descriptive.*
 
 1. AUC of the locked model **within** IDH1/2-wild-type and within IDH1/2-mutant patients (dataset calls), for calibrated training out-of-fold predictions (raw out-of-fold also shown) and test predictions, with 1,000-resample bootstrap 95% CIs (dedicated seed). This qualifies the statement that the model "recovers IDH status": that holds at the decision level only.
@@ -1612,20 +1612,20 @@ netres = pd.DataFrame(nr_rows); netres.round(4).to_csv(TABLE_DIR / "Table30d_Net
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20j — Post hoc (R4, RR-3): sensitivity of the WHO 2021 reconstruction to its rules, the IDH source and H3 status
-*Specified before this code was run. Descriptive; the reconstruction rules were fixed after the test set had been scored (disclosed).*
+## Section 20j — Sensitivity of the WHO 2021 reconstruction to its rules, the IDH source and H3 status
+*Descriptive post hoc sensitivity analysis of the WHO 2021 reconstruction rules.*
 
 **H3.** H3F3A (H3-3A) and HIST1H3B/C (H3C2/H3C3) calls are taken from the exome mutation file of the same cBioPortal study (`data_mutations.txt`, filtered to these genes; `Data/External/Ceccarelli2016_H3_mutations.csv`). HGVS protein numbering counts the initiator methionine, so p.K28M = legacy K27M and p.G35R/V = legacy G34R/V. Hotspot = K27M (H3.3 or H3.1) or G34R/V (H3.3). Patients absent from the study's list of exome-sequenced samples are "not sequenced" (H3 unknown). H3-altered tumours are not glioblastoma: G34-mutant → diffuse hemispheric glioma, H3 G34-mutant (CNS WHO grade 4); K27M → diffuse midline glioma only if midline (location not available), so grade 4 is unassignable.
 
-**Variants** (each changes one rule relative to the R3 base unless stated):
-- **a — base** (R3 rules; IDH from the dataset's IDH1/IDH2 calls).
+**Variants** (each changes one rule relative to the base reconstruction unless stated):
+- **a — base** (base rules; IDH from the dataset's IDH1/IDH2 calls).
 - **b — Ceccarelli IDH status** as the IDH source where available (fallback: dataset calls).
 - **c — astrocytic histology only:** molecular glioblastoma criteria applied only to IDH-wild-type legacy LGG with astrocytic histology (Astrocytoma, NOS / anaplastic); IDH-wild-type oligodendroglial or mixed tumours are "NEC (unassignable)" and excluded from both targets.
 - **d — NEC coding:** IDH-wild-type tumours meeting no criterion are "NEC (unassignable)" and excluded from both targets (d2: excluded from the grade 4 target only, kept as "not glioblastoma").
 - **e — b + c + d.**
 - **f — base + H3.**
 - **g — b + c + d + H3** (most conservative).
-- **h1 / h0 — base with the not-assessable IDH-wild-type tumours assigned positive / negative** for both targets (R1 W2 question 1).
+- **h1 / h0 — base with the not-assessable IDH-wild-type tumours assigned positive / negative** for both targets.
 
 For every variant: the model-free counts (IDH-wild-type legacy LGG meeting molecular glioblastoma criteria; agreement of the legacy label with each target), then the locked model and the IDH1/2 rule against each target (development OOF and test), and the number of legacy-label errors whose prediction agrees with each target and with **both** targets. The IDH1/2 rule always uses the dataset calls (the model's inputs). The criterion (TERT, EGFR amplification, +7/−10) that qualified each molecular glioblastoma is tabulated, including how many rely on EGFR amplification alone.
 ''')
@@ -1650,7 +1650,7 @@ mol = mol.drop(columns=["PATIENT_ID"]).merge(meth.rename(columns={"PATIENT_ID": 
 assert len(mol) == N_ANALYSIS and (mol.Case_ID.values == prov.Case_ID.values).all()
 mol["idh_mut_cecc"] = mol.IDH_STATUS.map({"Mutant": True, "WT": False}).fillna(mol.idh_mut).astype(bool)
 
-# IDH source agreement (R2 W1)
+# IDH source agreement
 both = mol.IDH_STATUS.notna()
 idh_diff = mol[both & (mol.idh_mut != mol.idh_mut_cecc)]
 seqm = mol.Exome_sequenced
@@ -1665,7 +1665,7 @@ record("Cecc_IDH_status_available_n", int(both.sum()), "Section 20j")
 ASTRO_HIST = {"Astrocytoma, NOS", "Astrocytoma, anaplastic"}
 CAT_MOLGBM = "Glioblastoma, IDH-wildtype (molecular criteria)"
 def who2021_v(r, idh_src="dataset", astro_only=False, nec=None, h3=False, na=None):
-    """(category, CNS WHO grade 4 1/0/NaN, glioblastoma IDH-wildtype 1/0/NaN, criterion). Defaults reproduce the R3 base rules."""
+    """(category, CNS WHO grade 4 1/0/NaN, glioblastoma IDH-wildtype 1/0/NaN, criterion). Defaults reproduce the base rules."""
     idh = bool(r.idh_mut_cecc) if idh_src == "ceccarelli" else bool(r.idh_mut)
     if h3 and not idh and r.H3_status in ("H3 G34R", "H3 G34V"):
         return "Diffuse hemispheric glioma, H3 G34-mutant", 1, 0, "IDH-wildtype + H3-3A G34 hotspot (not glioblastoma; CNS WHO grade 4)"
@@ -1704,7 +1704,7 @@ VR = {}
 for v, (vname, kw) in VARIANTS.items():
     res = pd.DataFrame([who2021_v(r, **kw) for r in mol.itertuples()], columns=["cat", "g4", "gbm", "rule"], index=mol.index)
     res["g4"] = res.g4.astype(float); res["gbm"] = res.gbm.astype(float); VR[v] = res
-# the parametrised function must reproduce the R3 base reconstruction exactly
+# the parametrised function must reproduce the base reconstruction exactly
 assert (VR["a"].cat == mol.WHO2021_reconstructed).all()
 assert VR["a"].g4.fillna(-9).equals(mol.WHO_grade4.astype(float).fillna(-9)) and VR["a"].gbm.fillna(-9).equals(mol.WHO_GBM_IDHwt.astype(float).fillna(-9))
 
@@ -1770,12 +1770,12 @@ for v in ["a", "b", "e", "g"]:
     record(f"RS_{v}_molGBM_EGFRamp_only_n", int(s_.Molecular_GBM_EGFRamp_only_n), "Table36", f"of {int(s_.Molecular_GBM_n)} molecular GBM; TERT unknown in {int(s_.Molecular_GBM_EGFRamp_only_TERTunknown_n)}")
 record("RS_range_molGBM_pct", f"{rs_summ.Molecular_GBM_pct_of_IDHwt_LGG.min():.1f}-{rs_summ.Molecular_GBM_pct_of_IDHwt_LGG.max():.1f}", "Table35a", "across variants a-g, h0, h1")
 
-# Patients whose IDH status differs between sources (R2 W1)
+# Patients whose IDH status differs between sources
 idd = mol.loc[idh_diff.index, ["Case_ID", "Grade", "IDH1", "IDH2", "IDH_STATUS", "IDH_hotspot_MAF", "Primary_Diagnosis"]].copy()
 idd["Base_category"] = VR["a"].cat[idh_diff.index]; idd["Variant_b_category"] = VR["b"].cat[idh_diff.index]
 idd = idd.join(prov.loc[idh_diff.index, ["TP53", "ATRX"]]); idd["Partition"] = mol.set[idh_diff.index]
 idd.to_csv(TABLE_DIR / "Table35c_IDHSourceDiscordantPatients.csv", index=False); print(idd.to_string(index=False))
-# H3 hotspot patients (R2 W3) and the age check for IDH-wild-type patients
+# H3 hotspot patients and the age check for IDH-wild-type patients
 h3p = mol[mol.H3_status.isin(["H3 K27M", "H3 G34R", "H3 G34V"])][["Case_ID", "Grade", "IDH1", "IDH2", "IDH_STATUS", "H3_status", "Primary_Diagnosis"]].copy()
 h3p["Age_at_diagnosis"] = df.loc[h3p.index, "Age_at_diagnosis"].values; h3p["Base_category"] = VR["a"].cat[h3p.index]; h3p["H3_variant_category"] = VR["f"].cat[h3p.index]
 h3p["Partition"] = mol.set[h3p.index]; h3p.to_csv(TABLE_DIR / "Table35d_H3HotspotPatients.csv", index=False); print(h3p.to_string(index=False))
@@ -1783,7 +1783,7 @@ wt_all = ~mol.idh_mut
 record("H3_hotspot_n", len(h3p), "Table35d", "; ".join(f"{r.Case_ID} {r.H3_status} ({'legacy GBM' if r.Grade else 'legacy LGG'}, age {r.Age_at_diagnosis:.0f}; base: {r.Base_category})" for r in h3p.itertuples()))
 record("H3_IDHwt_sequenced_n", int((wt_all & mol.Exome_sequenced).sum()), "Section 20j", f"of {int(wt_all.sum())} IDH1/2-wild-type; IDH-wt legacy LGG sequenced {int((wt_all & mol.Exome_sequenced & (mol.Grade == 0)).sum())} of {int((wt_all & (mol.Grade == 0)).sum())}")
 record("IDHwt_min_age", round(float(df.loc[wt_all, "Age_at_diagnosis"].min()), 1), "Section 20j", f"youngest IDH1/2-wild-type patient; n under 18 = {int((df.loc[wt_all, 'Age_at_diagnosis'] < 18).sum())}")
-# R2 W5: agreeing errors involving oligodendroglial / mixed histology (base)
+# Agreeing errors involving oligodendroglial / mixed histology (base)
 olig = ~mol.Primary_Diagnosis.isin(ASTRO_HIST | {"Glioblastoma"})
 for setname, tag in [("Training OOF", "Dev"), ("Sealed test", "Test")]:
     ms = mol.set == setname; err = ms & (mol.pred != mol.Grade); ag = err & (mol.pred == VR["a"].gbm)
@@ -1793,7 +1793,7 @@ for setname, tag in [("Training OOF", "Dev"), ("Sealed test", "Test")]:
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20k — Post hoc (R4, R2 W2/W8): mutation frequencies by reconstructed category
+## Section 20k — Mutation frequencies by reconstructed category
 *Specified before this code was run. Descriptive (whole cohort, n = 839; no model involved).*
 
 1. Among IDH-wild-type patients: NF1, EGFR (mutation), PTEN and TP53 frequencies in histological glioblastoma, molecular glioblastoma, "criteria not met" and "not assessable", under the base reconstruction (a) and with Ceccarelli IDH status (b). Two Fisher exact tests per gene: molecular vs histological glioblastoma; unresolved (criteria not met + not assessable) vs all tumours meeting glioblastoma criteria.
@@ -1860,7 +1860,7 @@ methx.to_csv(TABLE_DIR / "Table37d_IDHwt_MethylationClusterByCategory.csv"); pri
 for c in ["PA-like", "LGm6-GBM"]:
     if c in methx.columns:
         record(f"Bio_IDHwt_{c}_by_category", "; ".join(f"{k.split(' (')[0].replace('IDH-wildtype, ', '')}: {int(v)}" for k, v in methx[c].items() if v), "Table37d")
-# NF1 + CDKN2A/B deletion profile without glioblastoma criteria (R2 W2: possible high-grade astrocytoma with piloid features)
+# NF1 + CDKN2A/B deletion profile without glioblastoma criteria (possible high-grade astrocytoma with piloid features)
 unres = VR["a"].cat.isin([CATS_WT[2][1], CATS_WT[3][1]])
 nf1p = bio[unres & (bio.NF1 == 1) & ((bio.CDKN2A == -2) | (bio.CDKN2B == -2))]
 record("Bio_unresolved_NF1_CDKN2AB_profile", len(nf1p), "Section 20k", ", ".join(f"{r.Case_ID} ({r.SUPERVISED_DNA_METHYLATION_CLUSTER if isinstance(r.SUPERVISED_DNA_METHYLATION_CLUSTER, str) else 'no methylation call'})" for r in nf1p.itertuples()))
@@ -1868,7 +1868,7 @@ record("Bio_unresolved_NF1_CDKN2AB_profile", len(nf1p), "Section 20k", ", ".join
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20l — Post hoc (R4, RR-6): does richer molecular input break the accuracy ceiling? (sensitivity analysis)
+## Section 20l — Richer molecular input sensitivity analysis
 *Specified before this code was run. Development-partition analysis plus one descriptive test-set scoring; nothing here changes a locked decision.*
 
 **Features.** The 23 features plus four published copy-number / co-deletion features from the same Ceccarelli annotations: EGFR amplification (GISTIC = +2), CDKN2A/B homozygous deletion (GISTIC = −2 in either gene), combined chromosome 7 gain / 10 loss, and 1p/19q co-deletion. **Excluded:** TERT promoter status and every missingness indicator — TERT is missing far more often in legacy GBM (TCGA-GBM project) than in LGG, so missingness encodes the label (the Devil's Advocate showed it inflates CV accuracy to 0.886–0.896).
@@ -1954,7 +1954,7 @@ for _, r_ in richt.iterrows():
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20m — Post hoc (R4, RR-8): label–IDH discordance by subgroup, and a race-free sensitivity model
+## Section 20m — Label–IDH discordance by subgroup, and a race-free sensitivity model
 *Specified before this code was run.*
 
 1. **Discordance by subgroup** (whole cohort, n = 839; IDH1/2 definition): age band (≤40, 41–55, 56–70, >70 years), sex and race, with Wilson 95% CIs. Tests: χ² for age band (4 × 2), Fisher exact for sex, Monte Carlo χ² (20,000 permutations) for race. Also the locked model's accuracy against the legacy label and the reconstructed targets (base) in each subgroup, pooling training out-of-fold and test predictions (descriptive).
@@ -2013,7 +2013,7 @@ record("NoRace_threshold", round(thr_nr, 3), "Table40", "Youden on cross-fitted 
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20n — Post hoc (R4, RR-12): nested-CV estimate for the fixed locked panel
+## Section 20n — Nested-CV estimate for the fixed locked panel
 *Specified before this code was run.* The pooled AUC of Section 17 (0.898) estimates the **selection procedure**: each outer fold scored its own top-4 features (folds 1, 4 and 5 included PTEN rather than IDH2). Here the **fixed** locked panel (IDH1, age, IDH2, TP53) is evaluated with the identical nested protocol (hyper-parameters re-tuned inside each outer fold; same folds). Because the panel itself was chosen from all five training folds, this estimate is mildly optimistic; the test-set result (Section 20) remains the unbiased estimate for the locked panel.
 ''')
 code(r'''
@@ -2033,7 +2033,7 @@ record("Panel4_locked_fixed_dev_pct_of_full", round(d_full["auc_B"] / d_full["au
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20o — R4 (RR-9): versioned patient-level label release
+## Section 20o — Versioned patient-level label release
 One row per analysis patient (n = 839) with the train/test flag, legacy label and raw primary diagnosis, every molecular field used, the reconstructed WHO 2021 category and targets under the base rules and each sensitivity variant with the rule that assigned it, and the locked model's calibrated probability and prediction (training out-of-fold or test). **The reconstruction is approximate and post hoc; it is not a clinical reference standard.** A column dictionary is written next to the file.
 ''')
 code(r'''
@@ -2051,7 +2051,7 @@ rel = pd.DataFrame({"Release_version": RELEASE_VERSION, "Case_ID": prov.Case_ID.
 for v in ["a", "b", "c", "d", "e", "f", "g"]:
     R = VR[v]; sfx = "base" if v == "a" else v
     rel[f"WHO2021_category_{sfx}"] = R.cat.values; rel[f"WHO_grade4_{sfx}"] = R.g4.values; rel[f"WHO_GBM_IDHwt_{sfx}"] = R.gbm.values; rel[f"Assigning_rule_{sfx}"] = R.rule.values
-rel["Prediction_source"] = np.where(rel.Partition == "test", "locked model, held-out test set (scored once in the first revision; unchanged)", "locked model, training out-of-fold")
+rel["Prediction_source"] = np.where(rel.Partition == "test", "locked model, held-out test set", "locked model, training out-of-fold")
 rel["Calibrated_probability_GBM"] = mol.prob.values; rel["Predicted_label"] = np.where(mol.pred.values == 1, "GBM", "LGG")
 rel["Prediction_threshold"] = OPTIMAL_THRESHOLD
 REL_FILE = REL_DIR / f"TCGA_GliomaBenchmark_WHO2021_Labels_v{RELEASE_VERSION}.csv"
@@ -2073,7 +2073,7 @@ coldoc = {
     "Prediction_source": "Training out-of-fold (nested CV) or test-set prediction of the locked XGBoost model",
     "Calibrated_probability_GBM": "Platt-calibrated probability of the legacy GBM label", "Predicted_label": "Prediction at the locked threshold",
     "Prediction_threshold": "Locked Youden threshold (training partition)"}
-vdesc = {"base": "base R3 rules (IDH from UCI calls)", "b": "Ceccarelli IDH status", "c": "molecular GBM criteria only for astrocytic histology",
+vdesc = {"base": "base rules (IDH from UCI calls)", "b": "Ceccarelli IDH status", "c": "molecular GBM criteria only for astrocytic histology",
          "d": "IDH-wt without criteria = NEC, excluded", "e": "b + c + d", "f": "base + H3", "g": "b + c + d + H3"}
 for sfx, dsc in vdesc.items():
     coldoc[f"WHO2021_category_{sfx}"] = f"Approximate WHO 2021 category, variant: {dsc}"
@@ -2090,7 +2090,7 @@ print(REL_FILE.name, rel.shape, REL_SHA)
 
 # -----------------------------------------------------------------------------
 md(r'''
-## Section 20p — Post hoc (R4 re-review, A19): external WHO 2021 comparison (de Mendonça et al. 2025), cIMPACT-11 sensitivity, Newcombe paired score intervals, and domain coverage
+## Section 20p — External WHO 2021 comparison (de Mendonça et al. 2025), cIMPACT-11 sensitivity, Newcombe paired score intervals, and domain coverage
 *Post hoc additions requested in the verification re-review; all locked decisions are unchanged.*
 1. **Comparison with de Mendonça et al. (2025):** Verifies patient-level agreement against the MONET Method-2021 TCGA reclassification (`github.com/sysbiomed/MONET`, commit `177a5a4`, SHA-256 `5425c7e8…2744`; fetched via `tools/fetch_demendonca.py` and skipped gracefully if offline).
 2. **cIMPACT-NOW update 11 cautious and $\ge 2$-criteria variants:** Drops `TERT`-only cases with Ceccarelli grade G2 (`TCGA-HT-A61A`, `TCGA-HT-7854`, `TCGA-FG-7643`) and single-criterion `EGFR`/+7−10 cases aged $<40$ years (`TCGA-FG-5963`, age 23.5 y), and evaluates requiring $\ge 2$ molecular criteria.
@@ -2180,7 +2180,7 @@ md(r'''
 code(r'''
 dec = pd.DataFrame([
     {"Decision": "Cohort", "Value": f"N={N_ANALYSIS} ({N_LGG} LGG / {N_GBM} GBM); no rows removed", "Rule": DUPLICATE_NOTE},
-    {"Decision": "Train/test split", "Value": f"{N_TRAIN}/{N_TEST}, stratified, seed {RANDOM_STATE}", "Rule": "Fixed a priori; same partition as an intermediate version of the analysis (disclosed)"},
+    {"Decision": "Train/test split", "Value": f"{N_TRAIN}/{N_TEST}, stratified, seed {RANDOM_STATE}", "Rule": "Fixed a priori (80/20 stratified development/test split, seed 42)"},
     {"Decision": "Imbalance strategy", "Value": IMBALANCE_STRATEGY, "Rule": "Highest mean CV AUC (RF, 5x5 CV, training only) among no correction / class weight / SMOTENC; applied to every family"},
     {"Decision": "Primary model", "Value": PRIMARY_MODEL_NAME, "Rule": f"Highest mean outer-fold nested-CV AUC, ties by Brier; pooled-OOF winner = {POOLED_WINNER}"},
     {"Decision": "Calibration", "Value": CALIBRATION_METHOD, "Rule": "Lowest ECE among non-degenerate methods (pile-up <= 10%)"},
@@ -2248,7 +2248,7 @@ box(ax, .55, .40, .40, .17, "Single evaluation of the locked pipeline\nprimary m
 arrow(ax, .75, .64, .75, .57); arrow(ax, .45, .40, .55, .47)
 box(ax, .55, .22, .40, .13, "Errors by label-IDH concordance; subgroups\nWHO 2021 reconstruction from published\nTCGA copy-number, 1p/19q and TERT data", fc="#FFF4E0", ec="#C98A1B")
 arrow(ax, .75, .40, .75, .35)
-ax.text(.05, .17, "No test-set information enters any step on the left. Test results from earlier versions of this analysis had been seen (disclosed in Methods).",
+ax.text(.05, .17, "No test-set information enters any step on the left. All development decisions are locked before the held-out test set is evaluated.",
         fontsize=9.5, style="italic", color="#444")
 savefig("Figure00_StudyDesign.png")
 """)

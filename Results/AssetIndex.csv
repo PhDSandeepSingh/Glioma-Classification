@@ -55,15 +55,20 @@ Table,Table37f_DeMendoncaDisagreements.csv
 Table,Table38_RicherFeatureCeilingTest.csv
 Table,Table39_DiscordanceBySubgroup.csv
 Table,Table40_RaceFreeSensitivityModel.csv
+Table,Table_FullyNested_Joint_Canonical5Fold.csv
 Table,Table_PatientCharacteristics.csv
 Table,Table_RepeatedNestedCVStability.csv
 Table,Table_TargetDistribution.csv
 Table,split_test_indices.csv
 Table,split_train_indices.csv
 Figure,Figure00_StudyDesign.png
+Figure,Figure01_ClassDistribution (1).png
 Figure,Figure01_ClassDistribution.png
+Figure,Figure02_MutationHeatmap (1).png
 Figure,Figure02_MutationHeatmap.png
+Figure,Figure03_AgeDistribution (1).png
 Figure,Figure03_AgeDistribution.png
+Figure,Figure04_CorrelationMatrix (1).png
 Figure,Figure04_CorrelationMatrix.png
 Figure,Figure06_ModelFamilyComparison.png
 Figure,Figure07_CalibrationCurve.png

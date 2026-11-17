@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-10-12T18:21:27.013547+00:00",
+  "generated_utc": "2026-11-17T07:28:48.124829+00:00",
   "python": "3.13.16",
-  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
-  "numpy": "2.5.3",
-  "pandas": "3.0.5",
-  "scipy": "1.18.1",
-  "scikit-learn": "1.9.1",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "pandas": "2.2.3",
+  "scipy": "1.16.3",
+  "scikit-learn": "1.6.1",
   "xgboost": "3.4.1",
-  "shap": "0.53.0",
+  "shap": "0.54.1",
   "imbalanced-learn": "0.14.2",
   "statsmodels": "0.15.0",
-  "matplotlib": "3.11.2",
+  "matplotlib": "3.10.0",
   "seaborn": "0.13.2",
   "random_state": 42,
   "analysis_file_sha256": "1b25614ff94c8cf95f80f2c91c33e69843044c62283332690c9ff88f195144a1",
@@ -25,65 +25,65 @@
   "Four-feature panel": "IDH1, Age_at_diagnosis, IDH2, TP53",
   "cache_manifest": {
     "nested_cv_families": {
-      "file": "nested_cv_families_46b4f020c563_r3_7ded954bbd.pkl",
-      "code_key": "7ded954bbd",
-      "hit": false
+      "file": "nested_cv_families_46b4f020c563_r3_5488e72faf.pkl",
+      "code_key": "5488e72faf",
+      "hit": true
     },
     "age_idh1_nested": {
-      "file": "age_idh1_nested_46b4f020c563_r3_0668dc15f2.pkl",
-      "code_key": "0668dc15f2",
-      "hit": false
+      "file": "age_idh1_nested_46b4f020c563_r3_536db1cf27.pkl",
+      "code_key": "536db1cf27",
+      "hit": true
     },
     "repeated_nested_XGBoost": {
-      "file": "repeated_nested_XGBoost_46b4f020c563_r3_640ddd8a14.pkl",
-      "code_key": "640ddd8a14",
-      "hit": false
+      "file": "repeated_nested_XGBoost_46b4f020c563_r3_45268d94bc.pkl",
+      "code_key": "45268d94bc",
+      "hit": true
     },
     "explain_XGBoost": {
-      "file": "explain_XGBoost_46b4f020c563_r3_e31f119a79.pkl",
-      "code_key": "e31f119a79",
-      "hit": false
+      "file": "explain_XGBoost_46b4f020c563_r3_bf3cc8def1.pkl",
+      "code_key": "bf3cc8def1",
+      "hit": true
     },
     "lofo_nested_XGBoost": {
-      "file": "lofo_nested_XGBoost_46b4f020c563_r3_c227b5e8dd.pkl",
-      "code_key": "c227b5e8dd",
-      "hit": false
+      "file": "lofo_nested_XGBoost_46b4f020c563_r3_4d32484f28.pkl",
+      "code_key": "4d32484f28",
+      "hit": true
     },
     "panels_nested_XGBoost": {
-      "file": "panels_nested_XGBoost_46b4f020c563_r3_259e8b9a74.pkl",
-      "code_key": "259e8b9a74",
-      "hit": false
+      "file": "panels_nested_XGBoost_46b4f020c563_r3_a3f7ee2fc4.pkl",
+      "code_key": "a3f7ee2fc4",
+      "hit": true
     },
     "final_models_XGBoost": {
-      "file": "final_models_XGBoost_46b4f020c563_r3_2a88a735f0.pkl",
-      "code_key": "2a88a735f0",
-      "hit": false
+      "file": "final_models_XGBoost_46b4f020c563_r3_811b8a9c88.pkl",
+      "code_key": "811b8a9c88",
+      "hit": true
     },
     "rich_features_nested": {
-      "file": "rich_features_nested_46b4f020c563_r3_3cad6d4b99.pkl",
-      "code_key": "3cad6d4b99",
+      "file": "rich_features_nested_46b4f020c563_r3_9af34fa16e.pkl",
+      "code_key": "9af34fa16e",
       "hit": false
     },
     "rich_features_final": {
-      "file": "rich_features_final_46b4f020c563_r3_b5f0209931.pkl",
-      "code_key": "b5f0209931",
+      "file": "rich_features_final_46b4f020c563_r3_edfc265b1c.pkl",
+      "code_key": "edfc265b1c",
       "hit": false
     },
     "norace_nested_XGBoost": {
-      "file": "norace_nested_XGBoost_46b4f020c563_r3_32195aebd5.pkl",
-      "code_key": "32195aebd5",
+      "file": "norace_nested_XGBoost_46b4f020c563_r3_a03bf23020.pkl",
+      "code_key": "a03bf23020",
       "hit": false
     },
     "norace_final_XGBoost": {
-      "file": "norace_final_XGBoost_46b4f020c563_r3_32c54ed6f8.pkl",
-      "code_key": "32c54ed6f8",
+      "file": "norace_final_XGBoost_46b4f020c563_r3_9ff72d9ee1.pkl",
+      "code_key": "9ff72d9ee1",
       "hit": false
     },
     "locked_panel_nested_XGBoost": {
-      "file": "locked_panel_nested_XGBoost_46b4f020c563_r3_66cd56747a.pkl",
-      "code_key": "66cd56747a",
+      "file": "locked_panel_nested_XGBoost_46b4f020c563_r3_882eec22a8.pkl",
+      "code_key": "882eec22a8",
       "hit": false
     }
   },
-  "cache_all_recomputed_this_run": true
+  "cache_all_recomputed_this_run": false
 }

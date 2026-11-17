@@ -41,15 +41,15 @@ Train_LGG,389,Section 5,
 Test_GBM,70,Section 5,
 Test_LGG,98,Section 5,
 Imbalance_locked,Class-weight (balanced),Table04,
-Imbalance_AUC_spread,0.0001,Table04,
+Imbalance_AUC_spread,0.0007,Table04,
 SMOTE_nonbinary_pct_first_gene,1.9,Section 6,IDH1
 SMOTE_nonbinary_pct_mean_genes,3.4,Section 6,
 NestedCV_meanfold_AUC_XGBoost,0.915,Table06,
 NestedCV_pooled_AUC_XGBoost,0.912,Table06,
 NestedCV_meanfold_AUC_LogisticRegression,0.912,Table06,
 NestedCV_pooled_AUC_LogisticRegression,0.911,Table06,
-NestedCV_meanfold_AUC_RandomForest,0.911,Table06,
-NestedCV_pooled_AUC_RandomForest,0.906,Table06,
+NestedCV_meanfold_AUC_RandomForest,0.91,Table06,
+NestedCV_pooled_AUC_RandomForest,0.905,Table06,
 NestedCV_meanfold_AUC_SVM_RBF,0.909,Table06,
 NestedCV_pooled_AUC_SVM_RBF,0.894,Table06,
 Primary_model,XGBoost,Table06,
@@ -65,11 +65,11 @@ Dev_AUC_primary_pooled,0.912,Table07,
 Dev_AUC_AgeIDH1_pooled,0.896,Table07,
 Dev_DeltaAUC_vs_AgeIDH1,0.015,Table07,95% CI +0.001 to +0.030
 Dev_DeLong_p_vs_AgeIDH1,0.0368,Table07,
-Ensemble_pooled_AUC,0.913,Table07,
-Ensemble_vs_primary_p,0.727,Table07,
+Ensemble_pooled_AUC,0.912,Table07,
+Ensemble_vs_primary_p,0.823,Table07,
 DeLong_p_XGBoost vs LogisticRegression,0.951,Table07,
 DeLong_p_XGBoost vs SVM_RBF,0.019,Table07,
-DeLong_p_XGBoost vs RandomForest,0.31,Table07,
+DeLong_p_XGBoost vs RandomForest,0.2,Table07,
 Calibration_locked,Platt/sigmoid (cross-fitted),Table09,
 Raw_ECE,0.041,Table09,
 Raw_slope,0.966,Table09,
@@ -653,15 +653,10 @@ Panel4_locked_fixed_dev_pooled_AUC,0.902,Table15c,"fixed panel, nested CV; full 
 Panel4_locked_fixed_dev_DeLong_p,0.098,Table15c,
 Panel4_locked_fixed_dev_pct_of_full,99.0,Table15c,
 Release_file,TCGA_GliomaBenchmark_WHO2021_Labels_v1.0.csv,Data/Release,839 rows x 53 columns; SHA-256 d7c9e905dbe11f94ca396394766d46088854f223e99f244af508f7ff35c9afbd
-Version_python,3.13.16,reproducibility_report.json,
-Version_scikit-learn,1.9.1,reproducibility_report.json,
-Version_xgboost,3.4.1,reproducibility_report.json,
-Version_shap,0.53.0,reproducibility_report.json,
-Version_imbalanced-learn,0.14.2,reproducibility_report.json,
 DeMendonca_n_both_assigned,816,Table37e,patients assigned a category by both reconstructions (out of 839)
 DeMendonca_n_agree,811,Table37e,811 of 816 (99.4%) agree across four categories
 DeMendonca_agree_pct,99.4,Table37e,811/816 = 99.39%
-DeMendonca_4cat_kappa,0.990,Table37e,Cohen kappa across assigned categories (0.9902)
+DeMendonca_4cat_kappa,0.99,Table37e,Cohen kappa across assigned categories (0.9902)
 DeMendonca_GBMwt_kappa,0.988,Table37e,Cohen kappa for binary GBM-IDH-wildtype target (0.9877)
 DeMendonca_n_disagreements,5,Table37f,all 5 arise from IDH definition (UCI IDH1/2 vs Ceccarelli/GDC IDH status)
 DeMendonca_IDHwt_LGG_GBM,63/85,Table37e,74.1% of 85 IDH-wildtype legacy LGG labelled GBM-IDHwt by de Mendonca et al.
@@ -700,5 +695,10 @@ Bio_PAlike_in_molGBM68,3/68,Table37d,4.4% of the 68 molecular GBMs have a PA-lik
 Subgroup_Acc_grade4_Age_le40,0.886,Table39,217/245 (below legacy-label accuracy 0.908 = 226/249)
 Subgroup_Acc_grade4_Age_41_55,0.942,Table39,229/243
 Subgroup_Acc_grade4_Age_56_70,0.979,Table39,231/236
-Subgroup_Acc_grade4_Age_gt70,0.990,Table39,102/103
+Subgroup_Acc_grade4_Age_gt70,0.99,Table39,102/103
 Subgroup_Acc_grade4_Race_Asian,0.769,Table39,10/13 (vs legacy-label accuracy 0.714 = 10/14)
+Version_python,3.13.16,reproducibility_report.json,
+Version_scikit-learn,1.6.1,reproducibility_report.json,
+Version_xgboost,3.4.1,reproducibility_report.json,
+Version_shap,0.54.1,reproducibility_report.json,
+Version_imbalanced-learn,0.14.2,reproducibility_report.json,
