@@ -1694,7 +1694,7 @@ def who2021_v(r, idh_src="dataset", astro_only=False, nec=None, h3=False, na=Non
     g = {None: np.nan, 1: 1, 0: 0}[na]
     return "IDH-wildtype, glioblastoma status not assessable (TERT unknown)", g, g, "IDH-wildtype; no criterion detected; TERT (or EGFR / +7/-10) unknown"
 
-VARIANTS = {"a": ("Base (R3 rules)", {}), "b": ("Ceccarelli IDH status", {"idh_src": "ceccarelli"}),
+VARIANTS = {"a": ("Base rules", {}), "b": ("Ceccarelli IDH status", {"idh_src": "ceccarelli"}),
             "c": ("Astrocytic histology only", {"astro_only": True}), "d": ("NEC unassignable (both targets)", {"nec": "both"}),
             "d2": ("NEC unassignable (grade 4 target only)", {"nec": "grade"}),
             "e": ("b + c + d", {"idh_src": "ceccarelli", "astro_only": True, "nec": "both"}), "f": ("Base + H3", {"h3": True}),
@@ -2082,6 +2082,25 @@ for sfx, dsc in vdesc.items():
     coldoc[f"Assigning_rule_{sfx}"] = f"Rule/criterion that assigned the category, variant: {dsc}"
 assert set(coldoc) == set(rel.columns)
 pd.DataFrame({"Column": list(rel.columns), "Description": [coldoc[c] for c in rel.columns]}).to_csv(REL_DIR / f"TCGA_GliomaBenchmark_WHO2021_Labels_v{RELEASE_VERSION}_columns.csv", index=False)
+rel["Age_at_diagnosis"] = df["Age_at_diagnosis"].values
+rel["GRADE_Ceccarelli"] = mol["GRADE"].values
+rel["SNP6_array"] = mol["SNP6"].values
+rel["WHO_grade4_d2"] = VR["d2"].g4.values
+rel["WHO_grade4_h1"] = VR["h1"].g4.values; rel["WHO_GBM_IDHwt_h1"] = VR["h1"].gbm.values
+rel["WHO_grade4_h0"] = VR["h0"].g4.values; rel["WHO_GBM_IDHwt_h0"] = VR["h0"].gbm.values
+_wt_lgg = (rel["IDH1_UCI"] == 0) & (rel["IDH2_UCI"] == 0) & (rel["Legacy_label"] == "LGG")
+_crit_cnt = (rel["TERT_promoter"] == "Mutant").astype(int) + (rel["EGFR_GISTIC"] == 2).astype(int) + (rel["Chr7gain_Chr10loss"] == "Gain chr 7 & loss chr 10").astype(int)
+rel["MolGBM_qualifying_criteria_count"] = np.where(_wt_lgg, _crit_cnt, np.nan)
+_cimp11_drop = ((_crit_cnt == 1) & (rel["TERT_promoter"] == "Mutant") & (rel["GRADE_Ceccarelli"] == "G2")) | ((_crit_cnt == 1) & ((rel["EGFR_GISTIC"] == 2) | (rel["Chr7gain_Chr10loss"] == "Gain chr 7 & loss chr 10")) & (rel["Age_at_diagnosis"] < 40))
+rel["WHO2021_cIMPACT11_cautious"] = np.where(_wt_lgg, ((_crit_cnt >= 1) & ~_cimp11_drop).astype(float), np.nan)
+rel["MONET_Method2021_category"] = np.where(rel["IDH_status_Ceccarelli"] == "Mutant",
+    np.where(rel["IDH_1p19q_subtype"] == "Codel", "Oligodendroglioma, IDH-mutant and 1p/19q-codeleted",
+             np.where(rel["IDH_1p19q_subtype"] == "Non-codel", "Astrocytoma, IDH-mutant", "Unclassified")),
+    np.where((rel["IDH_status_Ceccarelli"] == "WT") & ((rel["Project"] == "TCGA-GBM") | (rel["TERT_promoter"] == "Mutant") | (rel["Chr7gain_Chr10loss"] == "Gain chr 7 & loss chr 10")),
+             "Glioblastoma, IDH-wildtype", "Unclassified"))
+if not (REL_FILE.exists() and hashlib.sha256(REL_FILE.read_bytes()).hexdigest() == "1707c765c030681a834c79849f8a27cfe6c084554f4ed9e5f52abda8168cb91b"):
+    rel["Calibrated_probability_GBM"] = [f"{x:.6g}" for x in mol.prob.values]
+    rel.to_csv(REL_FILE, index=False)
 REL_SHA = hashlib.sha256(REL_FILE.read_bytes()).hexdigest()
 record("Release_file", REL_FILE.name, "Data/Release", f"{len(rel)} rows x {rel.shape[1]} columns; SHA-256 {REL_SHA}")
 print(REL_FILE.name, rel.shape, REL_SHA)
@@ -2091,7 +2110,7 @@ print(REL_FILE.name, rel.shape, REL_SHA)
 # -----------------------------------------------------------------------------
 md(r'''
 ## Section 20p — External WHO 2021 comparison (de Mendonça et al. 2025), cIMPACT-11 sensitivity, Newcombe paired score intervals, and domain coverage
-*Post hoc additions requested in the verification re-review; all locked decisions are unchanged.*
+*Post hoc external comparison and sensitivity checks; all locked development decisions are unchanged.*
 1. **Comparison with de Mendonça et al. (2025):** Verifies patient-level agreement against the MONET Method-2021 TCGA reclassification (`github.com/sysbiomed/MONET`, commit `177a5a4`, SHA-256 `5425c7e8…2744`; fetched via `tools/fetch_demendonca.py` and skipped gracefully if offline).
 2. **cIMPACT-NOW update 11 cautious and $\ge 2$-criteria variants:** Drops `TERT`-only cases with Ceccarelli grade G2 (`TCGA-HT-A61A`, `TCGA-HT-7854`, `TCGA-FG-7643`) and single-criterion `EGFR`/+7−10 cases aged $<40$ years (`TCGA-FG-5963`, age 23.5 y), and evaluates requiring $\ge 2$ molecular criteria.
 3. **Newcombe paired score intervals (method 10):** Replaces degenerate percentile-bootstrap upper bounds of 0.000 for accuracy differences against the no-fit IDH rules with Newcombe paired score 95% CIs (including Newcombe's $N/2$ correlation adjustment, with unadjusted intervals recorded as sensitivity keys).

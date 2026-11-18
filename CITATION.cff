@@ -43,14 +43,14 @@ authors:
     affiliation: >-
       Faculty of Electrical and Computer Engineering, Bahir Dar Institute of
       Technology, Bahir Dar University, Bahir Dar, Ethiopia
-version: 3.0.0
+version: 3.1.0
 # TODO(authors): set date-released to the date the GitHub release is tagged.
-date-released: "2026-10-12"
+date-released: "2026-11-17"
 # TODO(authors): DOI is minted by Zenodo when the tagged GitHub release is
 # archived. Paste the version DOI here, then uncomment:
 # doi: 10.5281/zenodo.XXXXXXX
 license: MIT
-repository-code: "https://github.com/SandeepSinghNk/Glioma-Classification"
+repository-code: "https://github.com/PhDSandeepSingh/Glioma-Classification"
 keywords:
   - glioma
   - IDH mutation

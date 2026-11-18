@@ -1,15 +1,39 @@
 {
   "title": "Impact of diagnostic label–IDH discordance and WHO 2021 criteria on machine-learning glioma grading from somatic mutations",
+  "description": "Canonical analysis notebook, pure-Python source generator, locked development decisions, result tables, figures, and 64-column patient-level WHO 2021 label release (N = 839; SHA-256 1707c765c030681a834c79849f8a27cfe6c084554f4ed9e5f52abda8168cb91b) for the UCI/TCGA Glioma Grading benchmark (UCI dataset 759). Repository: https://github.com/PhDSandeepSingh/Glioma-Classification",
   "version": "3.1.0",
   "upload_type": "software",
-  "publication_date": "2026-11-16",
+  "publication_date": "2026-11-17",
   "creators": [
     {
       "name": "Singh, Sandeep",
-      "affiliation": "Department of Mathematics, Chandigarh University, Mohali, Punjab, India"
+      "affiliation": "Department of Mathematics, University Institute of Sciences, Chandigarh University, Mohali, Punjab, India"
+    },
+    {
+      "name": "Pal, Ashok",
+      "affiliation": "Department of Mathematics, University Institute of Sciences, Chandigarh University, Mohali, Punjab, India"
+    },
+    {
+      "name": "Mittal, Nitin",
+      "affiliation": "Department of Industry 4.0, Skill Faculty of Engineering & Technology, Shri Vishwakarma Skill University, Palwal, Haryana, India"
+    },
+    {
+      "name": "Kaur, Jatinder",
+      "affiliation": "Department of Electronics and Communication Engineering, GLA University, Mathura, Uttar Pradesh, India"
+    },
+    {
+      "name": "Gared, Fikreselam",
+      "affiliation": "Faculty of Electrical and Computer Engineering, Bahir Dar Institute of Technology, Bahir Dar University, Bahir Dar, Ethiopia"
     }
   ],
   "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/PhDSandeepSingh/Glioma-Classification/tree/v3.1.0",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
   "keywords": [
     "Glioma",
     "IDH mutation",

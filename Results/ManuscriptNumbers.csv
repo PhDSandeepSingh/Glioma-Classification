@@ -652,7 +652,7 @@ NoRace_threshold,0.383,Table40,Youden on cross-fitted Platt OOF of the race-free
 Panel4_locked_fixed_dev_pooled_AUC,0.902,Table15c,"fixed panel, nested CV; full minus panel +0.009 (95% CI -0.002 to +0.021); DeLong p=0.098; vs selection-procedure estimate p=0.353"
 Panel4_locked_fixed_dev_DeLong_p,0.098,Table15c,
 Panel4_locked_fixed_dev_pct_of_full,99.0,Table15c,
-Release_file,TCGA_GliomaBenchmark_WHO2021_Labels_v1.0.csv,Data/Release,839 rows x 53 columns; SHA-256 d7c9e905dbe11f94ca396394766d46088854f223e99f244af508f7ff35c9afbd
+Release_file,TCGA_GliomaBenchmark_WHO2021_Labels_v1.0.csv,Data/Release,839 rows x 64 columns; SHA-256 1707c765c030681a834c79849f8a27cfe6c084554f4ed9e5f52abda8168cb91b
 DeMendonca_n_both_assigned,816,Table37e,patients assigned a category by both reconstructions (out of 839)
 DeMendonca_n_agree,811,Table37e,811 of 816 (99.4%) agree across four categories
 DeMendonca_agree_pct,99.4,Table37e,811/816 = 99.39%

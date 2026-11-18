@@ -2,7 +2,9 @@
 
 **Manuscript:** *Impact of diagnostic label–IDH discordance and WHO 2021 criteria on machine-learning glioma grading from somatic mutations* (*Scientific Reports*)
 
-This directory contains the complete, self-contained canonical analysis pipeline, data provenance records, and patient-level WHO 2021 label release (`v1.0`).
+**Repository:** https://github.com/PhDSandeepSingh/Glioma-Classification (`version: 3.1.0`)
+
+This directory contains the complete, self-contained canonical analysis pipeline, data provenance records, and 64-column patient-level WHO 2021 label release (`v1.0`; 839 rows × 64 columns, SHA-256 `1707c765c030681a834c79849f8a27cfe6c084554f4ed9e5f52abda8168cb91b`).
 
 **Research use only.** Neither the trained classifiers nor the reconstructed WHO 2021 labels are intended for clinical diagnosis or patient management.
 

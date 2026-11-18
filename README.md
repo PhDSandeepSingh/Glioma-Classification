@@ -146,8 +146,8 @@ After execution, you can verify deterministic reproduction by checking:
 |---|---|---|
 | Base Cohort Features | UCI Machine Learning Repository (Dataset 759, `doi:10.24432/C5R62J`) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | External Molecular Annotations | cBioPortal Datahub (`lgggbm_tcga_pub`, pinned commit) | TCGA Open-Access / NCI GDC Policies |
-| Derived Label Release | `Data/Release/` (documented in `Data/DATASHEET.md`) | CC BY 4.0 |
-| Pipeline & Utility Code | This repository | [MIT License](LICENSE) |
+| Derived Label Release (`v1.0`, 839 rows × 64 columns, SHA-256 `1707c765c030681a834c79849f8a27cfe6c084554f4ed9e5f52abda8168cb91b`) | `Data/Release/TCGA_GliomaBenchmark_WHO2021_Labels_v1.0.csv` (`Data/DATASHEET.md`) | CC BY 4.0 |
+| Pipeline & Utility Code (`version: 3.1.0`) | https://github.com/PhDSandeepSingh/Glioma-Classification | [MIT License](LICENSE) |
 
 SHA-256 checksums and pinned upstream commit hashes for external reference files are recorded in `Data/External/README.md`.
 
